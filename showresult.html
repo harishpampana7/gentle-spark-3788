@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/details.css" />
+    <title>showresult</title>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
+<script>
+  let api = `  http://localhost:3000/hotel`;
+
+  let getdata = async () => {
+    let res = await fetch(api);
+    res = await res.json();
+    console.log(res);
+    renderDom(res);
+  };
+  getdata();
+
+  let card = ({ image, name, price, type, city, rating, id }) => {
+    let div = document.createElement("div");
+    div.className = "item";
+    let image1 = document.createElement("img");
+    let divimg = document.createElement("div");
+    divimg.className = "img-item";
+    let name1 = document.createElement("p");
+    let price1 = document.createElement("p");
+    let type1 = document.createElement("p");
+    let city1 = document.createElement("p");
+    let rating1 = document.createElement("p");
+
+    name1.className = "name-item";
+    price1.className = "price-item";
+    type1.className = "type-item";
+    city1.className = "city-item";
+    rating1.className = "rating-item";
+
+    image1.src = image;
+    divimg.append(image1);
+    name1.innerHTML = name;
+    price1.innerHTML = price;
+    type1.innerHTML = type;
+    city1.innerHTML = city;
+    rating1.innerHTML = rating;
+
+    div.append(divimg, name1, price1, type1, city1, rating1);
+
+    return div;
+  };
+  let renderDom = (data) => {
+    let cont = document.getElementById("container");
+    cont.innerHTML = null;
+
+    data.forEach((el) => {
+      let product = card(el);
+      cont.append(product);
+    });
+  };
+</script>

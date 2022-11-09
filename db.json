@@ -1,0 +1,94 @@
+{
+  "hotel": [
+    {
+      "id": 1667931558348.8557,
+      "name": "InterContinental Marine Drive Mumbai, an IHG Hotel",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/245805125.webp?k=ca954cabc61a93cee8c30542536575b52cf1e3bb43482c7966a3eb3d4705a7f9&o=&s=1",
+      "price": 2500,
+      "type": "Deluxe Room",
+      "rating": 8.6,
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667931595555.8413,
+      "name": "The Gordon House Hotel, Colaba",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/168344327.webp?k=bf9d529a087a0cfd8c6b416df288401d74d5135ced4ea4cfe269be8748347020&o=&s=1",
+      "price": "2300",
+      "type": "Deluxe Room",
+      "rating": "8.4",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667966854837.7332,
+      "name": "West End Hotel Opp Bombay Hospital",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/186364354.webp?k=e733ed75031f1902d810c0f648de493e106194b6a53514e0b1f4c795333d4a30&o=&s=1",
+      "price": "3000",
+      "type": "Deluxe Room",
+      "rating": "7.1",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983001130.701,
+      "name": "FabHotel Zaid International",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/363985827.webp?k=9d5e6a84a93850f446b23d4e4c6f83b2424369d76bc40afc62a2a8d46a1a7c79&o=&s=1",
+      "price": "5934",
+      "type": "Deluxe Room",
+      "rating": "7.5",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983048969.6558,
+      "name": "Treebo Trend Elegant CST",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/397269907.webp?k=49220002803f526e4f3c4c6ebcacda837b4c888a3b4ed7bdb3b59afca06da698&o=&s=1",
+      "price": "5945",
+      "type": "Double Room",
+      "rating": "7.5",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983087426.396,
+      "name": "FabHotel Shivani Residency",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/397596097.webp?k=64d1ead0fa0bbc070f5952eb6aa9b7b7f050a33541fd9f4f52c160c76d499e22&o=&s=1",
+      "price": "4512",
+      "type": "Deluxe Room",
+      "rating": "9.2",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983184956.4697,
+      "name": "FabHotel Zaid International",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/363985827.webp?k=9d5e6a84a93850f446b23d4e4c6f83b2424369d76bc40afc62a2a8d46a1a7c79&o=&s=1",
+      "price": "6412",
+      "type": "Deluxe Room",
+      "rating": "6.3",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983248132.3445,
+      "name": "FabHotel Axis International",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/249703480.webp?k=edab6d9848010e22cabfad64709b3dd89e55bdce4ac9565b542858f87d0c06a4&o=&s=1",
+      "price": "8280",
+      "type": "Deluxe Double Room",
+      "rating": "7.3",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983314847.8674,
+      "name": "FabExpress Venture Grand",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/221302960.webp?k=c82e17336228aa2f58fc334ac18d5feeb57d4e9dc8850475f6a964c095c647df&o=&s=1",
+      "price": "5532",
+      "type": "Deluxe Room",
+      "rating": "5.5",
+      "city": "Mumbai"
+    },
+    {
+      "id": 1667983382315.6887,
+      "name": "Treebo Trend Welcome Apartments Bandra",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/square600/320342827.webp?k=3349c8fc3a96174c9e214999942140af800ccd0d92842f50d18bef89b0a9bd96&o=&s=1",
+      "price": "10700",
+      "type": "Standard Double Room",
+      "rating": "7.1",
+      "city": "Mumbai"
+    }
+  ]
+}
