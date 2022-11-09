@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page Bookit.com</title>
+  </head>
+  <style>
+    #d-box {
+      width: 40%;
+      margin: auto;
+      flex-direction: column;
+      border: 1px solid black;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #d-box input {
+      width: 80%;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+  <body>
+    <button><a href="./showresult.html">show Result</a></button>
+    <div id="d-box">
+      <h2>Admin Bookit.com</h2>
+      <form action="" id="form-data">
+        <input type="text" id="image" placeholder="Enter link of Image" />
+        <input type="text" id="name" placeholder="Enter Hotel Name" />
+        <input type="text" id="type" placeholder="Enter the Type" />
+        <input type="number" id="rating" placeholder="Enter Rating" />
+        <input type="number" id="price" placeholder="Enter Price" />
+        <input type="text" id="city" placeholder="Enter city" />
+        <button id="submitBtn" onclick="addPlace(event)">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>
