@@ -1,0 +1,32 @@
+.item {
+  border: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.img-item > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+.img-item {
+  margin-right: 10px;
+}
+#container {
+  width: 100%;
+}
+.rating-item {
+  background-color: #003580;
+  color: #fff;
+  padding: 5px;
+  height: 100%;
+  border-radius: 5px;
+}
+.name-item {
+  font-size: 20px;
+  color: #0071c2;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-weight: bold;
+}
