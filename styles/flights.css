@@ -1,0 +1,294 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+body{
+    font-family: Arial, sans-serif;;
+} 
+
+/* section-2 Starts */
+
+/* Css for Popular flights */
+#AKsection-2 #AK_popular_flights{
+    border: 1px solid red;
+    width: 100%;
+}
+#AKsection-2 #AK_popular_flights>h1{
+    margin-left: 215px;
+    margin-top: 300px;
+}
+
+#AK_popular_flights_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,250px);
+    border: 0px solid red;
+    width: 70%;
+    gap: 15px;
+    position: absolute;
+    left:220px;
+    top: 200px;
+    transition: 1s;
+    scroll-behavior: smooth;
+  }
+  #AK_popular_flights_container>div{
+    border: 0px solid black;
+    line-height: 20px;
+    scroll-behavior:initial;
+  }
+  #AK_popular_flights_container>div>img{
+    width: 100% ;
+    height: 80%;
+    object-fit: cover;
+    transition: 1s;
+  }
+  #AK_popular_flights_container>div>p{
+    color: rgb(116, 115, 115);
+    transition: 1s;
+  }
+  #AK_popular_flights_container>div>h3{
+    font-size: 17px;
+    margin-top: 10px;
+    transition: 1s;
+  }
+  #AK_pnext, #AK_pprevious{
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 1s;
+  }
+  #AK_pprevious{
+    position: relative;
+    left:199px;
+    top:280px;
+    transition: 1s;
+  }
+  #AK_pnext{
+    position: relative;
+    left : 1220px;
+    top: 280px;
+    transition: 1s;
+  }
+
+
+/* Css for trending cities */
+  #AKtrending_cities{
+    border: 0px solid black;
+  }
+  #AKtrending_cities>h1{
+    margin-left: 215px;
+    margin-top: 450px;
+  }
+  #AKtrending_cities_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,250px);
+    border: 0px solid red;
+    width: 70%;
+   
+    gap: 15px;
+    position: absolute;
+    left:220px;
+    top: 600px;
+  }
+  #AKtrending_cities_container>div{
+    border: 0px solid black;
+    line-height: 30px;
+    transition: 1s;
+  }
+  #AKtrending_cities_container>div>img{
+    width: 100% ;
+    height: 80%;
+    object-fit: cover;
+  }
+  #AKtrending_cities_container>div>p{
+    color: rgb(116, 115, 115);
+  }
+  #AKtrending_cities_container>div>h3{
+    line-height: 15px;
+    font-size: 17px;
+  }
+
+  #AK_tnext, #AK_tprevious{
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+  }
+  #AK_tprevious{
+    position: relative;
+    left:199px;
+    top:120px;
+  }
+  #AK_tnext{
+    position: relative;
+    left : 1220px;
+    top:120px;
+    transition: 1s;
+  }
+
+/* section-2 Ends */
+   
+/* section-3 starts */
+#AKsection-3{
+   border: 0px solid black;
+   width: 100%;
+   height: 170px;
+   background-color: rgb(243, 242, 242);
+   display: flex;
+   margin-top: 340px;
+}
+#AKsection-3>div{
+    display: flex;
+    border: 0px solid blue;
+    width: 80%;
+    margin: auto;
+}
+#AKsection-3>div>div{
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 30px;
+    margin: auto;
+}
+#AKsection-3>div>div>div:nth-child(1){
+    border: 0px solid blue;
+    width: 6.5%;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: -45px;
+}
+#AKsection-3>div>div>div:nth-child(2){
+    width:80%;
+    border: 0px solid blue;
+}
+#AKsection-3>div>div>div:nth-child(1)>img{
+    width: 100%;
+    text-align: left;
+}
+/* section-3 End */
+
+
+
+/* section-4 Starts */
+
+#AKsection-4{
+    border: 0px solid red;
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+}
+#AKsection-4>p{
+    color: grey;
+    margin-top: 10px;
+}
+#AKsection-4 #AKsegments{
+    display: flex;
+    border: 0px solid blue;
+    justify-content: space-around;
+    width: 40%;
+    padding: 10px;
+}
+#AKsection-4 #AKsegments>p{
+    cursor: pointer;
+    padding: 10px;
+    touch-action: manipulation;
+    color: grey;
+}
+#AKsection-4 #AKsegments>p:hover{
+    background-color: rgb(227, 224, 224);
+    border-bottom: blue;
+}
+#AKsection-4 #AKsegments>p:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: blue;
+    opacity: .5;
+  
+  }
+  
+
+#AKsection-4 #AKsection-4-Container{
+    width: 100%;
+    height: 50%;
+    border-top: 1px solid rgb(199, 197, 197);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10px;
+    gap: 10px;
+    align-items: flex-start;
+}
+#AKsection-4 #AKsection-4-Container>div{
+    border: 0px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#AKsection-4 #AKsection-4-Container>div>div:nth-child(1){
+    border: 0px solid black;
+    width: 18%;
+  
+}
+#AKsection-4 #AKsection-4-Container>div>div:nth-child(2){
+    width: 80%;
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+#AKsection-4 #AKsection-4-Container>div>div>img{
+    width: 100%;
+    
+}
+#AKsection-4 #AKsection-4-Container>div>div>h3{
+    font-size: 14px;
+}
+#AKsection-4 #AKsection-4-Container>div>div>p{
+    color: grey;
+}
+/* section-4 End */
+
+
+
+/* section-5 Starts */
+
+#AKsection-5{
+    width: 70%;
+    margin: auto;
+    border: 0px solid black;
+    margin-top: 70px;
+}
+
+#AKsection-5>div{
+    border: 0px solid red;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,170px);
+    gap: 20px;
+    margin-top: 20px;
+}
+#AKsection-5>div>div{
+    border: 1px solid rgb(199, 197, 197);
+   padding: 10px;
+   line-height: 20px;
+   border-radius: 10px;
+}
+#AKsection-5>div>div>p{
+    color: grey;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+
+/* section-5 End */
+
+
+
