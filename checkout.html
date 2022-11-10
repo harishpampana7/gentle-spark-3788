@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/checkout.css">
 </head>
+
 <body>
     <div id="navDream">
         <div id="parantDream-div">
-        <div id="logoDream">
-            <h1>Booking.Com</h1>
-        </div>
-        <div id="loginDream">
-         <div id="inr">
-            <h1>INR</h1>
-         </div>
-         <div id="lang">
-            <img src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png" alt="">
-         </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+" alt=""></div>
-         <div id="comme">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXNwZWVjaF9idWJibGUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIuNzUxIDBDNi41NDYtLjAwOSAxLjUxIDUuMDE0IDEuNSAxMS4yMTlhMTEuMjM1IDExLjIzNSAwIDAgMCAxLjY5NiA1Ljk1MmwtLjA0LS43MTgtMy4wODMgNi40NzVjLS4zMDQuNjM3LjM2MiAxLjMwMyAxIDFsNi40NzMtMy4wODQtLjcxOC0uMDRjNS4yNzYgMy4yOCAxMi4yMTMgMS42NjMgMTUuNDk0LTMuNjE0IDMuMjgtNS4yNzYgMS42NjMtMTIuMjEzLTMuNjE0LTE1LjQ5NEExMS4yNSAxMS4yNSAwIDAgMCAxMi43NDggMHptMCAxLjVBOS43NSA5Ljc1IDAgMSAxIDcuNjIgMTkuNTNhLjc1Ljc1IDAgMCAwLS43MTgtLjA0TC40MjggMjIuNTczbDEgMSAzLjA4Mi02LjQ3NmEuNzUuNzUgMCAwIDAtLjA0LS43MThBOS43MzUgOS43MzUgMCAwIDEgMyAxMS4yMmMuMDA4LTUuMzc3IDQuMzcyLTkuNzI5IDkuNzQ5LTkuNzIxeiIvPjwvc3ZnPg==" alt="">
-         </div>
-         <div id="notify">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWJlbGxfbm9ybWFsIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuMjggMjEuOTYxYTIuODM3IDIuODM3IDAgMCAwIDUuNDQ1IDAgLjc1Ljc1IDAgMSAwLTEuNDQtLjQyMiAxLjMzNyAxLjMzNyAwIDAgMS0yLjU2NSAwIC43NS43NSAwIDEgMC0xLjQ0LjQyMnpNMTIuNzUgM1YuNzVhLjc1Ljc1IDAgMCAwLTEuNSAwVjNhLjc1Ljc1IDAgMCAwIDEuNSAwem0tLjc1Ljc1YTYuNzUgNi43NSAwIDAgMSA2Ljc1IDYuNzVjMCAzLjE1NC4yOSA1LjQzNi43ODUgNi45OTQuMzIzIDEuMDIuNjg0IDEuNTkuOTk1IDEuODRMMjEgMThIM2wuNTkgMS4yMTJjLjI0OC0uMzE1LjU3Mi0uOTU4Ljg4LTIgLjQ5LTEuNjYuNzgtMy44NzIuNzgtNi43MTJBNi43NSA2Ljc1IDAgMCAxIDEyIDMuNzV6bTAtMS41YTguMjUgOC4yNSAwIDAgMC04LjI1IDguMjVjMCAyLjcwMi0uMjcyIDQuNzcyLS43MiA2LjI4OC0uMjU0Ljg2NC0uNDkzIDEuMzM2LS42MiAxLjVBLjc1Ljc1IDAgMCAwIDMgMTkuNWgxOGMuNzA4IDAgMS4wMjItLjg5Mi40Ny0xLjMzNS4wMTkuMDE2LS4wMDgtLjAxNS0uMDctLjExMy0uMTQtLjIyMy0uMjktLjU1My0uNDM1LTEuMDEyLS40NDMtMS4zOTYtLjcxNS0zLjUyOS0uNzE1LTYuNTRBOC4yNSA4LjI1IDAgMCAwIDEyIDIuMjV6Ii8+PC9zdmc+" alt="">
-         </div>
-         <div id="profile">
-            <div id="prof"></div>
-            <h3>Sapna Sharma</h3>
-         </div> 
+            <div id="logoDream">
+                <h1>Booking.Com</h1>
+            </div>
+            <div id="loginDream">
+            <div id="Dinr">
+                <h3>INR</h3>
+            </div>
+            <div id="Dlang">
+                <img src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png"
+                    alt="">
+            </div>
+            <div id="Dques">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+"
+                    alt="">
+            </div>
+            <div id="Dcomme">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXNwZWVjaF9idWJibGUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIuNzUxIDBDNi41NDYtLjAwOSAxLjUxIDUuMDE0IDEuNSAxMS4yMTlhMTEuMjM1IDExLjIzNSAwIDAgMCAxLjY5NiA1Ljk1MmwtLjA0LS43MTgtMy4wODMgNi40NzVjLS4zMDQuNjM3LjM2MiAxLjMwMyAxIDFsNi40NzMtMy4wODQtLjcxOC0uMDRjNS4yNzYgMy4yOCAxMi4yMTMgMS42NjMgMTUuNDk0LTMuNjE0IDMuMjgtNS4yNzYgMS42NjMtMTIuMjEzLTMuNjE0LTE1LjQ5NEExMS4yNSAxMS4yNSAwIDAgMCAxMi43NDggMHptMCAxLjVBOS43NSA5Ljc1IDAgMSAxIDcuNjIgMTkuNTNhLjc1Ljc1IDAgMCAwLS43MTgtLjA0TC40MjggMjIuNTczbDEgMSAzLjA4Mi02LjQ3NmEuNzUuNzUgMCAwIDAtLjA0LS43MThBOS43MzUgOS43MzUgMCAwIDEgMyAxMS4yMmMuMDA4LTUuMzc3IDQuMzcyLTkuNzI5IDkuNzQ5LTkuNzIxeiIvPjwvc3ZnPg=="
+                    alt="">
+            </div>
+            <div id="Dnotify">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWJlbGxfbm9ybWFsIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuMjggMjEuOTYxYTIuODM3IDIuODM3IDAgMCAwIDUuNDQ1IDAgLjc1Ljc1IDAgMSAwLTEuNDQtLjQyMiAxLjMzNyAxLjMzNyAwIDAgMS0yLjU2NSAwIC43NS43NSAwIDEgMC0xLjQ0LjQyMnpNMTIuNzUgM1YuNzVhLjc1Ljc1IDAgMCAwLTEuNSAwVjNhLjc1Ljc1IDAgMCAwIDEuNSAwem0tLjc1Ljc1YTYuNzUgNi43NSAwIDAgMSA2Ljc1IDYuNzVjMCAzLjE1NC4yOSA1LjQzNi43ODUgNi45OTQuMzIzIDEuMDIuNjg0IDEuNTkuOTk1IDEuODRMMjEgMThIM2wuNTkgMS4yMTJjLjI0OC0uMzE1LjU3Mi0uOTU4Ljg4LTIgLjQ5LTEuNjYuNzgtMy44NzIuNzgtNi43MTJBNi43NSA2Ljc1IDAgMCAxIDEyIDMuNzV6bTAtMS41YTguMjUgOC4yNSAwIDAgMC04LjI1IDguMjVjMCAyLjcwMi0uMjcyIDQuNzcyLS43MiA2LjI4OC0uMjU0Ljg2NC0uNDkzIDEuMzM2LS42MiAxLjVBLjc1Ljc1IDAgMCAwIDMgMTkuNWgxOGMuNzA4IDAgMS4wMjItLjg5Mi40Ny0xLjMzNS4wMTkuMDE2LS4wMDgtLjAxNS0uMDctLjExMy0uMTQtLjIyMy0uMjktLjU1My0uNDM1LTEuMDEyLS40NDMtMS4zOTYtLjcxNS0zLjUyOS0uNzE1LTYuNTRBOC4yNSA4LjI1IDAgMCAwIDEyIDIuMjV6Ii8+PC9zdmc+"
+                    alt="">
+            </div>
+            <div id="Dprofile">
+                <div>S</div>
+                <h3>Sapna Sharma</h3>
+            </div>
         </div>
     </div>
+    </div>
+    <div id="mainDream-div">
+     <div id="leftDream-div">
+        <div id="Dream-d1">
+            <h4>Your booking details</h4>
+            <div id="D-checkin-div">
+                <div class="Dream-div">
+                    <p>Check-in</p>
+                </div>
+                <div id="Dream-line"></div>
+                <div class="Dream-div">
+                    <p>Check-out</p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div id="rightDream-div">
+        <div id="Dream-show-product"></div>
+     </div>
+     <div></div>
     </div>
 </body>
+
 </html>
 <script src="./scripts/checkout.js"></script>
