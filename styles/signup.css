@@ -5,9 +5,9 @@
 #HP_logo{
     height: 120px;
     width: 100%;
-    /* background-color: #06f; */
-    box-shadow: rgba(103, 23, 178) 0px 3px 8px;
-    color: white;
+    background-color: rgb(22, 16, 108);
+    /* box-shadow: rgba(103, 23, 178) 0px 3px 8px; */
+    color: rgb(22, 16, 108);
     display:flex ;
     justify-content: center;
     align-items: center;
@@ -24,20 +24,18 @@
     padding-right: 10px;
     background-color: #fff;
     border-radius: 4px;
-    /* box-shadow: 0 0 10px rgb(0 0 0 / 20%); */
-    /* box-shadow: rgba(103, 23, 178) 0px 3px 8px; */
-    box-shadow: rgba(103, 23, 178) 0px 5px 15px;
+    box-shadow: rgb(22, 16, 108) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     display: block;
 }
 #HP_container{
     height: 600px;
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: rgb(165, 89, 236); */
-    /* background-image: url('./images/bg.jpg'); */
+    /* background-image: url('https://i.pinimg.com/564x/b8/63/ee/b863ee6e138d95612b2183398b661c91.jpg'); */
 }
 
 input,#HP_checkbox,#HP_top_head,#HP_submit{
@@ -51,11 +49,11 @@ input,#HP_checkbox,#HP_top_head,#HP_submit{
     justify-content: space-between;
 }
 #HP_submit{
-    border: 1px solid rgba(103, 23, 178);
+    border: 1px solid rgb(22, 16, 108);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(103, 23, 178);
+    background-color: rgb(22, 16, 108);
     
     font-size: 16px;
     font-weight: bold;
