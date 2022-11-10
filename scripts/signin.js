@@ -9,6 +9,10 @@ function submit(){
         alert("Sigin succesfully")
         window.location.href="index.html"
     }
+    else if(email1==="admin@gmail.com" && password1==="admin@1234"){
+        alert("Sigin succesfully")
+        window.location.href="admin.html"
+    }
     else{
         let alert1=document.getElementById("alert")
         alert1.innerText="Sorry, we don't recognize that email. Please try again."
@@ -19,4 +23,4 @@ function submit(){
 
 let nav_logo = document.getElementById("nav_logo").addEventListener("click",function(){
     window.location.href ="index.html"
-})
+});
