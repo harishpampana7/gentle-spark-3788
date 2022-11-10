@@ -1,3 +1,4 @@
+
 let getproduct = JSON.parse(localStorage.getItem("hotel"));
 
 let appendProduct=(data)=>{
@@ -24,9 +25,9 @@ let ans="";
 for(let i=0;i<Math.ceil(data.rating);i++){
 ans+= "⭐";
 }
-rat.innerText=`Hotel ${ans}`;
-review_btn.innerText=data.review;
 
+rat.innerText=`Hotel ${ans}` ;
+review_btn.innerText=data.review;
 
 div1.append(image);
 div2.append(rat,name,addrs,review_btn)
