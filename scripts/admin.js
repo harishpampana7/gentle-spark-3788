@@ -18,6 +18,8 @@ let addPlace = async (e) => {
   let price = +form.price.value;
   let rating = +form.rating.value;
   let city = form.city.value;
+  let review = +form.review.value;
+  let strikeprice = +form.strikeprice.value;
 
   let data = {
     id: Date.now() + Math.random() * 100,
@@ -27,6 +29,8 @@ let addPlace = async (e) => {
     type,
     rating,
     city,
+    review,
+    strikeprice,
   };
   console.log(data);
 

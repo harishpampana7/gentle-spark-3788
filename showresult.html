@@ -8,7 +8,10 @@
     <title>showresult</title>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <div id="ss_box-1"></div>
+      <div id="ss_box-2"></div>
+    </div>
   </body>
 </html>
 <script>
@@ -21,44 +24,124 @@
     renderDom(res);
   };
   getdata();
+  /*
+    {
+        image,
+        name,
+        price,
+        type,
+        city,
+        rating,
+        id,
+        review,
+        strikeprice,
+      }
+    */
+  // let card = (el) => {
+  //   //creating Elements for appending Data
 
-  let card = ({ image, name, price, type, city, rating, id }) => {
-    let div = document.createElement("div");
-    div.className = "item";
-    let image1 = document.createElement("img");
-    let divimg = document.createElement("div");
-    divimg.className = "img-item";
-    let name1 = document.createElement("p");
-    let price1 = document.createElement("p");
-    let type1 = document.createElement("p");
-    let city1 = document.createElement("p");
-    let rating1 = document.createElement("p");
-
-    name1.className = "name-item";
-    price1.className = "price-item";
-    type1.className = "type-item";
-    city1.className = "city-item";
-    rating1.className = "rating-item";
-
-    image1.src = image;
-    divimg.append(image1);
-    name1.innerHTML = name;
-    price1.innerHTML = price;
-    type1.innerHTML = type;
-    city1.innerHTML = city;
-    rating1.innerHTML = rating;
-
-    div.append(divimg, name1, price1, type1, city1, rating1);
-
-    return div;
-  };
+  //   return div;
+  // };
   let renderDom = (data) => {
-    let cont = document.getElementById("container");
+    let cont = document.getElementById("ss_box-2");
     cont.innerHTML = null;
 
     data.forEach((el) => {
-      let product = card(el);
-      cont.append(product);
+      let div = document.createElement("div");
+
+      let image1 = document.createElement("img");
+      let ss_one = document.createElement("div");
+      let ss_two = document.createElement("div");
+      let ss_three = document.createElement("div");
+      let name1 = document.createElement("p");
+      let price1 = document.createElement("p");
+      let type1 = document.createElement("p");
+      let city1 = document.createElement("p");
+      let rating1 = document.createElement("p");
+      let review1 = document.createElement("p");
+      let strikeprice1 = document.createElement("p");
+      let deal = document.createElement("p");
+      let availability = document.createElement("p");
+
+      //classname's for styling
+      div.className = "ss_item";
+      ss_one.className = "ss_one-item";
+      ss_two.className = "ss_two-item";
+      ss_three.className = "ss_three-item";
+      name1.className = "ss_name-item";
+      price1.className = "ss_price-item";
+      type1.className = "ss_type-item";
+      city1.className = "ss_city-item";
+      rating1.className = "ss_rating-item";
+      review1.className = "ss_review1-item";
+      strikeprice1.className = "ss_strikeprice1";
+      deal.className = "ss_deal";
+      availability.className = "ss_availability";
+      /////////////////////////////////////////
+      image1.src = el.image;
+
+      let emptystr = "";
+      for (let i = 0; i < Math.floor(el.rating); i++) {
+        emptystr += "⭐";
+      }
+
+      // rating1.innerHTML = `${emptystr}`;
+      name1.innerHTML = `${el.name} ${emptystr}`;
+      price1.innerHTML = `₹ ${el.price}`;
+      type1.innerHTML = el.type;
+      city1.innerHTML = `📌${el.city}`;
+
+      review1.innerHTML = el.review;
+      strikeprice1.innerHTML = `₹ ${el.strikeprice}`;
+      deal.innerText = "Limited-time Deal";
+      availability.innerText = "See availability >";
+
+      let deleteBtn = document.createElement("button");
+      deleteBtn.innerText = "Remove";
+      deleteBtn.className = "ss_remove_item";
+      deleteBtn.onclick = () => {
+        deleteProduct(id);
+      };
+
+      let updateBtn = document.createElement("button");
+      updateBtn.innerText = "Update Price";
+      updateBtn.className = "ss_update_price";
+      updateBtn.onclick = () => {
+        updateProduct(id);
+      };
+
+      ss_one.append(image1);
+      ss_two.append(name1, rating1, city1, deal, type1);
+      ss_three.append(
+        "Review Score",
+        review1,
+        strikeprice1,
+        price1,
+        availability
+      );
+
+      div.append(ss_one, ss_two, ss_three, updateBtn, deleteBtn);
+
+      // let product = card(el);
+      cont.append(div);
     });
+  };
+
+  let deleteProduct = async (id) => {
+    await fetch(`http://localhost:3000/hotel/${id}`, { method: "DELETE" });
+    getdata();
+  };
+
+  let updateProduct = async (id) => {
+    window.prompt;
+    const new_price = prompt("Enter new price");
+    let price = new_price;
+    let data = { price };
+    let res = await fetch(`http://localhost:3000/hotel/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+    });
+    getdata(res);
   };
 </script>
