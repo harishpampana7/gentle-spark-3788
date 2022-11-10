@@ -1,9 +1,7 @@
-#gif{
-  border: 1px solid orange;
-  width: 100%;
-  opacity: 1;
-  transition: opacity 1s;
+.gif{
+  animation: fading 10s infinite;
 }
+
 .homevideo{
   width: 100%;
   bottom: 100px;
@@ -21,7 +19,7 @@ input{
   align-items: center;
 }
 #SKlogo{
-  width: 60%;
+  width: 40%;
   cursor: pointer;
 }
 #SKnavbar{
@@ -73,7 +71,7 @@ input{
   align-items: center;
 }
 #SKbuttons>button{
-  height: 50%;
+  height: 40%;
 }
 #SkLink{
   background-color: transparent;
@@ -99,4 +97,177 @@ input{
 }
 #skRegister:hover,#skSignIn:hover{
   background-color: aliceblue;
+}
+#hotellogo{
+  color: black;
+}
+#PagesLinks{
+  display: flex;
+  gap:15px;
+  position: absolute;
+  top: 15%;
+  left: 11%;
+}
+#PagesLinks>div>i{
+  color: white;
+}
+#PagesLinks>div:nth-child(1){
+  border: 1px solid white;
+  border-radius:30px; 
+  background-color:rgba(220, 239, 255, 0.205)
+}
+#PagesLinks>div{
+  width : auto;
+  border: 0px solid white;
+  display: flex;
+  gap: 15px;
+  justify-content:space-evenly;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  height:40px;
+
+}
+#PagesLinks>div:hover{
+  border: 0px solid white;
+  border-radius:30px;
+  background-color:rgba(220, 239, 255, 0.205)
+}
+.swiper-slide{
+  position: relative;
+  border: 0px solid white;
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+.swiper-slide>img{
+  filter: brightness(80%);
+}
+
+#SKcitylona{
+  position: absolute;
+  bottom:1%;
+  left: 3%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#SKcitygur{
+  position: absolute;
+  bottom:1%;
+  left:5%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#SKcitykol{
+  position: absolute;
+  bottom:1%;
+  left: 5%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#SKcitypune{
+  position: absolute;
+  bottom:1%;
+  left: 5%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#SKcityhyd{
+  position: absolute;
+  bottom:1%;
+  left: 5%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#SKcityjaipur{
+  position: absolute;
+  bottom:1%;
+  left: 5%;
+  color:white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.swiper{
+    width: 80%;
+    height:fit-content;
+    border: 0px red solid;
+    margin: auto;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+}
+.swiper-wrapper{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  width: 95%;
+}
+.slides-containerA{
+  /* height: calc(80vh - 2rem); */
+  border: 0px solid black;
+  display: flex;
+  overflow: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  padding-left: 25px;
+}
+.slideA{
+  border: 0px solid black;
+  flex: 1 0 100%;
+  display: flex;
+  gap: 10px;
+}
+.slide-arrowB{
+  position: absolute;
+  top:39%;
+  left:94.6%;
+  width: 3.2%;
+  height: 30px;
+  border-radius: 200px;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.593);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #304ef8;
+  cursor:pointer;
+}
+.slide-arrowPrev{
+  position: absolute;
+  top: 39%;
+  left: 0%;
+  width: 3.2%;
+  height: 30px;
+  border-radius: 200px;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.593);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #304ef8;
+  cursor: pointer;;
 }

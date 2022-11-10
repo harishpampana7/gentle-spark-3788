@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1",
+    "swiper": "^8.4.4"
+  }
 }
