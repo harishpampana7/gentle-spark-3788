@@ -1,16 +1,18 @@
 *{
    font-family:BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   margin: 0px;
+   padding: 0px;
 }
 #navDream{
     border: 1px solid black;
     width: 100%;
-    height:100px;
+    height:80px;
     margin: auto;
     background-color: #003580;
 }    
 #parantDream-div{
     display: flex;
-    width: 75%;
+    width: 70%;
     height: 100%;
     margin: auto;
     border: 1px solid red;
@@ -25,11 +27,129 @@
     align-items: center;
 }
 #logoDream>h1{
- font-size: 30px;
+ font-size:25px;
  font-weight: bold;
  color: white;
 }
 #loginDream{
     display: flex;
-    width:60%;
+    width:40%;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid white;
+}
+#Dinr{
+    color:white;
+    font-weight:400;
+}
+#Dlang{
+    border-radius: 50%;
+    width:28px;
+    height:28px;
+}
+#Dlang>img{
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}
+#Dques{
+    filter: invert();
+}
+#Dcomme{
+    filter: invert();
+}
+#Dnotify{
+    filter: invert();
+}
+#Dprofile{
+    display: inline-flex;
+    gap:7px;
+    align-items: center;
+}
+#Dprofile>h3{
+    color:white;
+}
+#Dprofile>div{
+    background-color: #FEBB02;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#mainDream-div{
+    display:flex;
+    width:70%;
+    margin:auto;
+    border: 1px solid green;
+}
+#leftDream-div{
+    display:flex;
+    flex-direction:column;
+    border:1px solid red;
+    width:30%;
+    margin-right:20px;
+}
+#rightDream-div{
+    display:flex;
+    width:70%;
+    flex-direction:column;
+    border:1px solid red;
+}
+#Dream-d1{
+    display:flex;
+    flex-direction:column;
+    border:1px solid black;
+    height:350px;
+    text-align: center;
+}
+#D-checkin-div{
+    display:flex;
+    width: 100%;
+    height:100px;
+    gap:20px;
+    align-items: center;
+    border: 1px solid grey;
+}
+.Dream-div{
+    border: 1px solid greenyellow;
+    width:35%;
+    text-align: left;
+    font-weight:500;
+}
+#Dream-line{
+    width:0.1px;
+    height:60%;
+    background-color:rgb(201, 195, 195);
+    
+}
+#Dream-show-product{
+    display:flex;
+    gap:15px;
+    padding:15px;
+    border: 1px solid rgb(219, 218, 218);
+}
+#Dream-review-btn{
+    background-color: #003580;
+    border:none;
+    font-size:14px;
+    padding: 5px 10px;
+    color:white;
+    border-radius: 4px 4px 4px 0px;
+}
+#Dream-div1{
+    width:250px;
+    height: 150px; 
+    border-radius:3px;   
+}
+#Dream-div1>img{
+    width:100%;
+    height:100%; 
+    border-radius:3px;     
+}
+#Dream-rat{
+    font-weight: normal;
+    font-size:14px;
 }

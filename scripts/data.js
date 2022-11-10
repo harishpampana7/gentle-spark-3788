@@ -11,3 +11,5 @@ let addHotel=(e)=>{
     console.log(obj);
     localStorage.setItem("hotel",JSON.stringify(obj));
 }
+
+//
