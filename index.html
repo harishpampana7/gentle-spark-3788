@@ -12,6 +12,7 @@
   ></script>
 </head>
 <body>
+    <!-- Navbar -->
     <div id="SKnavbar">
         <div id="SKlogoDiv">
         <img id="SKlogo" src="https://drive.google.com/uc?export=view&id=1HjnVBG9gNd58TlhLLNs3pbnVghqfl4h0" alt="logo">
@@ -28,6 +29,7 @@
             </div>
         </div>
     </div>
+    <!-- Navbar Links -->
     <div id="PagesLinks">
     <div id="SKhotel" class="skHotel">
         <i class="fa-solid fa-bed"></i>
@@ -54,6 +56,7 @@
     <p>Airport Taxi</p>
     </div>
     </div>
+    <!-- slide show of images -->
     <div id="viode&search">
         <div id="homevideo">
             <img class="mySlides gif" src="https://drive.google.com/uc?export=view&id=1JsJIUh36pLiiMkSMyLjIfYU8d-PdWe5z" alt="" style="width:100%;">
@@ -64,13 +67,14 @@
            <!-- <img id="gif" src="https://drive.google.com/uc?export=view&id=1Jf9WtG0VQgpdNrfxawGwJBpzVAuAgCW5" alt=""> -->
         </div>
     </div>
+    <!-- first swiper of popular cities -->
     <div class="swiper">
         <div class="swiper-wrapper">
             <button class="slide-arrowPrev" id="slide-arrow-prevA">&#8249;</button>
             <button class="slide-arrowB" id="slide-arrow-nextA">&#8250;</button>
             <ul class="slides-containerA" id="slides-containerA">
             <li class="slideA">
-            <div class="swiper-slide">
+            <div class="swiper-slideB">
            <img src="https://cf.bstatic.com/xdata/images/city/357x153/684682.jpg?k=30cf9de93f2a0f87eed7d2d0d9b3e6eccd5dcf3a4b68b4e0151c0800ddc84af7&o=" alt="">
            <p id="SKcitylona">Lonavala</p>
            </div>
@@ -100,18 +104,292 @@
           </ul>
         </div>
     </div>
+    <!-- Search bar  -->
     <div id="searchBar">
         <div id="searchCity">
             <i class="fa-solid fa-bed"></i>
-            <input type="search" placeholder="Where Are You Going?">
+            <input id="query" type="search" placeholder="Where Are You Going?">
         </div>
         <div id="dates">
-            <label for="skCheckin">Check-in</label>
-            <input id="skCheckin" type="date" value="Check In Date">
-            <label for="skCheckout">Check-out</label>
-            <input id="skCheckout" type="date" value="Check out Date">
+           <p>Checkin</p><input id="skCheckin" type="date">
+           <p>Checkout</p><input id="skCheckout" type="date">
+        </div>
+        <div id="skPerson">
+            <i class="fa-solid fa-user"></i>
+            <p id="adult"></p><span>Adult</span>
+            <p id="child"></p><span>Child</span>
+            <p id="room"></p><span>Room</span>
+        </div>
+        <div class="searchBtn">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+    <!-- increse decrese the values of number of persons -->
+    <div class="popup" id="skPersonDiv">
+        <p id="cross">Close</p>
+        <div id="AdultDiv">
+            <p>Adult</p>
+            <form action="" id="adultsForm">
+                <div class="value-button" id="decreaseAdult" value="Decrease Value">-</div>
+                <input type="number" id="Adultnumber" value="1" />
+                 <div class="value-button" id="increaseAdult" value="Increase Value">+</div>
+            </form>
+        </div>
+        <div id="childDiv">
+           <p>Child</p>
+           <form action="" id="childForm">
+            <div class="value-button" id="decreaseChild" value="Decrease Value">-</div>
+            <input type="number" id="Childnumber" value="0" />
+            <div class="value-button" id="increaseChild" value="Increase Value">+</div>
+         </form>
+        </div>
+        <div id="roomDiv">
+           <p>Room</p>
+        <form action="" id="roomsForm">
+            <div class="value-button" id="decreaseRoom" value="Decrease Value">-</div>
+            <input type="number" id="Roomnumber" value="1" />
+            <div class="value-button" id="increaseRoom" value="Increase Value">+</div>
+        </form>
         </div>
     </div> 
+    <!-- Recent searches -->
+    <div id="RecentSearches"></div>
+    <div class="offers">
+        <h2 id="offerH2">Offers</h2>
+        <p id="offerP">Promotions, deals and special offers for you</p>
+    </div>
+    <!-- Promo offers -->
+    <div id="offers">
+        <div id="promo">
+            <div id="ladywithLap">
+                <img src="https://q-xx.bstatic.com/psb/capla/static/media/long_stays_banner_wide.a1b12d47.png" alt="">
+                <div id="textpromo">
+                    <p id="escape">Escape for a While</p>
+                    <p id="enjoy">Enjoy the freedom of a monthly stay on Bookit.com</p>
+                    <button id="exploreBtn">Discover monthly Stays</button>
+                </div>
+            </div>
+            <div id="promoApp">
+                <div id="abotApp">
+                    <p id="every">Every part of your trip in one app</p>
+                    <p id="findthe">Find the best accommodations, flights and more on the free BOOKit.com app.</p>
+                    <button id="appBtn">Get the App</button>
+                </div>
+                <div id="appImg">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/500x500/178968129.jpeg?k=52539cb8ac165dd6904836ac7f5474223f043df7ef00a7ad1f5feb35d2384613&o=" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Explore more and cities swiper -->
+    <div class="explore">
+        <h2 id="offerH2">Explore</h2>
+        <p id="offerP">These popular destinations have a lot to offer</p>
+    </div>
+    <!-- cities swiper -->
+    <div id="citiesSwiper">
+        <div class="swiper-wrapperB">
+            <button class="slide-arrowPrevB" id="slide-arrow-prevB">&#8249;</button>
+            <button class="slide-arrowNextB" id="slide-arrow-nextB">&#8250;</button>
+            <ul id="slides-containerB" class="slides-containerB">
+                <li class="slideB">
+                 <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/684765.webp?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="">
+                    <h3>New Delhi</h3>
+                    <p>2912 Properties</p>
+                 </div>
+                 <div id="cityimg">
+                     <img src="https://cf.bstatic.com/xdata/images/city/square250/684622.webp?k=f9eacb40b8f7c8560afc74cdcfe2e7028e5117a36a0d8d3356f735ea3ac20f4f&o=" alt="">
+                     <h3>Gurgaon</h3>
+                     <p>1,135 Properties</p>
+                 </div>
+                 <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/824928.webp?k=021c9ec0c9e01c06f47809fe251701390100d0f446b4edc47027d1a0c029f638&o=" alt="">
+                    <h3>Manesar</h3>
+                    <p>14 Properties</p>
+                </div>
+                <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/684657.webp?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o=" alt="">
+                    <h3>Jaipur</h3>
+                    <p>1,563 Properties</p>
+                </div>
+                <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/691495.webp?k=1c9ca7d6f4c56ca1c8b5b26d842a2345d1e074a2a34df42f5e3179ff0fe060f3&o=" alt="">
+                    <h3>Noida</h3>
+                    <p>436 Properties</p>
+                </div>
+                <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/935891.webp?k=05668cbae7eaa0f13b675a0c91164465bdc3394db46c6bb555e9dacdbbc4c025&o=" alt="">
+                    <h3>Neemrana</h3>
+                    <p>24 Properties</p>
+                </div>
+                </li>
+                <li class="slideB">
+                    <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/region/square250/66586.webp?k=a478dc5b7deac38cd871f778813e3601933793785ed7f4c138c052cf87ec53c6&o=" alt="">
+                    <h3>Delhi NCR</h3>
+                    <p>5,947 Properties</p>
+                    </div>
+                    <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/684501.webp?k=225f7713b3f47f0c2c580c34c35582ba70331757bcc8dc32e7f17072c80805ff&o=" alt="">
+                    <h3>Agra</h3>
+                    <p>408 Properties</p>
+                    </div>
+                    <div id="cityimg">
+                     <img src="https://cf.bstatic.com/xdata/images/city/square250/665339.webp?k=0fb1dee60ac92148d6626952e98b7d0b63e97255d7a036a7e0f5b31e357742e7&o=" alt="">
+                     <h3>Faridabad</h3>
+                     <p>161 Properties</p>
+                    </div>
+                    <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/region/square250/49646.webp?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="">
+                    <p>Goa</p>
+                    <p>5,246 Properties</p>
+                    </div>
+                    <div id="cityimg">
+                    <img src="https://cf.bstatic.com/xdata/images/city/square250/735371.webp?k=78e5e28aee3dcafb6d6b6c254aedf2b2b8ec80a6ceefc33f7776d82dce50649c&o=" alt="">
+                    <h3>Shilong</h3>
+                    <p>275 Properties</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h2 id="offerH2new">Browse by property type</h2>
+    <div id="propertySwiper">
+         <div class="swiper-wrapperC">
+            <button class="slide-arrowPrevC" id="slide-arrow-prevC">&#8249;</button>
+            <button class="slide-arrowNextC" id="slide-arrow-nextC">&#8250;</button>
+            <ul id="slides-containerC" class="slides-containerC">
+                <li class="slideC" id="slideC">
+                  <div id="propImg">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o=" alt="">
+                    <p id="propType">Hotels</p>
+                    <p id="propcount">912,119 Hotels</p>
+                  </div>
+                  <div id="propImg">
+                    <img src="https://r-xx.bstatic.com/xdata/images/hotel/300x240/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o=" alt="">
+                    <p id="propType">Appartments</p>
+                    <p id="propcount">851,912 Appartments</p>
+                  </div>
+                  <div id="propImg">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o=" alt="">
+                    <p id="propType">Resorts</p>
+                    <p id="propcount">17,911 Resorts</p>
+                  </div>
+                  <div id="propImg">
+                    <img src="https://r-xx.bstatic.com/xdata/images/hotel/300x240/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o=" alt="">
+                    <p id="propType">Villas</p>
+                    <p id="propcount">451,915 Villas</p>
+                  </div>
+                </li>
+                <li class="slideC" id="slideC2">
+                    <div id="propImg" class="propImg">
+                        <img class="cabin" src="https://q-xx.bstatic.com/xdata/images/hotel/300x240/52979454.jpeg?k=6ac6d0afd28e4ce00a8f817cc3045039e064469a3f9a88059706c0b45adf2e7d&o=" alt="">
+                        <p id="propType">Cabins</p>
+                        <p id="propcount">45000 Cabins</p>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+         </div>
+    </div>
+    <div id="countriesFolder">
+        <div id="delhiMumbai">
+            <div id="newDelhiSK">
+                <img id="townImagedelhi" src="https://drive.google.com/uc?export=view&id=1oMzmvmWyMaXCf2kvh4UKfIbVsy8tR5By" alt="">
+            </div>
+            <div id="mumbaiSK">
+               <img id="townImagemumbai" src="https://drive.google.com/uc?export=view&id=1x2oyfdlezbEdH2MI3fjO__KECuHuk7SC" alt="">
+            </div>
+        </div>
+        <div id="jDA">
+            <div id="cityjaipur">
+                <img src="https://drive.google.com/uc?export=view&id=14voM6jnaSYAOqPAnSQRwHmDeU0mghN26" alt="">
+            </div>
+            <div id="citydubai">
+                <img src="https://drive.google.com/uc?export=view&id=1rYIZ2DueyxLs8g6ZqmjjcCg8nlMRSEg1" alt="">
+            </div>
+            <div id="cityagra">
+                <img src="https://drive.google.com/uc?export=view&id=1JJ0_k6jgTE7zKACmg6LD0ACJ95VY1sYw" alt="">
+            </div>
+        </div>
+    </div>
+    <h2 class="getinsi">Get inspiration for your next trip</h2>
+    <div id="insipirations">
+         <div id="insi1">
+            <a href="https://www.booking.com/articles/europe-s-most-festive-christmas-markets.en.html?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&amp;force_lang=en-gb&amp;from_articles_widget=1"><div id="europ">
+                <img src="https://bstatic.com/xdata/images/xphoto/1182x887/141399390.jpg?k=81725e963737db9ba34bf57e8fab11b57a000846a51a8dd7d139a9fdf72f6a07&o=?size=S" alt="">
+                <div id="insiContent">
+                    <h3>Europ's 10 most festive Christmas markets</h3>
+                    <p>Enjoy potent mulled wine in Salzburg and sugardusted gingerbread in Valkenburg</p>
+                </div>
+            </div></a>
+            <a href="https://www.booking.com/articles/48-hours-barcelona.en.html?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&amp;from_articles_widget=1&amp;force_lang=en-gb"><div id="spain">
+                <img src="https://bstatic.com/xdata/images/xphoto/1182x887/178937192.jpg?k=48f0f21ddc74148d6c18c55693e37321ea8ef5d25a646c61753b9d61e25b7ccf&o=?size=S" alt="">
+                <div id="insiContent">
+                    <h3>48 hours in Barcelona, Spain</h3>
+                    <p>Featuring beaches, churros and art of Salvador Dali.</p>
+                </div>
+            </div></a>
+            <a href="https://www.booking.com/articles/unesco-world-heritage-sites-india.en.html?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&amp;force_lang=en-gb&amp;from_articles_widget=1"><div id="unesco">
+                <img src="https://bstatic.com/xdata/images/xphoto/1182x887/178898097.jpg?k=ed16f9db2f5a6b0c1bb975cd50047310658de66b5593324f4ed2dc309b4a9b4c&o=?size=M" alt="">
+                <div id="insiContent">
+                    <h3>7 Incredible UNESCO world heritage sites in India </h3>
+                    <p>Bewitiching landscapes, holy temples and the candlelit banks of sacred rivers.</p>
+                </div>
+            </div></a>
+         </div>
+         <div id="insi2">
+            <a href="https://www.booking.com/articles/creative-guide-london.en.html?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&amp;from_articles_widget=1&amp;force_lang=en-gb">
+                <div id="london">
+                    <img src="https://bstatic.com/xdata/images/xphoto/1182x887/177969884.jpg?k=b7402dec639e3c61789fae9a6e1180c2a6103a2ff3c5cf6b15abb9b65c87870a&o=?size=S" alt="">
+                    <div id="insiContent2">
+                        <h3>Inspire yourself in the city: London</h3>
+                        <p>Fire up your imagination in london with these creative activities.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.booking.com/articles/usa-festive-stays.en.html?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&amp;force_lang=en-gb&amp;from_articles_widget=1">
+                <div id="usa">
+                    <img src="https://bstatic.com/xdata/images/xphoto/1182x887/177192152.jpg?k=0bcedd1090e2e4579fdf61533211f1a2214f4fda49390c946a8c208680aa6dee&o=?size=S" alt="">
+                    <div id="insiContent2">
+                        <h3>The USA’s cosiest stays for the festive season</h3>
+                        <p>Long term stays for a festive break; from period properties to picture-perfect townhouse.</p>
+                    </div>
+                </div>
+            </a>
+         </div>
+    </div>
+    <h2 class="getinsi">Connect with other travellers</h2>
+
+    <div id="connectwithother">
+        <a style="text-decoration: none" href="https://www.booking.com/communities/c/india?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&sid=66f4a736d9386bd92c206dbc355215b4&community_ep_ref=c323&lang=en-gb&utm_campaign=booking&utm_medium=www-index&utm_source=communities_ep&&communities_entry_point=www-index-recommended">
+            <div>
+                <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/india/a047bf294ce2d2e145fdcdd3097b9a7f4e6df229.jpg" alt="">
+                <h3>India</h3>
+                <p>Travel Community</p>
+                <p>155,707 Travellers</p>
+            </div>
+        </a>
+        <a style="text-decoration: none" href="https://www.booking.com/communities/c/travel-discussions?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&sid=66f4a736d9386bd92c206dbc355215b4&community_ep_ref=c323&lang=en-gb&utm_campaign=booking&utm_medium=www-index&utm_source=communities_ep&&communities_entry_point=www-index-recommended">
+        <div>
+            <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/travel-discussions/35a717b9feba5c8f800e2a8949dfa5014e4e79b4.jpg" alt="">
+            <h3>Travel Talks</h3>
+            <p>General Discussion</p>
+            <p>559,436 Travellers</p>
+        </div>
+    </a>
+    <a style="text-decoration: none" href="https://www.booking.com/communities/index?label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4Ap-zt5sGwAIB0gIkNWNmYTA4YjYtZDRiNS00OGQxLWFlMDEtM2QzNDE2MzYwMzhh2AIG4AIB&sid=66f4a736d9386bd92c206dbc355215b4&community_ep_ref=c323&lang=en-gb&utm_campaign=booking&utm_medium=www-index&utm_source=communities_ep&&communities_entry_point=www-index-recommended">
+        <div>
+            <img src="https://cf.bstatic.com/static/img/communities/communities-index/photo-300x300/b2d5ae20ed65039fe73edbeea8b34ccfddbd63b4.png" alt="">
+            <h3>More Communities</h3>
+            <p>View all</p>
+            <p>9,894,940 Travellers</p>
+        </div>
+    </a>
+    </div>
 </body>
 </html>
 <script type="module" src="./scripts/homepage.js"></script>
