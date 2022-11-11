@@ -199,24 +199,28 @@ const searchResult = () => {
   }
   searchArr.push(searchObj);
   localStorage.setItem("query",JSON.stringify(searchArr));
-  console.log("query")
+  console.log(query)
+
   if(query == "mumbai" || "Mumbai"){
-    window.location.href = "city_mumbai.html"
+    console.log("m");
+    // window.location.href = "city_mumbai.html"
   }else if(query == "delhi" || "Delhi"){
-    window.location.href = "city_New_Delhi.html"
+    console.log("d");
+    // window.location.href = "city_New_Delhi.html"
   }else if(query == "hyderabad" || "Hyderabad"){
-    window.location.href = "city_hyderabad.html"
+    console.log("h");
+    // window.location.href = "city_hyderabad.html"
   }else if(query == "pune" || "Pune"){
-    window.location.href = "city_pune.html"
+    console.log("p");
+    // window.location.href = "city_pune.html"
   }
+
   document.getElementById("query").value = null;
   document.getElementById("skCheckin").value = null;
   document.getElementById("skCheckout").value = null;
   document.getElementById("adult").innerText = null;
   document.getElementById("child").innerText = null;
   document.getElementById("room").innerText = null;
-
-
 }
 
 
