@@ -4,7 +4,7 @@
 
 
 document.getElementById("SkLink").addEventListener("click", ()=>{
-  window.location.href = "admin.html"
+  window.location.href = "signin.html"
 })
 document.getElementById("skRegister").addEventListener("click", ()=>{
   window.location.href = "signup.html"

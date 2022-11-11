@@ -89,15 +89,15 @@ let appendProduct = (data) => {
   }
   rat.innerText = `Hotel ${ans}`;
   let ansr = "";
-  for (let j = 0; j < Math.floor(data.review); j++) {
-    if (j <= 10) {
-      ansr += "Best .50 reviews";
+  for (let j = 1; j < Math.ceil(+data.review); j++) {
+    if (j <= 10 && j>8) {
+      ansr += "Very Good .50 reviews";
       break;
-    } else if (j <= 8) {
-      ansr += "Very Good .35 reviews";
+    } else if (j <= 8 && j>5) {
+      ansr += "Good .35 reviews";
       break;
     } else if (j <= 5) {
-      ansr += "Good .30 reviews";
+      ansr += "Average .30 reviews";
       break;
     }
   }
