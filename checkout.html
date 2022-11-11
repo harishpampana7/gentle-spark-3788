@@ -1,90 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/checkout.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="navDream">
-        <div id="parantDream-div">
-            <div id="logoDream">
-                <h1>Booking.Com</h1>
-            </div>
-            <div id="loginDream">
-                <div id="Dinr">
-                    <h3>INR</h3>
-                </div>
-                <div id="Dlang">
-                    <img src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png"
-                        alt="" />
-                </div>
-                <div id="Dques">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+"
-                        alt="" />
-                </div>
-                <div id="Dcomme">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXNwZWVjaF9idWJibGUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIuNzUxIDBDNi41NDYtLjAwOSAxLjUxIDUuMDE0IDEuNSAxMS4yMTlhMTEuMjM1IDExLjIzNSAwIDAgMCAxLjY5NiA1Ljk1MmwtLjA0LS43MTgtMy4wODMgNi40NzVjLS4zMDQuNjM3LjM2MiAxLjMwMyAxIDFsNi40NzMtMy4wODQtLjcxOC0uMDRjNS4yNzYgMy4yOCAxMi4yMTMgMS42NjMgMTUuNDk0LTMuNjE0IDMuMjgtNS4yNzYgMS42NjMtMTIuMjEzLTMuNjE0LTE1LjQ5NEExMS4yNSAxMS4yNSAwIDAgMCAxMi43NDggMHptMCAxLjVBOS43NSA5Ljc1IDAgMSAxIDcuNjIgMTkuNTNhLjc1Ljc1IDAgMCAwLS43MTgtLjA0TC40MjggMjIuNTczbDEgMSAzLjA4Mi02LjQ3NmEuNzUuNzUgMCAwIDAtLjA0LS43MThBOS43MzUgOS43MzUgMCAwIDEgMyAxMS4yMmMuMDA4LTUuMzc3IDQuMzcyLTkuNzI5IDkuNzQ5LTkuNzIxeiIvPjwvc3ZnPg=="
-                        alt="" />
-                </div>
-                <div id="Dnotify">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWJlbGxfbm9ybWFsIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuMjggMjEuOTYxYTIuODM3IDIuODM3IDAgMCAwIDUuNDQ1IDAgLjc1Ljc1IDAgMSAwLTEuNDQtLjQyMiAxLjMzNyAxLjMzNyAwIDAgMS0yLjU2NSAwIC43NS43NSAwIDEgMC0xLjQ0LjQyMnpNMTIuNzUgM1YuNzVhLjc1Ljc1IDAgMCAwLTEuNSAwVjNhLjc1Ljc1IDAgMCAwIDEuNSAwem0tLjc1Ljc1YTYuNzUgNi43NSAwIDAgMSA2Ljc1IDYuNzVjMCAzLjE1NC4yOSA1LjQzNi43ODUgNi45OTQuMzIzIDEuMDIuNjg0IDEuNTkuOTk1IDEuODRMMjEgMThIM2wuNTkgMS4yMTJjLjI0OC0uMzE1LjU3Mi0uOTU4Ljg4LTIgLjQ5LTEuNjYuNzgtMy44NzIuNzgtNi43MTJBNi43NSA2Ljc1IDAgMCAxIDEyIDMuNzV6bTAtMS41YTguMjUgOC4yNSAwIDAgMC04LjI1IDguMjVjMCAyLjcwMi0uMjcyIDQuNzcyLS43MiA2LjI4OC0uMjU0Ljg2NC0uNDkzIDEuMzM2LS42MiAxLjVBLjc1Ljc1IDAgMCAwIDMgMTkuNWgxOGMuNzA4IDAgMS4wMjItLjg5Mi40Ny0xLjMzNS4wMTkuMDE2LS4wMDgtLjAxNS0uMDctLjExMy0uMTQtLjIyMy0uMjktLjU1My0uNDM1LTEuMDEyLS40NDMtMS4zOTYtLjcxNS0zLjUyOS0uNzE1LTYuNTRBOC4yNSA4LjI1IDAgMCAwIDEyIDIuMjV6Ii8+PC9zdmc+"
-                        alt="" />
-                </div>
-                <div id="Dprofile">
-                    <div>S</div>
-                    <h3>Sapna Sharma</h3>
-                </div>
-            </div>
+      <div id="parantDream-div">
+        <div id="logoDream">
+          <img src="https://drive.google.com/uc?export=view&id=1HjnVBG9gNd58TlhLLNs3pbnVghqfl4h0" alt="">
         </div>
+        <div id="loginDream">
+          <div id="Dinr">
+            <h3>INR</h3>
+          </div>
+          <div id="Dlang">
+            <img
+              src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png"
+              alt=""
+            />
+          </div>
+          <div id="Dques">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+"
+              alt=""
+            />
+          </div>
+          <div id="Dcomme">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXNwZWVjaF9idWJibGUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIuNzUxIDBDNi41NDYtLjAwOSAxLjUxIDUuMDE0IDEuNSAxMS4yMTlhMTEuMjM1IDExLjIzNSAwIDAgMCAxLjY5NiA1Ljk1MmwtLjA0LS43MTgtMy4wODMgNi40NzVjLS4zMDQuNjM3LjM2MiAxLjMwMyAxIDFsNi40NzMtMy4wODQtLjcxOC0uMDRjNS4yNzYgMy4yOCAxMi4yMTMgMS42NjMgMTUuNDk0LTMuNjE0IDMuMjgtNS4yNzYgMS42NjMtMTIuMjEzLTMuNjE0LTE1LjQ5NEExMS4yNSAxMS4yNSAwIDAgMCAxMi43NDggMHptMCAxLjVBOS43NSA5Ljc1IDAgMSAxIDcuNjIgMTkuNTNhLjc1Ljc1IDAgMCAwLS43MTgtLjA0TC40MjggMjIuNTczbDEgMSAzLjA4Mi02LjQ3NmEuNzUuNzUgMCAwIDAtLjA0LS43MThBOS43MzUgOS43MzUgMCAwIDEgMyAxMS4yMmMuMDA4LTUuMzc3IDQuMzcyLTkuNzI5IDkuNzQ5LTkuNzIxeiIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </div>
+          <div id="Dnotify">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWJlbGxfbm9ybWFsIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuMjggMjEuOTYxYTIuODM3IDIuODM3IDAgMCAwIDUuNDQ1IDAgLjc1Ljc1IDAgMSAwLTEuNDQtLjQyMiAxLjMzNyAxLjMzNyAwIDAgMS0yLjU2NSAwIC43NS43NSAwIDEgMC0xLjQ0LjQyMnpNMTIuNzUgM1YuNzVhLjc1Ljc1IDAgMCAwLTEuNSAwVjNhLjc1Ljc1IDAgMCAwIDEuNSAwem0tLjc1Ljc1YTYuNzUgNi43NSAwIDAgMSA2Ljc1IDYuNzVjMCAzLjE1NC4yOSA1LjQzNi43ODUgNi45OTQuMzIzIDEuMDIuNjg0IDEuNTkuOTk1IDEuODRMMjEgMThIM2wuNTkgMS4yMTJjLjI0OC0uMzE1LjU3Mi0uOTU4Ljg4LTIgLjQ5LTEuNjYuNzgtMy44NzIuNzgtNi43MTJBNi43NSA2Ljc1IDAgMCAxIDEyIDMuNzV6bTAtMS41YTguMjUgOC4yNSAwIDAgMC04LjI1IDguMjVjMCAyLjcwMi0uMjcyIDQuNzcyLS43MiA2LjI4OC0uMjU0Ljg2NC0uNDkzIDEuMzM2LS42MiAxLjVBLjc1Ljc1IDAgMCAwIDMgMTkuNWgxOGMuNzA4IDAgMS4wMjItLjg5Mi40Ny0xLjMzNS4wMTkuMDE2LS4wMDgtLjAxNS0uMDctLjExMy0uMTQtLjIyMy0uMjktLjU1My0uNDM1LTEuMDEyLS40NDMtMS4zOTYtLjcxNS0zLjUyOS0uNzE1LTYuNTRBOC4yNSA4LjI1IDAgMCAwIDEyIDIuMjV6Ii8+PC9zdmc+"
+              alt=""
+            />
+          </div>
+          <div id="Dprofile">
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXBlcnNvbl9oYWxmIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTE2LjUgNmE0LjUgNC41IDAgMSAxLTkgMCA0LjUgNC41IDAgMCAxIDkgMHpNMTggNkE2IDYgMCAxIDAgNiA2YTYgNiAwIDAgMCAxMiAwek0zIDIzLjI1YTkgOSAwIDEgMSAxOCAwIC43NS43NSAwIDAgMCAxLjUgMGMwLTUuNzk5LTQuNzAxLTEwLjUtMTAuNS0xMC41UzEuNSAxNy40NTEgMS41IDIzLjI1YS43NS43NSAwIDAgMCAxLjUgMHoiLz48L3N2Zz4="
+                alt=""
+              />
+            </div>
+            <h3></h3>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="mainDream-div">
-        <div id="leftDream-div">
-            <div id="Dream-d1">
-                <h4>Your booking details</h4>
-                <div id="D-checkin-div">
-                    <div class="Dream-div">
-                        <p>Check-in</p>
-                    </div>
-                    <div id="Dream-line"></div>
-                    <div class="Dream-div">
-                        <p>Check-out</p>
-                    </div>
-                </div>
+      <div id="leftDream-div">
+        <div id="Dream-d1">
+          <h4>Your booking details</h4>
+          <div id="D-checkin-div">
+            <div class="Dream-div">
+              <p>Check-in</p>
+              <h5>Sat 11 Nov 2022</h5>
             </div>
-        </div>
-        <div id="rightDream-div">
-            <div id="Dream-show-product"></div>
-            <div id="Dream-goodToKnow">
-                <h2>Good to know:</h2>
-                <div>
-                    <div>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNyZWRpdF9jYXJkX2Nyb3NzZWQiIGZpbGw9IiMwMDgwMDkiIGhlaWdodD0iMTYiIHJvbGU9InByZXNlbnRhdGlvbiIgd2lkdGg9IjE2IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik04OC43MiAxMDhhNCA0IDAgMCAxLTQgNEgxMmMtNi42MjcgMC0xMi01LjM3My0xMi0xMlYyOGE0IDQgMCAwIDEgOCAwdjEyaDEyLjExYTQgNCAwIDAgMSAwIDhIOHY1MmE0IDQgMCAwIDAgNCA0aDcyLjcyYTQgNCAwIDAgMSA0IDR6TTExNiAxNkg0My4xYTQgNCAwIDAgMCAwIDhIMTE2YTQgNCAwIDAgMSA0IDR2MTJINjYuODZhNCA0IDAgMCAwIDAgOEgxMjB2NTJhNCA0IDAgMCAwIDggMFYyOGMwLTYuNjI3LTUuMzczLTEyLTEyLTEyek00NC4zIDY0SDI4YTQgNCAwIDAgMCAwIDhoMTYuM2E0IDQgMCAwIDAgMC04ek0yNCA4NGE0IDQgMCAwIDAgNCA0aDI5Ljg4YTQgNCAwIDAgMCAwLThIMjhhNCA0IDAgMCAwLTQgNHpNNi44MyAxLjE3YTQuMDAyIDQuMDAyIDAgMSAwLTUuNjYgNS42NmwxMjAgMTIwYTQuMDAyIDQuMDAyIDAgMSAwIDUuNjYtNS42NnoiLz48L3N2Zz4=" alt="" />
-                        <p>Reservation possible without a credit card</p>
-                    </div>
-                    <div>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNoZWNrbWFya19zZWxlY3RlZCIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTU2LjYyIDkzLjU0YTQgNCAwIDAgMS0yLjgzLTEuMThMMjguNCA2N2E0IDQgMCAxIDEgNS42NS01LjY1bDIyLjEzIDIyLjEgMzMtNDRhNCA0IDAgMSAxIDYuNCA0LjhMNTkuODIgOTEuOTRhNC4wNiA0LjA2IDAgMCAxLTIuOTIgMS41OXpNMTI4IDY0YzAtMzUuMzQ2LTI4LjY1NC02NC02NC02NEMyOC42NTQgMCAwIDI4LjY1NCAwIDY0YzAgMzUuMzQ2IDI4LjY1NCA2NCA2NCA2NCAzNS4zMy0uMDM5IDYzLjk2MS0yOC42NyA2NC02NHptLTggMGMwIDMwLjkyOC0yNS4wNzIgNTYtNTYgNTZTOCA5NC45MjggOCA2NCAzMy4wNzIgOCA2NCA4YzMwLjkxNC4wMzMgNTUuOTY3IDI1LjA4NiA1NiA1NnoiLz48L3N2Zz4=" alt="" />
-                        <p>Free cancellation</p>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBmaWxsPSIjMDA3MUMyIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+" alt="" />
-                    </div>
-                    <div>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNoZWNrbWFya19zZWxlY3RlZCIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTU2LjYyIDkzLjU0YTQgNCAwIDAgMS0yLjgzLTEuMThMMjguNCA2N2E0IDQgMCAxIDEgNS42NS01LjY1bDIyLjEzIDIyLjEgMzMtNDRhNCA0IDAgMSAxIDYuNCA0LjhMNTkuODIgOTEuOTRhNC4wNiA0LjA2IDAgMCAxLTIuOTIgMS41OXpNMTI4IDY0YzAtMzUuMzQ2LTI4LjY1NC02NC02NC02NEMyOC42NTQgMCAwIDI4LjY1NCAwIDY0YzAgMzUuMzQ2IDI4LjY1NCA2NCA2NCA2NCAzNS4zMy0uMDM5IDYzLjk2MS0yOC42NyA2NC02NHptLTggMGMwIDMwLjkyOC0yNS4wNzIgNTYtNTYgNTZTOCA5NC45MjggOCA2NCAzMy4wNzIgOCA2NCA4YzMwLjkxNC4wMzMgNTUuOTY3IDI1LjA4NiA1NiA1NnoiLz48L3N2Zz4=" alt="" />
-                        <p>
-                            No payment is required to secure this booking. You'll pay during
-                            your stay.
-                        </p>
-                    </div>
-                </div>
+            <div id="Dream-line"></div>
+            <div class="Dream-div">
+              <p>Check-out</p>
+              <h5>Sun 12 Nov 2022</h5>
             </div>
+          </div>
+         </div>
+        
+        <div id="Dream-pricediv">
+          <h4>Price</h4>
+          <h4 id="dr-pr"></h4>
         </div>
-      <div></div>
+        <div id="Dream-payment-schedule">
+          <h4>Your payment schedule</h4>
+          <div>
+            <p>Before you stay you'll pay</p>
+            <p id="dr-sch-pay"></p>
+          </div>
+        </div>
+        <div id="Dream-payment-schedule1">
+          <h4>How much will it cost to cancel?</h4>
+          <div>
+            <p>If you cancel, you'll pay</p>
+            <p id="dr-sch-pay1"></p>
+          </div>
+        </div>
+        <div id="dream-discount">
+          <h4>Your Genius benefits included in the price:</h4>
+          <div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1pY29uc2V0LWNoZWNrbWFya19zZWxlY3RlZCBidWktbGlzdF9faWNvbiBiZW5lZml0c19saXN0X19pY29uIiBmaWxsPSIjRkVCQjAyIiBoZWlnaHQ9IjE2IiByb2xlPSJwcmVzZW50YXRpb24iIHdpZHRoPSIxNiIgdmlld0JveD0iMCAwIDEyOCAxMjgiIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNNjQgOGE1NiA1NiAwIDEgMCA1NiA1NkE1NiA1NiAwIDAgMCA2NCA4em0zOC4yIDQyLjJsLTQ0IDQ0YTYgNiAwIDAgMS04LjQgMGwtMjQtMjRhNiA2IDAgMCAxIDguNC04LjRMNTQgODEuNWwzOS44LTM5LjdhNiA2IDAgMSAxIDguNSA4LjR6Ii8+PC9zdmc+"
+                alt=""
+              />
+              <p>10% discount</p>
+            </div>
+            <p>
+              You're getting a 10% discount on the price of this option before
+              taxes and charges are applied.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="rightDream-div">
+        <div id="Dream-show-product"></div>
+        <div id="Dream-goodToKnow">
+          <h3>Good to know:</h3>
+          <div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNyZWRpdF9jYXJkX2Nyb3NzZWQiIGZpbGw9IiMwMDgwMDkiIGhlaWdodD0iMTYiIHJvbGU9InByZXNlbnRhdGlvbiIgd2lkdGg9IjE2IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik04OC43MiAxMDhhNCA0IDAgMCAxLTQgNEgxMmMtNi42MjcgMC0xMi01LjM3My0xMi0xMlYyOGE0IDQgMCAwIDEgOCAwdjEyaDEyLjExYTQgNCAwIDAgMSAwIDhIOHY1MmE0IDQgMCAwIDAgNCA0aDcyLjcyYTQgNCAwIDAgMSA0IDR6TTExNiAxNkg0My4xYTQgNCAwIDAgMCAwIDhIMTE2YTQgNCAwIDAgMSA0IDR2MTJINjYuODZhNCA0IDAgMCAwIDAgOEgxMjB2NTJhNCA0IDAgMCAwIDggMFYyOGMwLTYuNjI3LTUuMzczLTEyLTEyLTEyek00NC4zIDY0SDI4YTQgNCAwIDAgMCAwIDhoMTYuM2E0IDQgMCAwIDAgMC04ek0yNCA4NGE0IDQgMCAwIDAgNCA0aDI5Ljg4YTQgNCAwIDAgMCAwLThIMjhhNCA0IDAgMCAwLTQgNHpNNi44MyAxLjE3YTQuMDAyIDQuMDAyIDAgMSAwLTUuNjYgNS42NmwxMjAgMTIwYTQuMDAyIDQuMDAyIDAgMSAwIDUuNjYtNS42NnoiLz48L3N2Zz4="
+                alt=""
+              />
+              <p>Reservation possible without a credit card</p>
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNoZWNrbWFya19zZWxlY3RlZCIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTU2LjYyIDkzLjU0YTQgNCAwIDAgMS0yLjgzLTEuMThMMjguNCA2N2E0IDQgMCAxIDEgNS42NS01LjY1bDIyLjEzIDIyLjEgMzMtNDRhNCA0IDAgMSAxIDYuNCA0LjhMNTkuODIgOTEuOTRhNC4wNiA0LjA2IDAgMCAxLTIuOTIgMS41OXpNMTI4IDY0YzAtMzUuMzQ2LTI4LjY1NC02NC02NC02NEMyOC42NTQgMCAwIDI4LjY1NCAwIDY0YzAgMzUuMzQ2IDI4LjY1NCA2NCA2NCA2NCAzNS4zMy0uMDM5IDYzLjk2MS0yOC42NyA2NC02NHptLTggMGMwIDMwLjkyOC0yNS4wNzIgNTYtNTYgNTZTOCA5NC45MjggOCA2NCAzMy4wNzIgOCA2NCA4YzMwLjkxNC4wMzMgNTUuOTY3IDI1LjA4NiA1NiA1NnoiLz48L3N2Zz4="
+                alt=""
+              />
+              <p>Free cancellation</p>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBmaWxsPSIjMDA3MUMyIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNoZWNrbWFya19zZWxlY3RlZCIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTU2LjYyIDkzLjU0YTQgNCAwIDAgMS0yLjgzLTEuMThMMjguNCA2N2E0IDQgMCAxIDEgNS42NS01LjY1bDIyLjEzIDIyLjEgMzMtNDRhNCA0IDAgMSAxIDYuNCA0LjhMNTkuODIgOTEuOTRhNC4wNiA0LjA2IDAgMCAxLTIuOTIgMS41OXpNMTI4IDY0YzAtMzUuMzQ2LTI4LjY1NC02NC02NC02NEMyOC42NTQgMCAwIDI4LjY1NCAwIDY0YzAgMzUuMzQ2IDI4LjY1NCA2NCA2NCA2NCAzNS4zMy0uMDM5IDYzLjk2MS0yOC42NyA2NC02NHptLTggMGMwIDMwLjkyOC0yNS4wNzIgNTYtNTYgNTZTOCA5NC45MjggOCA2NCAzMy4wNzIgOCA2NCA4YzMwLjkxNC4wMzMgNTUuOTY3IDI1LjA4NiA1NiA1NnoiLz48L3N2Zz4="
+                alt=""
+              />
+              <p>
+                No payment is required to secure this booking. You'll pay during
+                your stay.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="Dream-EnterDetails">
+          <div id="d-div1">
+            <h3>Enter your details</h3>
+            <div>
+              <img
+                src="https://cf.bstatic.com/static/img/profile/nw_avatar_bp.png"
+                alt=""
+              />
+              <p>Sapna Sharma</p>
+            </div>
+          </div>
+          <div id="d-div2">
+            <p>Almost done! Just fill in the * required info</p>
+          </div>
+          <div id="d-div3">
+            <h4>Are you travelling for work?</h4>
+            <div>
+              <input type="radio" />
+              <p>Yes</p>
+              <input type="radio" />
+              <p>No</p>
+            </div>
+          </div>
+          <div id="d-div4">
+            <label for="">First Name</label>
+            <input type="text" />
+            <label for="">Last Name</label>
+            <input type="text" />
+            <label for="">Email Address</label>
+            <input type="email" />
+            <p>Confirmation email goes to this address</p>
+            <label for="">Confirm Email Address</label>
+            <input type="email" />
+          </div>
+          <div id="d-div5">
+            <h4>Who are you booking for?</h4>
+            <div>
+              <input type="radio" />
+              <p>I am the main guest</p>
+            </div>
+            <div>
+              <input type="radio" />
+              <p>Booking is for someone else</p>
+            </div>
+          </div>
+        </div>
+        <div id="Dream-standard">
+          <h3>Standard Double Room</h3>
+          <div id="D-div1">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWNoZWNrbWFya19zZWxlY3RlZCIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTU2LjYyIDkzLjU0YTQgNCAwIDAgMS0yLjgzLTEuMThMMjguNCA2N2E0IDQgMCAxIDEgNS42NS01LjY1bDIyLjEzIDIyLjEgMzMtNDRhNCA0IDAgMSAxIDYuNCA0LjhMNTkuODIgOTEuOTRhNC4wNiA0LjA2IDAgMCAxLTIuOTIgMS41OXpNMTI4IDY0YzAtMzUuMzQ2LTI4LjY1NC02NC02NC02NEMyOC42NTQgMCAwIDI4LjY1NCAwIDY0YzAgMzUuMzQ2IDI4LjY1NCA2NCA2NCA2NCAzNS4zMy0uMDM5IDYzLjk2MS0yOC42NyA2NC02NHptLTggMGMwIDMwLjkyOC0yNS4wNzIgNTYtNTYgNTZTOCA5NC45MjggOCA2NCAzMy4wNzIgOCA2NCA4YzMwLjkxNC4wMzMgNTUuOTY3IDI1LjA4NiA1NiA1NnoiLz48L3N2Zz4="
+              alt=""
+            />
+            <h5>Free cancellation</h5>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXF1ZXN0aW9uX21hcmtfY2lyY2xlIiBmaWxsPSIjMDA3MUMyIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTkuNzUgOWEyLjI1IDIuMjUgMCAxIDEgMyAyLjEyMiAyLjI1IDIuMjUgMCAwIDAtMS41IDIuMTIydjEuMDA2YS43NS43NSAwIDAgMCAxLjUgMHYtMS4wMDZjMC0uMzE4LjItLjYwMi41LS43MDhBMy43NSAzLjc1IDAgMSAwIDguMjUgOWEuNzUuNzUgMCAxIDAgMS41IDB6TTEyIDE2LjVhMS4xMjUgMS4xMjUgMCAxIDAgMCAyLjI1IDEuMTI1IDEuMTI1IDAgMCAwIDAtMi4yNS43NS43NSAwIDAgMCAwIDEuNS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6TTIyLjUgMTJjMCA1Ljc5OS00LjcwMSAxMC41LTEwLjUgMTAuNVMxLjUgMTcuNzk5IDEuNSAxMiA2LjIwMSAxLjUgMTIgMS41IDIyLjUgNi4yMDEgMjIuNSAxMnptMS41IDBjMC02LjYyNy01LjM3My0xMi0xMi0xMlMwIDUuMzczIDAgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6Ii8+PC9zdmc+"
+              alt=""
+            />
+          </div>
+          <div id="D-div2">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLW5vX3Ntb2tpbmciIGZpbGw9IiMzMzMzMzMiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTkuNSA5aDIuMjVhLjc1Ljc1IDAgMCAxIC43NS43NXYzYS43NS43NSAwIDAgMS0uNzUuNzVoLTcuNWEuNzUuNzUgMCAwIDAgMCAxLjVoNy41QTIuMjUgMi4yNSAwIDAgMCAyNCAxMi43NXYtM2EyLjI1IDIuMjUgMCAwIDAtMi4yNS0yLjI1SDE5LjVhLjc1Ljc1IDAgMCAwIDAgMS41ek01LjI1IDEzLjVoLTEuNWwuNzUuNzV2LTZMMy43NSA5aDcuNWEuNzUuNzUgMCAwIDAgMC0xLjVoLTcuNWEuNzUuNzUgMCAwIDAtLjc1Ljc1djZjMCAuNDE0LjMzNi43NS43NS43NWgxLjVhLjc1Ljc1IDAgMCAwIDAtMS41ek0xNSAxMnYyLjI1YS43NS43NSAwIDAgMCAxLjUgMFYxMmEuNzUuNzUgMCAwIDAtMS41IDB6TTAgOC4yNXY2YS43NS43NSAwIDAgMCAxLjUgMHYtNmEuNzUuNzUgMCAwIDAtMS41IDB6bTEuMjggMTUuNTNsMjIuNS0yMi41QS43NS43NSAwIDAgMCAyMi43Mi4yMkwuMjIgMjIuNzJhLjc1Ljc1IDAgMSAwIDEuMDYgMS4wNnpNNC41Ljc1QTIuMjUgMi4yNSAwIDAgMSAyLjI1IDMgMi4yNSAyLjI1IDAgMCAwIDAgNS4yNWEuNzUuNzUgMCAwIDAgMS41IDAgLjc1Ljc1IDAgMCAxIC43NS0uNzVBMy43NSAzLjc1IDAgMCAwIDYgLjc1YS43NS43NSAwIDAgMC0xLjUgMHoiLz48L3N2Zz4="
+              alt=""
+            />
+            <p>No Smoking</p>
+          </div>
+          <div id="D-div3">
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXJvb21fc2l6ZSIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHJvbGU9InByZXNlbnRhdGlvbiIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0zLjc1IDIzLjI1VjcuNWEuNzUuNzUgMCAwIDAtMS41IDB2MTUuNzVhLjc1Ljc1IDAgMCAwIDEuNSAwek0uMjIgMjEuNTNsMi4yNSAyLjI1YS43NS43NSAwIDAgMCAxLjA2IDBsMi4yNS0yLjI1YS43NS43NSAwIDEgMC0xLjA2LTEuMDZsLTIuMjUgMi4yNWgxLjA2bC0yLjI1LTIuMjVhLjc1Ljc1IDAgMCAwLTEuMDYgMS4wNnpNNS43OCA5LjIyTDMuNTMgNi45N2EuNzUuNzUgMCAwIDAtMS4wNiAwTC4yMiA5LjIyYS43NS43NSAwIDEgMCAxLjA2IDEuMDZsMi4yNS0yLjI1SDIuNDdsMi4yNSAyLjI1YS43NS43NSAwIDEgMCAxLjA2LTEuMDZ6TTcuNSAzLjc1aDE1Ljc1YS43NS43NSAwIDAgMCAwLTEuNUg3LjVhLjc1Ljc1IDAgMCAwIDAgMS41ek05LjIyLjIyTDYuOTcgMi40N2EuNzUuNzUgMCAwIDAgMCAxLjA2bDIuMjUgMi4yNWEuNzUuNzUgMCAxIDAgMS4wNi0xLjA2TDguMDMgMi40N3YxLjA2bDIuMjUtMi4yNUEuNzUuNzUgMCAxIDAgOS4yMi4yMnptMTIuMzEgNS41NmwyLjI1LTIuMjVhLjc1Ljc1IDAgMCAwIDAtMS4wNkwyMS41My4yMmEuNzUuNzUgMCAxIDAtMS4wNiAxLjA2bDIuMjUgMi4yNVYyLjQ3bC0yLjI1IDIuMjVhLjc1Ljc1IDAgMCAwIDEuMDYgMS4wNnpNMTAuNSAxMy4wNXY3LjJhMi4yNSAyLjI1IDAgMCAwIDIuMjUgMi4yNWg2QTIuMjUgMi4yNSAwIDAgMCAyMSAyMC4yNXYtNy4yYS43NS43NSAwIDAgMC0xLjUgMHY3LjJhLjc1Ljc1IDAgMCAxLS43NS43NWgtNmEuNzUuNzUgMCAwIDEtLjc1LS43NXYtNy4yYS43NS43NSAwIDAgMC0xLjUgMHptMTMuMjUyIDIuMTQzbC02LjQ5Ny01Ljg1YTIuMjUgMi4yNSAwIDAgMC0zLjAxIDBsLTYuNDk3IDUuODVhLjc1Ljc1IDAgMCAwIDEuMDA0IDEuMTE0bDYuNDk3LTUuODVhLjc1Ljc1IDAgMCAxIDEuMDAyIDBsNi40OTcgNS44NWEuNzUuNzUgMCAwIDAgMS4wMDQtMS4xMTR6Ii8+PC9zdmc+"
+                alt=""
+              />
+              <p>270 m</p>
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXJlc29ydCIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHJvbGU9InByZXNlbnRhdGlvbiIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0uNzY4IDExLjQxM2wxLjUgNi43NWEuNzUuNzUgMCAwIDAgMS40NjQtLjMyNmwtMS41LTYuNzVhLjc1Ljc1IDAgMCAwLTEuNDY0LjMyNnpNMi4yMiAyMy40NTZsMS41LTUuMjVMMyAxOC43NWgzYS43NS43NSAwIDAgMSAuNzUuNzV2My43NWEuNzUuNzUgMCAwIDAgMS41IDBWMTkuNUEyLjI1IDIuMjUgMCAwIDAgNiAxNy4yNUgzYS43NS43NSAwIDAgMC0uNzIxLjU0NGwtMS41IDUuMjVhLjc1Ljc1IDAgMSAwIDEuNDQyLjQxMnptMTkuNTQ3LTEyLjM2OWwtMS41IDYuNzVhLjc1Ljc1IDAgMSAwIDEuNDY0LjMyNmwxLjUtNi43NWEuNzUuNzUgMCAxIDAtMS40NjQtLjMyNnptMS40NTMgMTEuOTU3bC0xLjUtNS4yNUEuNzUuNzUgMCAwIDAgMjEgMTcuMjVoLTNhMi4yNSAyLjI1IDAgMCAwLTIuMjUgMi4yNXYzLjc1YS43NS43NSAwIDAgMCAxLjUgMFYxOS41YS43NS43NSAwIDAgMSAuNzUtLjc1aDNsLS43MjEtLjU0NCAxLjUgNS4yNWEuNzUuNzUgMCAxIDAgMS40NDItLjQxMnpNMTEuMjUgNi43NXYxNi41YS43NS43NSAwIDAgMCAxLjUgMFY2Ljc1YS43NS43NSAwIDAgMC0xLjUgMHptLTQuNSA3LjVoMTAuNWEuNzUuNzUgMCAwIDAgMC0xLjVINi43NWEuNzUuNzUgMCAwIDAgMCAxLjV6TTEuNSA2bDEwLjA2NC00LjM3Yy4yOTctLjE2MS41NzUtLjE2MS44MDMtLjAzM2wxMC4xNzggNC40MjVMMjIuNSA2SDEuNXptMCAxLjVoMjFhMS41IDEuNSAwIDAgMCAuNjg5LTIuODMyTDEzLjAzNC4yNTVjLS42MTYtLjM1LTEuNDUyLS4zNS0yLjEzNi4wMzRMLjg1OCA0LjY0NmMtLjU0NC4yOC0uODU2Ljc5Mi0uODU3IDEuMzUyQTEuNSAxLjUgMCAwIDAgMS40OTkgNy41eiIvPjwvc3ZnPg=="
+                alt=""
+              />
+              <p>Balcony</p>
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWxhbmRtYXJrIiBmaWxsPSIjMDA4MDA5IiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTQuNSA4LjkxMWgzbC0uNzUtLjc1djlsLjc1LS43NWgtM2wuNzUuNzV2LTlsLS43NS43NXptMC0xLjVhLjc1Ljc1IDAgMCAwLS43NS43NXY5YzAgLjQxNC4zMzYuNzUuNzUuNzVoM2EuNzUuNzUgMCAwIDAgLjc1LS43NXYtOWEuNzUuNzUgMCAwIDAtLjc1LS43NWgtM3ptNiAxLjVoM2wtLjc1LS43NXY5bC43NS0uNzVoLTNsLjc1Ljc1di05bC0uNzUuNzV6bTAtMS41YS43NS43NSAwIDAgMC0uNzUuNzV2OWMwIC40MTQuMzM2Ljc1Ljc1Ljc1aDNhLjc1Ljc1IDAgMCAwIC43NS0uNzV2LTlhLjc1Ljc1IDAgMCAwLS43NS0uNzVoLTN6bTYgMS41aDNsLS43NS0uNzV2OWwuNzUtLjc1aC0zbC43NS43NXYtOWwtLjc1Ljc1em0wLTEuNWEuNzUuNzUgMCAwIDAtLjc1Ljc1djljMCAuNDE0LjMzNi43NS43NS43NWgzYS43NS43NSAwIDAgMCAuNzUtLjc1di05YS43NS43NSAwIDAgMC0uNzUtLjc1aC0zem00LjUgMTJIM2wuNzUuNzV2LTIuMjVoMTYuNXYyLjI1bC43NS0uNzV6bTAgMS41YS43NS43NSAwIDAgMCAuNzUtLjc1di0yLjI1YTEuNSAxLjUgMCAwIDAtMS41LTEuNUgzLjc1YTEuNSAxLjUgMCAwIDAtMS41IDEuNXYyLjI1YzAgLjQxNC4zMzYuNzUuNzUuNzVoMTh6bS0xOS41IDNoMjFhLjc1Ljc1IDAgMCAwIDAtMS41aC0yMWEuNzUuNzUgMCAwIDAgMCAxLjV6bTAtM2gyMWEuNzUuNzUgMCAwIDAgMC0xLjVoLTIxYS43NS43NSAwIDAgMCAwIDEuNXptMTguNzUtMTUuNzV2Mi4yNUgzLjc1di0yLjI1bC0uNDE1LjY3TDEyIDEuNWw4LjY2NSA0LjMzMi0uNDE1LS42NzF6bTEuNSAwYS43NS43NSAwIDAgMC0uNDE1LS42N0wxMi42Ny4xNTdhMS41MDMgMS41MDMgMCAwIDAtMS4zNCAwTDIuNjY2IDQuNDlhLjc1Ljc1IDAgMCAwLS40MTUuNjcxdjIuMjVhMS41IDEuNSAwIDAgMCAxLjUgMS41aDE2LjVhMS41IDEuNSAwIDAgMCAxLjUtMS41di0yLjI1ek0zIDUuOTExaDE4YS43NS43NSAwIDAgMCAwLTEuNUgzYS43NS43NSAwIDAgMCAwIDEuNXoiLz48L3N2Zz4="
+                alt=""
+              />
+              <p>Landmark view</p>
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXdlYXRoZXJfc25vd2ZsYWtlIiBmaWxsPSIjMDA4MDA5IiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTExLjI1Ljc1djcuNWEuNzUuNzUgMCAwIDAgMS41IDBWLjc1YS43NS43NSAwIDAgMC0xLjUgMHptNC4wMzEuOTE0bC0zLjc1IDNoLjkzOGwtMy43NS0zYS43NS43NSAwIDEgMC0uOTM4IDEuMTcybDMuNzUgM2EuNzUuNzUgMCAwIDAgLjkzOCAwbDMuNzUtM2EuNzUuNzUgMCAxIDAtLjkzOC0xLjE3MnpNMS44ODMgNy4wMjRsNi40OTUgMy43NWEuNzUuNzUgMCAwIDAgLjc1LTEuMjk5bC02LjQ5NS0zLjc1YS43NS43NSAwIDEgMC0uNzUgMS4zek00LjY5IDMuOTlsLjcyMyA0Ljc0OC40NjgtLjgxMi00LjQ3MyAxLjc0OGEuNzUuNzUgMCAwIDAgLjU0NiAxLjM5OGw0LjQ3My0xLjc0OGEuNzUuNzUgMCAwIDAgLjQ2OC0uODEybC0uNzIzLTQuNzQ4YS43NS43NSAwIDEgMC0xLjQ4Mi4yMjZ6TTIuNjMyIDE4LjI3NGw2LjQ5NS0zLjc1YS43NS43NSAwIDEgMC0uNzUtMS4yOThsLTYuNDk1IDMuNzVhLjc1Ljc1IDAgMSAwIC43NSAxLjI5OXptLTEuMjI0LTMuOTQ4bDQuNDczIDEuNzQ4LS40NjgtLjgxMi0uNzIzIDQuNzQ4YS43NS43NSAwIDAgMCAxLjQ4Mi4yMjZsLjcyMy00Ljc0OGEuNzUuNzUgMCAwIDAtLjQ2OC0uODEybC00LjQ3My0xLjc0OGEuNzUuNzUgMCAwIDAtLjU0NiAxLjM5OHpNMTIuNzUgMjMuMjV2LTcuNWEuNzUuNzUgMCAwIDAtMS41IDB2Ny41YS43NS43NSAwIDAgMCAxLjUgMHptLTQuMDMxLS45MTRsMy43NS0zaC0uOTM4bDMuNzUgM2EuNzUuNzUgMCAwIDAgLjkzNy0xLjE3MmwtMy43NS0zYS43NS43NSAwIDAgMC0uOTM3IDBsLTMuNzUgM2EuNzUuNzUgMCAwIDAgLjkzOCAxLjE3MnptMTMuMzk5LTUuMzZsLTYuNDk1LTMuNzVhLjc1Ljc1IDAgMCAwLS43NSAxLjI5OGw2LjQ5NSAzLjc1YS43NS43NSAwIDAgMCAuNzUtMS4yOTl6bS0yLjgwNyAzLjAzNGwtLjcyNC00Ljc0OC0uNDY4LjgxMiA0LjQ3My0xLjc0OGEuNzUuNzUgMCAwIDAtLjU0Ni0xLjM5OGwtNC40NzMgMS43NDhhLjc1Ljc1IDAgMCAwLS40NjguODEybC43MjMgNC43NDhhLjc1Ljc1IDAgMCAwIDEuNDgzLS4yMjZ6bTIuMDU3LTE0LjI4NWwtNi40OTUgMy43NWEuNzUuNzUgMCAwIDAgLjc1IDEuM2w2LjQ5NS0zLjc1YS43NS43NSAwIDAgMC0uNzUtMS4zem0xLjIyNCAzLjk1bC00LjQ3My0xLjc0OS40NjguODEyLjcyNC00Ljc0OGEuNzUuNzUgMCAwIDAtMS40ODMtLjIyNmwtLjcyMyA0Ljc0OGEuNzUuNzUgMCAwIDAgLjQ2OC44MTJsNC40NzMgMS43NDhhLjc1Ljc1IDAgMCAwIC41NDYtMS4zOTh6TTExLjYyNSA3LjZMOC4zNzcgOS40NzVhLjc1Ljc1IDAgMCAwLS4zNzUuNjV2My43NWEuNzUuNzUgMCAwIDAgLjM3NS42NWwzLjI0OCAxLjg3NGEuNzUuNzUgMCAwIDAgLjc1IDBsMy4yNDgtMS44NzVhLjc1Ljc1IDAgMCAwIC4zNzUtLjY0OXYtMy43NWEuNzUuNzUgMCAwIDAtLjM3NS0uNjVMMTIuMzc1IDcuNmEuNzUuNzUgMCAwIDAtLjc1IDB6bS43NSAxLjNoLS43NWwzLjI0OCAxLjg3NC0uMzc1LS42NDl2My43NWwuMzc1LS42NS0zLjI0OCAxLjg3NmguNzVsLTMuMjQ4LTEuODc2LjM3NS42NXYtMy43NWwtLjM3NS42NUwxMi4zNzUgOC45eiIvPjwvc3ZnPg=="
+                alt=""
+              />
+              <p>Air conditioning</p>
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXNob3dlciIgZmlsbD0iIzAwODAwOSIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHJvbGU9InByZXNlbnRhdGlvbiIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0xNS4zNzUgMTAuODc1YTEuODc1IDEuODc1IDAgMSAxLTMuNzUgMCAxLjg3NSAxLjg3NSAwIDAgMSAzLjc1IDB6bTEuNSAwYTMuMzc1IDMuMzc1IDAgMSAwLTYuNzUgMCAzLjM3NSAzLjM3NSAwIDAgMCA2Ljc1IDB6bS4zNzUgMTIuMzc1VjE4LjdsLS42NjcuNzQ1QzIwLjc0OCAxOC45OCAyNCAxNS45MjUgMjQgMTAuNWEyLjI1IDIuMjUgMCAwIDAtNC41IDBjMCAxLjk0NS0uNjA5IDMuMTU0LTEuNjQgMy44NDhhMy45NzMgMy45NzMgMCAwIDEtMi4xMzIuNjUySDlhMy43NSAzLjc1IDAgMSAwIDAgNy41aDNhMi4yNSAyLjI1IDAgMCAwIDAtNC41SDlhLjc1Ljc1IDAgMCAwIDAgMS41aDNhLjc1Ljc1IDAgMCAxIDAgMS41SDlhMi4yNSAyLjI1IDAgMCAxIDAtNC41aDYuNzRhNS40MjYgNS40MjYgMCAwIDAgMi45NTctLjkwOEMyMC4xNTQgMTQuNjEzIDIxIDEyLjkzMiAyMSAxMC41YS43NS43NSAwIDAgMSAxLjUgMGMwIDQuNi0yLjYyOCA3LjA2OS02LjA4MyA3LjQ1NWEuNzUuNzUgMCAwIDAtLjY2Ny43NDV2NC41NWEuNzUuNzUgMCAwIDAgMS41IDB6bS03LjUtMS41djEuNWEuNzUuNzUgMCAwIDAgMS41IDB2LTEuNWEuNzUuNzUgMCAwIDAtMS41IDB6TS43NSAxLjVoMS41bC0uNTMtLjIyIDEuNDAyIDEuNDAyYS43NS43NSAwIDAgMCAxLjA2LTEuMDZMMi43OC4yMkEuNzUuNzUgMCAwIDAgMi4yNSAwSC43NWEuNzUuNzUgMCAxIDAgMCAxLjV6bTIuOTgzIDMuNzU0YS4wMS4wMSAwIDAgMSAuMDE2LjAwMmMtLjU0Mi0xLjA3Mi0uMS0yLjQyNiAxLjAwOC0yLjk4OGEyLjI1IDIuMjUgMCAwIDEgMi4wMzcgMGMtLjA0MS0uMDIyLS4wNDMtLjAyOS0uMDQtLjAzNGwuMDAyLS4wMDItMy4wMTMgMy4wMTJ6bTEuMDcgMS4wNWwzLjAwMi0zQTEuNDg5IDEuNDg5IDAgMCAwIDcuNTEuOTUxIDMuNzY2IDMuNzY2IDAgMCAwIDQuMDc5LjkyOSAzLjc1IDMuNzUgMCAwIDAgMi40MyA1Ljk3MWExLjQ5IDEuNDkgMCAwIDAgMi4zODIuMzIzem0zLjQwOC0uOTY4bDEuMTE2LjYyYS43NS43NSAwIDEgMCAuNzI4LTEuMzEybC0xLjExNi0uNjJhLjc1Ljc1IDAgMSAwLS43MjggMS4zMTJ6bTEuOTY0LTIuMjMzbDEuNjE1LjQ0YS43NS43NSAwIDEgMCAuMzk0LTEuNDQ4bC0xLjYxNS0uNDRhLjc1Ljc1IDAgMSAwLS4zOTQgMS40NDh6bTQuMjE3IDEuMTVsMS42MTUuNDRhLjc1Ljc1IDAgMCAwIC4zOTYtMS40NDdsLTEuNjE1LS40NGEuNzUuNzUgMCAwIDAtLjM5NiAxLjQ0N3pNNS42OTcgNy4zODhsLjU3NyAxLjAzOGEuNzUuNzUgMCAxIDAgMS4zMTItLjcyOEw3LjAwOSA2LjY2YS43NS43NSAwIDEgMC0xLjMxMi43Mjh6TTMuMjg0IDguOTRsLjQ0IDEuNjE1YS43NS43NSAwIDEgMCAxLjQ0OC0uMzk0bC0uNDQtMS42MTVhLjc1Ljc1IDAgMSAwLTEuNDQ4LjM5NHptMS4xNSA0LjIxOWwuMjQ2Ljg5NmEuNzUuNzUgMCAxIDAgMS40NDYtLjM5NmwtLjI0NS0uODk2YS43NS43NSAwIDEgMC0xLjQ0Ni4zOTZ6Ii8+PC9zdmc+"
+                alt=""
+              />
+              <p>Ensuite bathroom</p>
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLXNvdW5kcHJvb2YiIGZpbGw9IiMwMDgwMDkiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTAuNDEzIDE3LjM2OGwzLjI4NCAyLjA5Yy45NDcuNzEzIDIuMzU3LjUxMSAzLjEwMy0uNDgzLjI5Mi0uMzkuNDUtLjg2My40NS0xLjM1di01LjI1YS43NS43NSAwIDAgMC0xLjUgMHY1LjI1YS43NS43NSAwIDAgMS0xLjIuNmwtMy4zMzEtMi4xMjNhLjc1Ljc1IDAgMCAwLS44MDYgMS4yNjZ6TTE3LjI1IDUuNjI1YTIuMjUgMi4yNSAwIDAgMC0zLjYtMS44TDcuMDk3IDcuOTkybC40MDMtLjExN2gtM2EyLjI1IDIuMjUgMCAwIDAtMi4yNSAyLjI1djNhMi4yNSAyLjI1IDAgMCAwIDIuMjUgMi4yNWguNjI1YS43NS43NSAwIDAgMCAwLTEuNUg0LjVhLjc1Ljc1IDAgMCAxLS43NS0uNzV2LTNhLjc1Ljc1IDAgMCAxIC43NS0uNzVoM2EuNzUuNzUgMCAwIDAgLjQwMy0uMTE3bDYuNi00LjJBLjgxNi44MTYgMCAwIDEgMTUgNC44NzVhLjc1Ljc1IDAgMCAxIC43NS43NS43NS43NSAwIDAgMCAxLjUgMHpNMy40OCAyMC40NTFsMTgtMTVhLjc1Ljc1IDAgMCAwLS45Ni0xLjE1MmwtMTggMTVhLjc1Ljc1IDAgMCAwIC45NiAxLjE1MnoiLz48L3N2Zz4="
+                alt=""
+              />
+              <p>Soundproofing</p>
+            </div>
+          </div>
+          <div id="D-div4">
+            <h4>Your Genius benefits</h4>
+            <div>
+              <div>
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1pY29uc2V0LWNoZWNrbWFya19zZWxlY3RlZCBidWktbGlzdF9faWNvbiBiZW5lZml0c19saXN0X19pY29uIiBmaWxsPSIjRkVCQjAyIiBoZWlnaHQ9IjE2IiByb2xlPSJwcmVzZW50YXRpb24iIHdpZHRoPSIxNiIgdmlld0JveD0iMCAwIDEyOCAxMjgiIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNNjQgOGE1NiA1NiAwIDEgMCA1NiA1NkE1NiA1NiAwIDAgMCA2NCA4em0zOC4yIDQyLjJsLTQ0IDQ0YTYgNiAwIDAgMS04LjQgMGwtMjQtMjRhNiA2IDAgMCAxIDguNC04LjRMNTQgODEuNWwzOS44LTM5LjdhNiA2IDAgMSAxIDguNSA4LjR6Ii8+PC9zdmc+"
+                  alt=""
+                />
+                <p>10% discount</p>
+              </div>
+              <p>
+                You're getting a 10% discount on the price of this option before
+                taxes and charges are applied.
+              </p>
+            </div>
+          </div>
+          <div id="D-div5">
+            <div>
+              <h4>Guests:</h4>
+              <input type="number" />
+            </div>
+            <h4>Full guest name</h4>
+            <input type="text" />
+          </div>
+        </div>
+        <div id="Dream-add-stay">
+          <h3>Add to your stay</h3>
+          <div>
+            <div>
+              <input type="checkbox" />
+              <p>I'm interested in requesting an airport shuttle</p>
+            </div>
+            <p>
+              We’ll tell your accommodation that you’re interested so they can
+              provide details and costs.
+            </p>
+          </div>
+          <div>
+            <div>
+              <input type="checkbox" />
+              <p>I'm interested in renting a car</p>
+            </div>
+            <p>
+              Make the most out of your trip and check car hire options in your
+              booking confirmation.
+            </p>
+          </div>
+        </div>
+        <div id="Dream-Special-requests">
+          <h3>Special requests</h3>
+          <p>
+            Special requests cannot be guaranteed – but the property will do its
+            best to meet your needs. You can always make a special request after
+            your booking is complete!
+          </p>
+          <h5>
+            Please write your requests in English or Hindi.
+            <span>(optional)</span>
+          </h5>
+          <input type="text" />
+        </div>
+        <div id="Dream-nextbtn">
+          <button onclick="gotoFinalPage()">Next: Final Details  ></button>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
 <script src="./scripts/checkout.js"></script>
-
