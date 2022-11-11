@@ -15,6 +15,9 @@ document.getElementById("skSignIn").addEventListener("click", ()=>{
 document.getElementById("SKflights").addEventListener("click",()=>{
   window.location.href = "flights.html"
 })
+document.getElementById("SKcarRental").addEventListener("click",()=>{
+  window.location.href = "cars.html"
+})
 //slideshow
 var myIndex = 0;
 carousel();
@@ -196,14 +199,28 @@ const searchResult = () => {
   }
   searchArr.push(searchObj);
   localStorage.setItem("query",JSON.stringify(searchArr));
-  
+  console.log("query")
+  if(query == "mumbai" || "Mumbai"){
+    window.location.href = "city_mumbai.html"
+  }else if(query == "delhi" || "Delhi"){
+    window.location.href = "city_New_Delhi.html"
+  }else if(query == "hyderabad" || "Hyderabad"){
+    window.location.href = "city_hyderabad.html"
+  }else if(query == "pune" || "Pune"){
+    window.location.href = "city_pune.html"
+  }
   document.getElementById("query").value = null;
   document.getElementById("skCheckin").value = null;
   document.getElementById("skCheckout").value = null;
   document.getElementById("adult").innerText = null;
   document.getElementById("child").innerText = null;
-  ocument.getElementById("room").innerText = null;
+  document.getElementById("room").innerText = null;
+
+
 }
+
+
+
 
 
 
