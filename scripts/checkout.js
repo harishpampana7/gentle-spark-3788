@@ -79,9 +79,9 @@ let appendProduct = (data) => {
     }
   });
 
-  name.innerText = data.hn;
-  image.src = data.img;
-  addrs.innerText = data.add;
+  name.innerText = data.name;
+  image.src = data.image;
+  addrs.innerText = data.city;
   
   let ans = "";
   for (let i = 0; i < Math.ceil(data.rating); i++) {
