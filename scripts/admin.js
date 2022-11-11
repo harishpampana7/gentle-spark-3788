@@ -1,4 +1,4 @@
-let api = `  http://localhost:3000/hotel`;
+let api = `https://bookit-com-server.onrender.com/hotel`;
 
 window.onload = () => {
   let addBtn = document.getElementById("submitBtn");

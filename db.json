@@ -4,9 +4,9 @@
       "id": 1667931558348.8557,
       "name": "InterContinental Marine Drive Mumbai, an IHG Hotel",
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/245805125.webp?k=ca954cabc61a93cee8c30542536575b52cf1e3bb43482c7966a3eb3d4705a7f9&o=&s=1",
-      "price": "2600",
+      "price": 3600,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 4,
       "city": "Mumbai",
       "review": 7.1,
       "strikeprice": 8000
@@ -26,9 +26,9 @@
       "id": 1667966854837.7332,
       "name": "West End Hotel Opp Bombay Hospital",
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/186364354.webp?k=e733ed75031f1902d810c0f648de493e106194b6a53514e0b1f4c795333d4a30&o=&s=1",
-      "price": 3000,
+      "price": 2700,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 7.9,
       "strikeprice": 8000
@@ -39,7 +39,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/363985827.webp?k=9d5e6a84a93850f446b23d4e4c6f83b2424369d76bc40afc62a2a8d46a1a7c79&o=&s=1",
       "price": 5934,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 8.1,
       "strikeprice": 8000
@@ -50,7 +50,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/397269907.webp?k=49220002803f526e4f3c4c6ebcacda837b4c888a3b4ed7bdb3b59afca06da698&o=&s=1",
       "price": 5945,
       "type": "Double Room",
-      "rating": 5,
+      "rating": 4,
       "city": "Mumbai",
       "review": 6.5,
       "strikeprice": 8000
@@ -61,7 +61,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/397596097.webp?k=64d1ead0fa0bbc070f5952eb6aa9b7b7f050a33541fd9f4f52c160c76d499e22&o=&s=1",
       "price": 4512,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 4,
       "city": "Mumbai",
       "review": 6.1,
       "strikeprice": 8000
@@ -72,7 +72,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/363985827.webp?k=9d5e6a84a93850f446b23d4e4c6f83b2424369d76bc40afc62a2a8d46a1a7c79&o=&s=1",
       "price": 6412,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 8.2,
       "strikeprice": 8000
@@ -83,7 +83,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/249703480.webp?k=edab6d9848010e22cabfad64709b3dd89e55bdce4ac9565b542858f87d0c06a4&o=&s=1",
       "price": 8280,
       "type": "Deluxe Double Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 7.1,
       "strikeprice": 8000
@@ -94,7 +94,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/221302960.webp?k=c82e17336228aa2f58fc334ac18d5feeb57d4e9dc8850475f6a964c095c647df&o=&s=1",
       "price": 5532,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 5.6,
       "strikeprice": 8000
@@ -105,7 +105,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/320342827.webp?k=3349c8fc3a96174c9e214999942140af800ccd0d92842f50d18bef89b0a9bd96&o=&s=1",
       "price": 10700,
       "type": "Standard Double Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 8.1,
       "strikeprice": 8000
@@ -116,7 +116,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/271473562.webp?k=b5bb271c0e70c78cfea97ae6a0e3a8024bfcb6cea50df4fb8059a416e03c3e9d&o=&s=1",
       "price": 9000,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 7.8,
       "strikeprice": 8000
@@ -127,7 +127,7 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/285424937.webp?k=19e63fbaef9326b97110637e0a275ad8b2926f8af327030a07495b1dd41ac215&o=&s=1",
       "price": 5600,
       "type": "Deluxe Room",
-      "rating": 5,
+      "rating": 3,
       "city": "Mumbai",
       "review": 8.2,
       "strikeprice": 8000
@@ -138,9 +138,9 @@
       "image": "https://cf.bstatic.com/xdata/images/hotel/square600/92310554.webp?k=b41da3cee7dfd8f148a0aa95a118783231f6dba759218b67224cc4f703036e6a&o=&s=1",
       "price": 2442,
       "type": "Standard  Room",
-      "rating": 7.6,
+      "rating": 3,
       "city": "New Delhi",
-      "review": 3,
+      "review": 7.6,
       "strikeprice": 4070
     },
     {

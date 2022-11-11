@@ -15,7 +15,7 @@
   </body>
 </html>
 <script>
-  let api = `  http://localhost:3000/hotel`;
+  let api = `https://bookit-com-server.onrender.com/hotel`;
 
   let getdata = async () => {
     let res = await fetch(api);
@@ -62,7 +62,7 @@
       let strikeprice1 = document.createElement("p");
       let deal = document.createElement("p");
       let availability = document.createElement("p");
-
+      let id = el.id;
       //classname's for styling
       div.className = "ss_item";
       ss_one.className = "ss_one-item";
@@ -128,7 +128,9 @@
   };
 
   let deleteProduct = async (id) => {
-    await fetch(`http://localhost:3000/hotel/${id}`, { method: "DELETE" });
+    await fetch(`https://bookit-com-server.onrender.com/hotel/${id}`, {
+      method: "DELETE",
+    });
     getdata();
   };
 
@@ -137,11 +139,14 @@
     const new_price = prompt("Enter new price");
     let price = new_price;
     let data = { price };
-    let res = await fetch(`http://localhost:3000/hotel/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" },
-    });
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
+      }
+    );
     getdata(res);
   };
 </script>

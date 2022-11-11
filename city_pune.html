@@ -4,23 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>city Mubmai Hotels</title>
+    <title>city Pune Hotels</title>
     <link rel="stylesheet" href="./styles/ss_city.css" />
   </head>
   <body>
     <div id="ss_container">
       <div id="ss_city_box_1">
         <div id="ss_city_box_1_1"></div>
-        <div id="ss_city_box_1_2">
-          <input type="checkbox" id="first-checkbox" onchange="myfilter()" />
-        </div>
+        <div id="ss_city_box_1_2"></div>
       </div>
       <div id="ss_city_box_2"></div>
     </div>
   </body>
 </html>
 <script>
-  let api = `http://localhost:3000/hotel?city=Mumbai`;
+  let api = `http://localhost:3000/hotel?city=Pune`;
   console.log(api);
 
   let getdata = async () => {
@@ -110,9 +108,4 @@
     localStorage.setItem("hotel", JSON.stringify(el));
     window.location.href = "./checkout.html";
   };
-
-  function myfilter() {
-    let c = document.getElementById("first-checkbox").value;
-    console.log(c);
-  }
 </script>
