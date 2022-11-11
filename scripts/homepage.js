@@ -201,18 +201,18 @@ const searchResult = () => {
   localStorage.setItem("query",JSON.stringify(searchArr));
   console.log(query)
 
-  if(query == "mumbai" || "Mumbai"){
+  if(query == "mumbai"){
     console.log("m");
-    // window.location.href = "city_mumbai.html"
-  }else if(query == "delhi" || "Delhi"){
+     window.location.href = "city_mumbai.html"
+  }else if(query == "delhi"){
     console.log("d");
-    // window.location.href = "city_New_Delhi.html"
-  }else if(query == "hyderabad" || "Hyderabad"){
+     window.location.href = "city_New_Delhi.html"
+  }else if(query == "hyderabad"){
     console.log("h");
-    // window.location.href = "city_hyderabad.html"
-  }else if(query == "pune" || "Pune"){
+     window.location.href = "city_hyderabad.html"
+  }else if(query == "pune"){
     console.log("p");
-    // window.location.href = "city_pune.html"
+     window.location.href = "city_pune.html"
   }
 
   document.getElementById("query").value = null;

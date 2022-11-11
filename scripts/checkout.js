@@ -89,13 +89,13 @@ let appendProduct = (data) => {
   }
   rat.innerText = `Hotel ${ans}`;
   let ansr = "";
-    if (Math.floor(data.rating) <= 10 && Math.floor(data.rating)>8 ) {
+    if (Math.floor(data.review) <= 10 && Math.floor(data.review)>8 ) {
       ansr += "Very Good .50 reviews";
       
-    } else if (Math.floor(data.rating) <= 8 && Math.floor(data.rating)>5 ) {
+    } else if (Math.floor(data.review) <= 8 && Math.floor(data.review)>5 ) {
       ansr += "Good .35 reviews";
     
-    } else if (Math.floor(data.rating) <= 5 && Math.floor(data.rating)>1 ) {
+    } else if (Math.floor(data.review) <= 5 && Math.floor(data.review)>1 ) {
       ansr += "Average .30 reviews";
       
     }
