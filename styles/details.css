@@ -10,18 +10,20 @@
   height: 434px;
   background-color: #febb02;
 } */
-*/ #ss_box-2 {
+ #ss_box-2 {
   width: 80%;
+  margin: auto;
 }
 .ss_item {
-  border: 1px solid gray;
+  border: 0px solid gray;
   padding: 10px;
   display: flex;
   margin-bottom: 10px;
-  width: 90%;
+  width:100%;
   /* margin: auto; */
   justify-content: space-evenly;
-  gap: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap:15px;
 }
 
 .ss_one-item > img {
