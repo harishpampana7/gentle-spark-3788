@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+#HP_footer-container{
+    background-color: #ecf3fc;
+    padding-bottom: 7px;
+    margin-bottom: 0%;
+}
+#HP_about{
+    display: flex;
+    text-align: center;
+    padding: 2%;
+    color: white;
+    background-color: rgb(22, 16, 108);
+    font-weight: 800;
+    justify-content: space-around;
+    /* word-spacing: 2%; */
+    /* font-family: "Open Sans", sans-serif; */
+}
+a{
+    color: white;
+}
+hr{
+    background-color: rgba(255, 255, 255, 0.84);
+}
+#HP_all_links{
+    padding-top: 3%;
+    display: flex;
+    padding-bottom: 2%;
+}
+#HP_links_container1{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: small;
+    padding: 0 20px;
+    
+}
+#HP_links_container1>div>h4{
+    margin-top: 5%;
+    font-weight: 200;
+    color: #46474A;
+}
+#HP_links_container1>div>h4:hover{
+    cursor: pointer;
+}
+
+/* #HP{
+    width: 50%;
+    font-size: 90%;
+    padding:  10px 20px
+} */
+
+#HP_links_container2>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+#HP_qr_images{
+    width: 33%;
+    display: flex;
+
+}
+#HP_qr_images>div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+#HP_qr_images>div:last-child>img{
+    width: 100%;
+}#HP_qr_images>div:first-child>img{
+    width: 100%;
+}
+#HP_qr_images>div:last-child>img:nth-child(2){
+    margin: 3% 0px;
+}
+
+.HP_links_icon{
+    width: 10%;
+}
+#HP_important_links{
+    margin-right: 2%;
+    width: 45%;
+}
+#HP_important_links>div:nth-child(2){
+    margin: 6% 0px;
+}
+#HP_important_links>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#HP_important_links>div>span{
+    margin-left: 5%;
+}
+
+#HP_social_links{
+    width: 40%;
+}
+
+#HP_copyright{
+    text-align: center;
+    padding: 2%;
+    color: rgb(118, 119, 122);
+}
+
+#HP_footer_img_log{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+#HP_foot_bookit_logo{
+    width: 7%;
+
+}
