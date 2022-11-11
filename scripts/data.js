@@ -9,7 +9,7 @@ let addHotel = (e) => {
   let price = +form.price.value;
   let obj = { hn, img, add, review, rating, price };
   console.log(obj);
-  localStorage.setItem("hotel", JSON.stringify(obj));
+  //localStorage.setItem("hotel", JSON.stringify(obj));
 };
 
 //

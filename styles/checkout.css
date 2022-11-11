@@ -4,9 +4,9 @@
    padding: 0px;
 }
 #navDream{
-    border: 1px solid black;
+    border: 0px solid black;
     width: 100%;
-    height:80px;
+    height:100px;
     margin: auto;
     background-color: #003580;
 }    
@@ -15,28 +15,26 @@
     width: 70%;
     height: 100%;
     margin: auto;
-    border: 1px solid red;
+    border: 0px solid red;
     align-items: center;
     justify-content: space-between;
 }
 #logoDream{
-    border: 1px solid white;
+    border: 0px solid white;
     width:20%;
-    height:50%;
+    height:100%;
     display:flex;
     align-items: center;
 }
-#logoDream>h1{
- font-size:25px;
- font-weight: bold;
- color: white;
+#logoDream>img{
+ width:80%;
 }
 #loginDream{
     display: flex;
     width:40%;
     justify-content: space-between;
     align-items: center;
-    border:1px solid white;
+    border:0px solid white;
 }
 #Dinr{
     color:white;
@@ -71,8 +69,8 @@
 }
 #Dprofile>div{
     background-color: #FEBB02;
-    width:35px;
-    height:35px;
+    width:32px;
+    height:32px;
     border-radius:50%;
     display: flex;
     align-items: center;
@@ -83,48 +81,26 @@
     display:flex;
     width:70%;
     margin:auto;
-    border: 1px solid green;
+    margin-top: 30px;
+    border: 0px solid green;
 }
 #leftDream-div{
     display:flex;
     flex-direction:column;
-    border:1px solid red;
-    width:30%;
+    border:0px solid red;
+    width:33%;
+    gap:15px;
     margin-right:20px;
+    padding: 0px 15px;
 }
 #rightDream-div{
     display:flex;
-    width:70%;
+    width:68%;
     flex-direction:column;
-    border:1px solid red;
+    border:0px solid red;
+    gap:15px;
 }
-#Dream-d1{
-    display:flex;
-    flex-direction:column;
-    border:1px solid black;
-    height:350px;
-    text-align: center;
-}
-#D-checkin-div{
-    display:flex;
-    width: 100%;
-    height:100px;
-    gap:20px;
-    align-items: center;
-    border: 1px solid grey;
-}
-.Dream-div{
-    border: 1px solid greenyellow;
-    width:35%;
-    text-align: left;
-    font-weight:500;
-}
-#Dream-line{
-    width:0.1px;
-    height:60%;
-    background-color:rgb(201, 195, 195);
-    
-}
+
 #Dream-show-product{
     display:flex;
     gap:15px;
@@ -140,8 +116,8 @@
     border-radius: 4px 4px 4px 0px;
 }
 #Dream-div1{
-    width:250px;
-    height: 150px; 
+    width:280px;
+    height: 170px; 
     border-radius:3px;   
 }
 #Dream-div1>img{
@@ -149,21 +125,379 @@
     height:100%; 
     border-radius:3px;     
 }
+#Dream-div2>p{
+    font-size:18px;
+    font-weight: 500;
+    text-decoration: underline;
+    color:#0071C2;
+}
 #Dream-rat{
     font-weight: normal;
     font-size:14px;
 }
+#Dream-goodToKnow{
+    border: 1px solid rgb(219, 218, 218);  
+    padding:15px; 
+}
 #Dream-goodToKnow>div{
-  display:flex;
-  flex-direction: column;
-  gap:10px;
-  margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px; 
+    margin-top:20px;
 }
 #Dream-goodToKnow>div>div{
     display:flex;
     gap:10px;
 }
 #Dream-goodToKnow>div>div>img{
-  width:25px;
-  height:25px;
+    width:25px;
+    height:25px;
+}
+#Dream-EnterDetails{
+    border: 1px solid rgb(219, 218, 218);  
+    padding:15px; 
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    background-color:#EBF3FF;
+}
+#d-div1{
+    width: 100%;
+    display:inline-flex;
+    justify-content: space-between;
+}
+#d-div1>div{
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    padding:7px;
+    border-radius:5px;
+}
+#d-div2{
+    background-color:#D2EDD5;
+    padding:6px 10px;
+    width:43%;
+    border-radius:5px;
+    color:#515b2c;
+}
+#d-div3>div{
+  display:inline-flex;
+  align-items: center;
+  gap:10px;
+  margin-top:10px;
+}
+#d-div3>div>input{
+    width:20px;
+    height:20px;
+}
+#d-div4{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+#d-div4>label{
+    margin-top:13px;
+    font-weight: bold;
+    font-size:14px;
+}
+#d-div4>input{
+    padding:8px;
+    border-radius:5px;
+    border: 0.1px solid #a8a8a8;    
+}
+#d-div4>p{
+    font-size:14px;
+    color:#828181;
+}
+#d-div5{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+#d-div5>div{
+    display:flex;
+    gap:10px;
+}
+#d-div5>div>input{
+    width:20px;
+    height:20px;
+}
+#Dream-standard{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    padding:15px;
+    background-color:#EBF3FF;
+}
+#D-div1{
+    display:flex;
+    gap:10px;
+    color: #008009;
+}
+#D-div2{
+    display:flex;
+    gap:15px 10px;
+}
+#D-div3{
+    display:flex;
+    gap:5px;
+    margin-top:10px;
+}
+#D-div3>div{
+    border: 1px solid #45b54d;
+    display:flex;
+    gap:7px;
+    padding:3px;
+    background-color:#ddf1e0;
+}
+#D-div3>div>p{
+    font-size:11px;
+}
+#D-div4>div{
+    display:flex;
+    flex-direction: column;
+    gap:3px;
+    margin-top:20px;
+}
+#D-div4>div>div{
+   display:flex; 
+   gap:15px;
+}
+#D-div4>div>div>img{
+    width:20px;
+    height:20px;
+}
+#D-div4>div>div>p{
+    font-weight:500;
+    font-size:15px;
+}
+#D-div4>div>p{
+    font-size:12px;
+}
+#D-div5>div{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#D-div5>div>h4{
+    font-size: 14px;
+}
+#D-div5>div>input{
+    width:50px;
+    height:30px;
+    margin-left:5px;
+}
+#D-div5>h4{
+    margin-top:12px;
+    font-size:14px;
+    margin-bottom:3px;
+}
+#D-div5>input{
+    border-radius:5px;
+    border: 0.1px solid rgb(160, 160, 162);
+    width:50%;
+    height:35px;
+}
+#Dream-add-stay{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    padding:15px;
+    background-color:#EBF3FF;
+}
+#Dream-add-stay>div{
+    margin-top:15px;
+}
+#Dream-add-stay>div+div{
+    margin-top:30px;
+}
+#Dream-add-stay>div>div{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+#Dream-add-stay>div>p{
+    margin-left:32px;
+    font-size:13px;
+    margin-top:2px;
+}
+#Dream-add-stay>div>div>input{
+    width: 23px;
+    height: 23px;
+}
+#Dream-Special-requests{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    padding:15px;
+    background-color:#EBF3FF;
+}
+#Dream-Special-requests>p{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#Dream-Special-requests>input{
+    height:70px;
+}
+span{
+    color:#a49c9c;
+    font-weight: lighter;
+}
+#Dream-div2{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+#Dream-div2>p{
+    font-size:14px;
+}
+#Dream-div2>div{
+    display: flex;
+    gap:10px;
+    align-items:center;
+}
+#Dream-div2>div>p{
+    font-size: 13px;
+}
+#Dream-n-div{
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+#Dream-minus{
+    font-size:20px;
+    padding: 0px 10px;
+}
+#Dream-plus{
+    font-size: 20px;
+    padding: 0px 7px;
+}
+#Dream-av-div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#Dream-av-btn{
+   background-color: #008009;
+   font-size: 15px;
+   color:white;
+   border: none; 
+   padding:5px 10px;
+   border-radius: 3px;
+}
+#Dream-nextbtn{
+    border: 0px solid green;
+    display: flex;
+    padding: 0px 15px;
+    justify-content: flex-end;
+}
+#Dream-nextbtn>button{
+    width:30%;
+    height:50px;
+    font-size:17px;
+    background-color: #0071C2;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius:2px;
+}
+#Dream-nextbtn>button:hover{
+    background-color:#003580;
+    cursor: pointer;
+}
+#Dream-d1{
+    display:flex;
+    flex-direction:column;
+    border:1px solid rgb(171, 171, 171);
+    text-align: center;
+}
+#D-checkin-div{
+    display:flex;
+    width:90%;
+    gap:20px;
+    margin-top: 20px;
+    padding: 15px;
+    align-items: center;
+    border:0px solid grey;
+}
+
+#Dream-line{
+    width:0.1px;
+    height:80%;
+    background-color:rgb(201, 195, 195);
+    
+}
+.Dream-div{
+   width:45%;
+   display:flex;
+   text-align: left;
+   font-weight:500;
+   flex-direction:column;
+   gap:10px;
+}
+.Dream-div>h5{
+    font-size:15px;
+}
+.Dream-div>p{
+    font-size:14px;
+}
+#Dream-pricediv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid rgb(219, 218, 218);
+    padding: 15px;
+    background-color:#EBF3FF;
+}
+#Dream-payment-schedule{
+    display: flex;
+    border:1px solid rgb(219, 218, 218);
+    flex-direction: column;
+    gap:15px;
+    padding: 15px;
+}
+#Dream-payment-schedule>div{
+    display: flex;
+    border: 0px solid black;
+    justify-content:space-between;
+}
+#Dream-payment-schedule1{
+    display: flex;
+    border:1px solid rgb(219, 218, 218);
+    flex-direction: column;
+    gap:15px;
+    padding: 15px;
+}
+#Dream-payment-schedule1>div{
+    display: flex;
+    border: 0px solid black;
+    justify-content:space-between;
+}
+#dream-discount{
+    border:1px solid rgb(219, 218, 218);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 15px 15px;
+}
+#dream-discount>div{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top:20px;
+}
+#dream-discount>div>div{
+   display:flex; 
+   gap:15px;
+
+}
+#dream-discount>div>div>img{
+    width:20px;
+    height:20px;
+}
+#dream-discount>div>div>p{
+    font-weight:500;
+    font-size:15px;
+}
+#dream-discount>div>p{
+    font-size:12px;
 }
