@@ -180,18 +180,21 @@ color: rgb(102, 102, 102);
     left:199px;
     top:100px;
     transition: 1s;
+    cursor: pointer;
   }
   #AK_pnext{
     position: relative;
     left : 1220px;
     top: 100px;
     transition: 1s;
+    cursor: pointer;
   }
 
 
 /* Css for trending cities */
   #AKtrending_cities{
     border: 0px solid black;
+    scroll-behavior: smooth;
   }
   #AKtrending_cities>h1{
     margin-left: 215px;
@@ -208,11 +211,13 @@ color: rgb(102, 102, 102);
     position: absolute;
     left:220px;
     top: 1050px;
+    
   }
   #AKtrending_cities_container>div{
     border: 0px solid black;
     line-height: 30px;
     transition: 1s;
+    
   }
   #AKtrending_cities_container>div>img{
     width: 100% ;
@@ -239,12 +244,14 @@ color: rgb(102, 102, 102);
     position: relative;
     left:199px;
     top:110px;
+    cursor: pointer;
   }
   #AK_tnext{
     position: relative;
     left : 1220px;
     top:110px;
     transition: 1s;
+    cursor: pointer;
   }
 
 /* section-2 Ends */
