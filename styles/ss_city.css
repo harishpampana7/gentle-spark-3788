@@ -48,17 +48,17 @@
   border-radius: 5px;
 }
 .ss_one-item {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: 25%;
 }
 
 .ss_two-item {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: 50%;
 }
 
 .ss_three-item {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: 20%;
 }
 
