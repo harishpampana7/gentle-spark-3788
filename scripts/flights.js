@@ -1,3 +1,9 @@
+import navbar from "../components/navbar.js";
+
+let navbar_div = document.getElementById("top_navbar");
+navbar_div.innerHTML = navbar();
+
+
 let asia_arr = [
     {
       image:"https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o=",
@@ -329,6 +335,11 @@ let pappend = (data) => {
 };
 pappend(popular_flights_arr);
 
+
+let AK_pnext_btn = document.getElementById("AK_pnext");
+AK_pnext_btn.addEventListener("click",()=>{
+  pnext();
+})
 let pnext = () => {
     if(i == popular_flights_arr.length-5){
        return;
@@ -336,6 +347,11 @@ let pnext = () => {
   i++;
   pappend(popular_flights_arr);
 };
+
+let AK_pprevious_btn = document.getElementById("AK_pprevious");
+AK_pprevious_btn.addEventListener("click",()=>{
+  pprevious();
+})
 
 let pprevious = ()=>{
     if(i == 0){
@@ -460,6 +476,11 @@ let tappend = (data) => {
 };
 tappend(trending_cities_arr);
 
+
+let AK_tnext_btn = document.getElementById("AK_tnext");
+AK_tnext_btn.addEventListener("click",()=>{
+  tnext();
+})
 let tnext = () => {
     if(j == trending_cities_arr.length-5){
        return;
@@ -468,10 +489,30 @@ let tnext = () => {
   tappend(trending_cities_arr);
 };
 
+let AK_tprevious_btn = document.getElementById("AK_tprevious");
+AK_tprevious_btn.addEventListener("click",()=>{
+  tprevious();
+})
 let tprevious = ()=>{
     if(j == 0){
         return;
     }
     j--;
     tappend(trending_cities_arr);
+}
+
+
+
+// Search flights functionality
+
+let search_form = document.getElementById("AKsearchdata");
+search_form.addEventListener("submit",()=>{
+    getSearchData(event);
+})
+
+let getSearchData = (e)=>{
+  e.preventDefault();
+
+  let from = document.getElementById("AKfrom");
+  let to = document.getElementById("AKto"); 
 }

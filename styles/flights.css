@@ -7,6 +7,119 @@ body{
     font-family: Arial, sans-serif;;
 } 
 
+/* section-1 Starts */
+
+#AKsection-1{
+  border: 0px solid black;
+  width: 100%;
+  height: 390px;
+  display: grid;
+  background-color: rgb(243, 242, 242);
+  
+}
+#AKsection-1 #AKsubsection-1{
+  border: 0px solid black;
+  width: 70%;
+  height: 330px;
+  margin: auto;
+}
+#AKsection-1 #AKsubsection-1 #AKcovid{
+  border: 1px solid red;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: rgb(247, 233, 213);
+}
+#AKsection-1 #AKsubsection-1 #AKcovid>p{
+  color: rgb(94, 93, 93);
+  font-size: 14px;
+}
+#AKsection-1 #AKsubsection-1 #AKcovid>p>a{
+  color: rgb(57, 57, 247);
+  font-size: 14px;
+}
+#AKcomparesection{
+  width: 100%;
+  border: 0px solid blue;
+  height: auto;
+  margin-top: 30px;
+  line-height: 30px;
+}
+#AKcomparesection>p{
+  margin-top: 10px;
+}
+
+#AKradiobutton{
+  display: flex;
+  align-items: center;
+  border: 0PX solid rebeccapurple;
+  justify-content: space-around;
+  width: 55%;
+  font-size: 14px;
+  color: rgb(78, 76, 76);
+  margin-top: 10px;
+}
+#AKradiobutton>label{
+  margin-left: -35px;
+}
+#AKradio{
+border: 2px solid blue;
+width: 7%;
+height: 2em;
+margin-left:-15px;
+}  
+.AKselect{
+border: none;
+background-color: rgb(243, 242, 242);
+width: 13.5%;
+outline: none;
+}
+#AKsearchdata{
+border: 1px solid red;
+margin-top: 15px;
+display: flex;
+width: 100%;
+}
+#AKsearchdata>input{
+font-size: 15px;
+padding: 15px;
+border: 3px solid rgb(237, 193, 32);
+border-right: 1px solid rgb(237, 193, 32);
+color: rgb(102, 102, 102);
+outline: none;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#AKsearchdata>input[type = "text"]{
+width:30% ;
+}
+#AKsearchdata>input[type="submit"]{
+background-color: rgb(50, 108, 194);
+color: white;
+cursor: pointer;
+padding: 0px 40px 0px 40px;
+border-right: 4px solid rgb(237, 193, 32);
+}
+#AKcheckdiv{
+display: flex;
+margin-top: 20px;
+align-items: center;
+}
+#AKcheck{
+width: 20px;
+height: 20px;
+border: 1px solid blue;
+}
+#AKcheckdiv>label{
+margin-left: 7px;
+font-size: 14px;
+color: rgb(102, 102, 102);
+}
+
+/* section-1 End */
+
+
 /* section-2 Starts */
 
 /* Css for Popular flights */
@@ -14,9 +127,10 @@ body{
     border: 1px solid red;
     width: 100%;
 }
-#AKsection-2 #AK_popular_flights>h1{
-    margin-left: 215px;
-    margin-top: 300px;
+#AKpopular_flights>h1{
+  border: 0px solid rebeccapurple;
+    margin-left: 220px;
+    margin-top:  60px;
 }
 
 #AK_popular_flights_container{
@@ -28,7 +142,7 @@ body{
     gap: 15px;
     position: absolute;
     left:220px;
-    top: 200px;
+    top: 640px;
     transition: 1s;
     scroll-behavior: smooth;
   }
@@ -56,7 +170,7 @@ body{
     padding: 10px 15px 10px 15px;
     border-radius: 50%;
     background-color: white;
-    
+    border: none;
     font-size: 15px;
     font-weight: 900;
     transition: 1s;
@@ -64,13 +178,13 @@ body{
   #AK_pprevious{
     position: relative;
     left:199px;
-    top:280px;
+    top:100px;
     transition: 1s;
   }
   #AK_pnext{
     position: relative;
     left : 1220px;
-    top: 280px;
+    top: 100px;
     transition: 1s;
   }
 
@@ -81,7 +195,7 @@ body{
   }
   #AKtrending_cities>h1{
     margin-left: 215px;
-    margin-top: 450px;
+    margin-top: 320px;
   }
   #AKtrending_cities_container{
     display: grid;
@@ -93,7 +207,7 @@ body{
     gap: 15px;
     position: absolute;
     left:220px;
-    top: 600px;
+    top: 1050px;
   }
   #AKtrending_cities_container>div{
     border: 0px solid black;
@@ -124,12 +238,12 @@ body{
   #AK_tprevious{
     position: relative;
     left:199px;
-    top:120px;
+    top:110px;
   }
   #AK_tnext{
     position: relative;
     left : 1220px;
-    top:120px;
+    top:110px;
     transition: 1s;
   }
 

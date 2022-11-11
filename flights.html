@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Book Your Flight</title>
-
+  <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/flights.css" />
   </head>
   <body>
     <!-- I have divided the whole page into (excluding navbar and footer) five sections -->
     <!-- There will be to five main divs having ID's AKsection-1,AKsection-2 and so on -->
-
-    <div id="AKsection-1"></div>
+    <div id="top_navbar"></div>
+    
+    <div id="AKsection-1">
+      <div id="AKsubsection-1">
+        <div id="AKcovid">
+            <p>Coronavirus (COVID-19) may affect your travel plans. <a href="">Learn more</a></p>
+        </div>
+        <div id="AKcomparesection">
+            <h1>Compare and book flights with ease</h1>
+            <p>Discover your next dream destination</p>
+            <div id="AKradiobutton">
+                <input type="radio" id="AKradio" name="check" value="" />
+                <label for="check-24">Round-trip</label>
+                <input type="radio" id="AKradio" name="check" value="" />
+                <label for="check-24">One-way</label>
+                <input type="radio" id="AKradio" name="check" value="" />
+                <label for="check-24">Checkbox</label>
+                <select name="" class="AKselect">
+                    <option value="economy">Economy</option>
+                    <option value="premium_economy">Premium economy</option>
+                    <option value="business">Business</option>
+                    <option value="first_class">First-class</option>
+                </select>
+                <select name="" class="AKselect" id="">
+                    <option value="">1 adult</option>
+                </select>
+            </div>
+            <form action="" id="AKsearchdata">
+                <input type="text" placeholder="From" id="AKfrom">
+                <input type="text" placeholder="Where to?" id="AKto">
+                <input type="date" id="AKfromdate">
+                <input type="date" id="AKtodate">
+                <input type="submit" value="Search" id="AKsubmitsearch">
+            </form>
+            <div id="AKcheckdiv">
+                <input type="checkbox" id="AKcheck" name="check" value="" />
+                <label for="check-24">Direct flights only</label>
+            </div>
+            
+        </div>
+     </div>
+    </div>
     <div id="AKsection-2">
       <!-- In this section, there are two subsections, their id's are as AKpopular_flights and AKtrending_cities -->
       <div id="AKpopular_flights">
@@ -24,12 +64,11 @@
           <div id="AK_pthird"></div>
           <div id="AK_pfourth"></div>
         </div>
-        <button id="AK_pprevious" onclick="pprevious()"><</button>
-        <button id="AK_pnext" onclick="pnext()">></button>
+        <button id="AK_pprevious"><</button>
+        <button id="AK_pnext">></button>
       </div>
       
       <div id="AKtrending_cities">
-           
         <h1>Trending cities</h1>
         <div id="AKtrending_cities_container">
           <div id="AK_tfirst"></div>
@@ -37,8 +76,8 @@
           <div id="AK_tthird"></div>
           <div id="AK_tfourth"></div>
         </div>
-        <button id="AK_tprevious" onclick="tprevious()"><</button>
-        <button id="AK_tnext" onclick="tnext()">></button>
+        <button id="AK_tprevious"><</button>
+        <button id="AK_tnext">></button>
       
 
       </div>
@@ -139,12 +178,8 @@
       </div>
     </div>
 
-    <script src="/scripts/flights.js"></script>
+    <script type="module" src="/scripts/flights.js"></script>
   </body>
 </html>
-<script>
-  
 
- 
-</script>
 

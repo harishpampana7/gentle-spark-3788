@@ -58,7 +58,7 @@
   #second_dropdwn:hover #second_dropbtn_btn {background-color: rgb(22, 16, 108);;}
   #third_dropdwn:hover #third_dropbtn_btn {background-color: rgb(22, 16, 108);;}
   #top_navbar{
-    height: 185px;
+    height: 135px;
     background-color: rgb(22, 16, 108);
     color: white;
   }
@@ -95,7 +95,7 @@
     display: flex;
     justify-content:space-between;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 40px;
     /* border: 1px solid red; */
     
@@ -158,14 +158,26 @@
   #top_navbar_last{
     display: flex;
     margin-top: 55px;
+    width: 60%;
+    border: 0px solid white;
     /* position: relative; */
     /* border: 1px solid red; */
     justify-content: space-between;
-  
+    font-size: 14px;
+    font-weight: lighter;
+    
   }
   #top_navbar_last>div{
-     margin-right: 45px;
+     margin-right: 0px;
+     display: flex;
+     align-items: center;
   }
+  /* #top_navbar_last>div:hover{
+    background-color: #e4f4f48f;
+    opacity: 10.5;
+  
+  } */
+ 
   
   #shipToBox{
     width: 280px;
