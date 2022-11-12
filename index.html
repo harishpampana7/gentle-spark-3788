@@ -74,29 +74,29 @@
             <button class="slide-arrowB" id="slide-arrow-nextA">&#8250;</button>
             <ul class="slides-containerA" id="slides-containerA">
             <li class="slideA">
-            <div class="swiper-slideB">
-           <img src="https://cf.bstatic.com/xdata/images/city/357x153/684682.jpg?k=30cf9de93f2a0f87eed7d2d0d9b3e6eccd5dcf3a4b68b4e0151c0800ddc84af7&o=" alt="">
-           <p id="SKcitylona">Lonavala</p>
+            <div class="swiper-slideB" id="mumbaiCity">
+               <img src="https://cf.bstatic.com/xdata/images/city/357x153/684682.jpg?k=30cf9de93f2a0f87eed7d2d0d9b3e6eccd5dcf3a4b68b4e0151c0800ddc84af7&o=" alt="">
+               <p id="SKcitylona">Mumbai</p>
            </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="delhiCity">
                 <img src="https://cf.bstatic.com/xdata/images/city/357x153/684622.jpg?k=f9eacb40b8f7c8560afc74cdcfe2e7028e5117a36a0d8d3356f735ea3ac20f4f&o=" alt="">
-                <p id="SKcitygur">Gurgaon</p>
+                <p id="SKcitygur">Delhi</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="kolkataCity">
                 <img src="https://cf.bstatic.com/xdata/images/city/357x153/684571.jpg?k=2166dfd3192f12497a35d57434f14f2f9175eca9e2698b04eeb827064c3c9d4d&o=" alt="">
                 <p id="SKcitykol">Kolkata</p>
             </div>
             </li>
-            <li class="slideA">
+            <li class="slideA" id="puneCity">
             <div class="swiper-slide">
                 <img src="https://cf.bstatic.com/xdata/images/city/357x153/684822.jpg?k=8e3dfdbe7474b16f993bead046bb1d3d329cdd68c6aee6ec72c8e935ba426a9f&o=" alt="">
                 <p id="SKcitypune">Pune</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="hydCity">
                 <img src="https://cf.bstatic.com/xdata/images/city/357x153/684653.jpg?k=306ccafcc8a4a7e23b9e8a05b183453fe885b312a4daa5ce76ec39a1b79cbc6f&o=" alt="">
                 <p id="SKcityhyd">Hyderabad</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="jaipurCity">
                 <img src="https://cf.bstatic.com/xdata/images/city/357x153/684657.jpg?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o=" alt="">
                 <p id="SKcityjaipur">Jaipur</p>
             </div>
@@ -118,10 +118,41 @@
             <i class="fa-solid fa-user"></i>
             <p id="adult"></p><span>Adult</span>
             <p id="child"></p><span>Child</span>
-            <p id="room"></p><span>Room</span>
+            <!-- <p id="room"></p><span>Room</span> -->
         </div>
         <div class="searchBtn">
             <button id="searchBtn">Search</button>
+        </div>
+    </div>
+    <div class="searchPopUp" id="searchpopupdiv">
+        <p id="closesearch">Close</p>
+        <div>
+            <div id="cityicon">
+                <i class="fa-solid fa-location-dot"></i>
+                <option value="mumbai">Mumbai</option>
+            </div>
+            <p>Maharashtra,India</p>
+        </div>
+        <div>
+            <div id="cityicon">
+                <i class="fa-solid fa-location-dot"></i>
+                <option value="pune">Pune</option>
+            </div>
+            <p>Maharashtra,India</p>
+        </div>
+        <div>
+            <div id="cityicon">
+                <i class="fa-solid fa-location-dot"></i>
+                <option value="Delhi">Delhi NCR</option>
+            </div>
+            <p>Delhi,India</p>
+        </div>
+        <div>
+            <div id="cityicon">
+                <i class="fa-solid fa-location-dot"></i>
+                <option value="hyd">Hyderabad</option>
+            </div>
+            <p>Telangana India</p>
         </div>
     </div>
     <!-- increse decrese the values of number of persons -->
@@ -142,14 +173,6 @@
             <input type="number" id="Childnumber" value="0" />
             <div class="value-button" id="increaseChild" value="Increase Value">+</div>
          </form>
-        </div>
-        <div id="roomDiv">
-           <p>Room</p>
-        <form action="" id="roomsForm">
-            <div class="value-button" id="decreaseRoom" value="Decrease Value">-</div>
-            <input type="number" id="Roomnumber" value="1" />
-            <div class="value-button" id="increaseRoom" value="Increase Value">+</div>
-        </form>
         </div>
     </div> 
     <!-- Recent searches -->
@@ -193,59 +216,59 @@
             <button class="slide-arrowNextB" id="slide-arrow-nextB">&#8250;</button>
             <ul id="slides-containerB" class="slides-containerB">
                 <li class="slideB">
-                 <div id="cityimg">
+                 <div id="cityimg" class="delhiCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/684765.webp?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="">
                     <h3>New Delhi</h3>
                     <p>2912 Properties</p>
                  </div>
-                 <div id="cityimg">
+                 <div id="cityimg" class="gurCity">
                      <img src="https://cf.bstatic.com/xdata/images/city/square250/684622.webp?k=f9eacb40b8f7c8560afc74cdcfe2e7028e5117a36a0d8d3356f735ea3ac20f4f&o=" alt="">
                      <h3>Gurgaon</h3>
                      <p>1,135 Properties</p>
                  </div>
-                 <div id="cityimg">
+                 <div id="cityimg" class="mumbaiCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/824928.webp?k=021c9ec0c9e01c06f47809fe251701390100d0f446b4edc47027d1a0c029f638&o=" alt="">
                     <h3>Manesar</h3>
                     <p>14 Properties</p>
                 </div>
-                <div id="cityimg">
+                <div id="cityimg" class="hydCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/684657.webp?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o=" alt="">
                     <h3>Jaipur</h3>
                     <p>1,563 Properties</p>
                 </div>
-                <div id="cityimg">
+                <div id="cityimg" class="noidaCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/691495.webp?k=1c9ca7d6f4c56ca1c8b5b26d842a2345d1e074a2a34df42f5e3179ff0fe060f3&o=" alt="">
                     <h3>Noida</h3>
                     <p>436 Properties</p>
                 </div>
-                <div id="cityimg">
+                <div id="cityimg" class="puneCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/935891.webp?k=05668cbae7eaa0f13b675a0c91164465bdc3394db46c6bb555e9dacdbbc4c025&o=" alt="">
                     <h3>Neemrana</h3>
                     <p>24 Properties</p>
                 </div>
                 </li>
-                <li class="slideB">
+                <li class="slideB" class="newdelhiCity">
                     <div id="cityimg">
                     <img src="https://cf.bstatic.com/xdata/images/region/square250/66586.webp?k=a478dc5b7deac38cd871f778813e3601933793785ed7f4c138c052cf87ec53c6&o=" alt="">
                     <h3>Delhi NCR</h3>
                     <p>5,947 Properties</p>
                     </div>
-                    <div id="cityimg">
+                    <div id="cityimg" class="agraCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/684501.webp?k=225f7713b3f47f0c2c580c34c35582ba70331757bcc8dc32e7f17072c80805ff&o=" alt="">
                     <h3>Agra</h3>
                     <p>408 Properties</p>
                     </div>
-                    <div id="cityimg">
+                    <div id="cityimg" class="faridaCity">
                      <img src="https://cf.bstatic.com/xdata/images/city/square250/665339.webp?k=0fb1dee60ac92148d6626952e98b7d0b63e97255d7a036a7e0f5b31e357742e7&o=" alt="">
                      <h3>Faridabad</h3>
                      <p>161 Properties</p>
                     </div>
-                    <div id="cityimg">
+                    <div id="cityimg" class="goaCity">
                     <img src="https://cf.bstatic.com/xdata/images/region/square250/49646.webp?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="">
                     <p>Goa</p>
                     <p>5,246 Properties</p>
                     </div>
-                    <div id="cityimg">
+                    <div id="cityimg" class="shilongCity">
                     <img src="https://cf.bstatic.com/xdata/images/city/square250/735371.webp?k=78e5e28aee3dcafb6d6b6c254aedf2b2b8ec80a6ceefc33f7776d82dce50649c&o=" alt="">
                     <h3>Shilong</h3>
                     <p>275 Properties</p>
@@ -389,6 +412,9 @@
             <p>9,894,940 Travellers</p>
         </div>
     </a>
+    </div>
+    <div id="footer">
+
     </div>
 </body>
 </html>
