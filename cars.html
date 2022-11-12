@@ -4,9 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rent a Car</title>
 </head>
+<link rel="stylesheet" href="./styles/navbar.css">
+<link rel="stylesheet" href="./styles/cars.css">
 <body>
-    
+    <div id="top_navbar"></div>
+
+    <div id="AKCsection-1">
+        <div id="AKsubsection-1">
+          <div id="AKCar_rent_section">
+            <h1>Car hire for any kind of trip</h1>
+            <p>Compare deals from the biggest car hire companies</p>
+            <div id="AKCradiobutton">
+              <input type="radio" id="AKCradio" name="check" value="" />
+              <label for="check-24">Return to same location</label>
+              <input type="radio" id="AKCradio" name="check" value="" />
+              <label for="check-24">Return to different location </label>
+            </div>
+            <form action="" id="AKCsearchdata">
+              <input type="text" placeholder="Pick-up location" id="AKfrom" />
+              <input type="date" id="AKfromdate" />
+              <input type="date" id="AKtodate" />
+              <input type="submit" value="Search" id="AKsubmitsearch" />
+            </form>
+            <div id="AKCcheckdiv">
+              <input type="checkbox" id="AKCcheck" name="check" value="" />
+              <label for="check-24">Driver aged between 30 - 65 </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="AKCsection-2">
+          <div id="AKCcovid">
+              <p>Coronavirus (COVID-19) may affect your travel plans. <a href="">Learn more</a></p>
+          </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+              <h1>Popular car hire brands</h1>
+            <button class="slide-arrowPrev" id="slide-arrow-prevA">
+              &#8249;
+            </button>
+            <button class="slide-arrowB" id="slide-arrow-nextA">&#8250;</button>
+            <ul class="slides-containerA" id="slides-containerA">
+              <li class="slideA">
+                <div class="swiper-slideB">
+                  <img
+                    src="https://cdn.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/suppliers/flat/sixt_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li class="slideA">
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/supplier_logos/enterprise_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/supplier_logos/thrifty_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.rcstatic.com/images/suppliers/flat/sicily_by_car_logo_lrg.gif"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="AKCsection-3">
+          <h1>Popular destinations for car hire</h1>
+          <div id="AKCsection-3_container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+      
+          </div> 
+              </div> -->
+      <div id="AKCsection-4">
+        <div>
+          <div>
+            <div>
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-128/customer-support-169-866155.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>24/7 customer service</h3>
+              <p>We're here to help if you need</p>
+            </div>
+          </div>
+  
+          <div>
+            <div>
+              <img
+                src="https://cdn.iconscout.com/icon/premium/png-128-thumb/approve-4667646-3870748.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Free cancellation</h3>
+              <p>Available on most cars</p>
+            </div>
+          </div>
+  
+          <div>
+            <div>
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-128/star-619-433870.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>3.5+ million reviews</h3>
+              <p>
+                By real, verified customers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="AKCsection-5">
+        <h1>Frequently asked questions</h1>
+        <div>
+          <div>
+            <h3>What do I need to rent a car?</h3>
+            <span>&#8964;</span>
+          </div>
+          <div>
+            <h3>Am I old enough to rent a car?</h3>
+            <span>&#8964;</span>
+          </div>
+          <div>
+            <h3>Can I book a car for my partner, friend, colleague, etc</h3>
+            <span>&#8964;</span>
+          </div>
+          <div>
+            <h3>Any tips on choosing the right car?</h3>
+            <span>&#8964;</span>
+          </div>
+          <div>
+            <h3>Is the rental price all inclusive?</h3>
+            <span>&#8964;</span>
+          </div>
+        </div>
+      </div>
+      <div id="AKCsection-6"></div>
+
+
+    <script type="module" src="./scripts/cars.js"></script>
 </body>
 </html>

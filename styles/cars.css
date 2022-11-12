@@ -1,0 +1,341 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* section-1 Starts */
+  
+  #AKCsection-1 {
+    border: 0px solid black;
+    width: 100%;
+    height: 390px;
+    display: grid;
+    background-color: rgb(243, 242, 242);
+  }
+  #AKCsection-1 #AKsubsection-1 {
+    border: 0px solid black;
+    width: 70%;
+    height: 330px;
+    margin: auto;
+  }
+  #AKCsection-1 #AKsubsection-1 #AKcovid {
+    border: 1px solid red;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: rgb(247, 233, 213);
+  }
+  #AKCsection-1 #AKsubsection-1 #AKcovid > p {
+    color: rgb(94, 93, 93);
+    font-size: 14px;
+  }
+  #AKCsection-1 #AKsubsection-1 #AKcovid > p > a {
+    color: rgb(57, 57, 247);
+    font-size: 14px;
+  }
+  #AKCar_rent_section {
+    width: 100%;
+    border: 0px solid blue;
+    height: auto;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  #AKCar_rent_section > p {
+    margin-top: 10px;
+  }
+  #AKCar_rent_section > h1 {
+    font-size: 27px;
+  }
+  #AKCradiobutton {
+    display: flex;
+    align-items: center;
+    border: 0px solid rebeccapurple;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 14px;
+    color: rgb(78, 76, 76);
+    margin-top: 10px;
+  }
+  #AKCradiobutton > label {
+    margin-left: -40px;
+  }
+  #AKCradio {
+    border: 2px solid blue;
+    width: 5%;
+    height: 2em;
+    margin-left: -20px;
+  }
+  .AKCselect {
+    border: none;
+    background-color: rgb(243, 242, 242);
+    width: 13.5%;
+    outline: none;
+  }
+  #AKCsearchdata {
+    border: 1px solid red;
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+  }
+  #AKCsearchdata > input {
+    font-size: 15px;
+    padding: 15px;
+    border: 3px solid rgb(237, 193, 32);
+    border-right: 1px solid rgb(237, 193, 32);
+    color: rgb(102, 102, 102);
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  #AKCsearchdata > input[type="text"] {
+    width: 60%;
+  }
+  #AKCsearchdata > input[type="submit"] {
+    background-color: rgb(50, 108, 194);
+    color: white;
+    cursor: pointer;
+    padding: 0px 40px 0px 40px;
+    border-right: 4px solid rgb(237, 193, 32);
+  }
+  #AKCcheckdiv {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  #AKCcheck {
+    width: 20px;
+    height: 20px;
+    border: 1px solid blue;
+  }
+  #AKCcheckdiv > label {
+    margin-left: 7px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+  }
+  
+  /* section-1 End */
+  
+  /* section-2 Starts */
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .swiper,
+  .citiesSwiper {
+    width: 80%;
+    height: fit-content;
+    border: 0px red solid;
+    margin: auto;
+    margin-top: 1000px;
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+  }
+  .swiper-wrapper,
+  .swiper-wrapperB,
+  .swiper-wrapperC {
+    /*   margin: 1rem; */
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 95%;
+    border: 0px solid green;
+    bottom: 600px;
+  }
+  .swiper-wrapper > h1 {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 250px;
+    margin-bottom: -220px;
+  }
+  .slides-containerA,
+  .slides-containerB,
+  .slides-containerC {
+    /* height: calc(80vh - 2rem); */
+    border: 0px solid black;
+    display: flex;
+    overflow: scroll;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    padding-left: 25px;
+    margin-top: 210px;
+  }
+  .slideA,
+  .slideB,
+  .slideC {
+    border: 0px solid black;
+    flex: 1 0 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .swiper-slideB,
+  .swiper-slide {
+    border: 1px solid rgb(209, 207, 207);
+    padding: 30px 80px 30px 80px;
+  }
+  
+  .slide-arrowPrev {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    position: relative;
+    top: 290px;
+    left: 7px;
+    cursor: pointer;
+  }
+  .slide-arrowB {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    position: relative;
+    top: 290px;
+    left: 1040px;
+    cursor: pointer;
+  }
+  .swiper {
+    border: 0px solid blue;
+    top: 1px;
+    bottom: 20px;
+  }
+  
+  #AKCcovid {
+    border: 1px solid rgb(220, 216, 216);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: rgb(247, 233, 213);
+    background-color: white;
+  }
+  
+  /* section-2 End */
+  
+  /* section-3 starts */
+  
+  #AKCsection-3 {
+    border: 1px solid red;
+    width: 70%;
+    margin: auto;
+    margin-top: 400px;
+  }
+  #AKCsection-3 > h1 {
+    font-size: 30px;
+  }
+  
+  #AKCsection-3_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  #AKCsection-3_container > div {
+    border: 1px solid red;
+  }
+  
+  /* section-3 End */
+  
+  /* section-4 Starts */
+  
+  #AKCsection-4 {
+    border: 0px solid black;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    margin-top: 280px;
+  }
+  #AKCsection-4 > div {
+    display: flex;
+    border: 0px solid blue;
+    width: 80%;
+    margin: auto;
+  }
+  #AKCsection-4 > div > div {
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 20px;
+    margin: auto;
+  }
+  #AKCsection-4 > div > div > div:nth-child(1) {
+    border: 0px solid blue;
+    width: 9%;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  #AKCsection-4 > div > div > div:nth-child(2) {
+    width: 80%;
+    border: 0px solid blue;
+  }
+  #AKCsection-4 > div > div > div:nth-child(1) > img {
+    width: 100%;
+    text-align: left;
+  }
+  #AKCsection-4 > div > div > div:nth-child(2) > h3 {
+    font-size: 15px;
+  }
+  #AKCsection-4 > div > div > div:nth-child(2) > p {
+    font-size: 13px;
+    color: rgb(105, 102, 102);
+  }
+  
+  /* section-4 End */
+  
+  /* section-5 Starts */
+  
+  #AKCsection-5 {
+    border: 0px solid red;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  
+  #AKCsection-5 > h1 {
+    margin-bottom: 20px;
+  }
+  
+  #AKCsection-5 > div {
+    border: 1px solid rgb(201, 198, 198);
+    width: 100%;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #AKCsection-5 > div > div {
+    border-bottom: 1px solid rgb(201, 198, 198);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 12px 20px;
+  }
+  #AKCsection-5 > div > div > span {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: wider;
+    margin-bottom: 16px;
+  }
+  
+  /* section-5 End */
+  
