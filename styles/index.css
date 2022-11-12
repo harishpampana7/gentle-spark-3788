@@ -313,7 +313,7 @@
 }
 #dates{
   border: 0px solid blue;
-  width:30%;
+  width:40%;
   display:flex;
   align-items: center;
   background-color: white;
@@ -390,6 +390,7 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  position: static;
 }
 #ladywithLap{
   border: 0px solid black;
@@ -705,6 +706,7 @@
   margin-top: 20px;
   border: 0px solid black;
   margin-left:150px;
+  margin-bottom: 100px;
 }
 #connectwithother>a>div{
   border: 0px solid blue;
@@ -790,7 +792,7 @@ input#Adultnumber,#Childnumber,#Roomnumber{
 input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;
     margin: 0;
 } */
-.popup{
+.popup,.searchPopUp{
   /* margin-top: 50px;
   width: 100%; */
   text-align: center;
@@ -799,8 +801,9 @@ input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;
   position: absolute;
   visibility:hidden;
   transition: transform 0.2s, top 0.10s;
+  z-index: 1;
 }
-.open_popup{
+.open_popup,.openSearch_popup{
   visibility: visible;
   transform: scale(1);
 }
@@ -809,10 +812,173 @@ input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;
   cursor: pointer;
   border: 1px solid #0071c2;
   font-family: sans-serif;
-  width:50%;
+  width:45%;
   border-radius: 5px;
-  margin: auto;
+  margin-left: 120px;
 }
 #cross:hover{
   background-color:#ddd;
+}
+
+#searchpopupdiv{
+  border: 0px solid black;
+  width:20%;
+  margin-top: 30px;
+  margin-left: 205px;
+  border-radius:10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#searchpopupdiv>div{
+  border: 0px solid blue;
+  font-family: sans-serif;
+  text-align: left;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px;
+}
+#searchpopupdiv>div>p{
+  color: #6b6b6b;
+  margin-left: 20px;
+}
+#searchpopupdiv>div:hover{
+  background-color: #ddd;
+}
+#cityicon{
+  display: flex;
+  gap: 10px;
+}
+#cityicon>option{
+  font-weight: bold;
+}
+#cityicon>i{
+  color: #6b6b6b;
+}
+
+
+
+/* footer stykling */
+#HP_footer-container{
+  background-color: #ecf3fc;
+  padding-bottom: 7px;
+  margin-bottom: 0%;
+  font-family: sans-serif;
+  width: 80%;
+  margin: auto;
+}
+#HP_about{
+  display: flex;
+  text-align: center;
+  padding: 2%;
+  color: white;
+  background-color: rgb(22, 16, 108);
+  font-weight: 800;
+  justify-content: space-around;
+  /* word-spacing: 2%; */
+  font-family: "Open Sans", sans-serif;
+}
+a{
+  color: white;
+}
+hr{
+  background-color: rgba(255, 255, 255, 0.84);
+}
+#HP_all_links{
+  width: 80%;
+  margin: auto;
+  padding-top: 3%;
+  display: flex;
+  padding-bottom: 2%;
+}
+#HP_links_container1{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  font-size: small;
+  padding: 0 20px;
+  font-family: "Open Sans", sans-serif;
+  
+}
+#HP_links_container1>div>h4{
+  margin-top: 5%;
+  font-weight: 200;
+  color: #46474A;
+  font-family: "Open Sans", sans-serif;
+}
+#HP_links_container1>div>h4:hover{
+  cursor: pointer;
+}
+
+/* #HP{
+  width: 50%;
+  font-size: 90%;
+  padding:  10px 20px
+} */
+
+#HP_links_container2>div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+#HP_qr_images{
+  width: 33%;
+  display: flex;
+
+}
+#HP_qr_images>div:last-child{
+  display: flex;
+  flex-direction: column;
+}
+#HP_qr_images>div:last-child>img{
+  width: 100%;
+}#HP_qr_images>div:first-child>img{
+  width: 100%;
+}
+#HP_qr_images>div:last-child>img:nth-child(2){
+  margin: 3% 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.HP_links_icon{
+  width: 10%;
+}
+#HP_important_links{
+  margin-right: 2%;
+  width: 45%;
+  font-family: "Open Sans", sans-serif;
+}
+#HP_important_links>div:nth-child(2){
+  margin: 6% 0px;
+  font-family: "Open Sans", sans-serif;
+}
+#HP_important_links>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+#HP_important_links>div>span{
+  margin-left: 5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#HP_social_links{
+  width: 40%;
+}
+
+#HP_copyright{
+  text-align: center;
+  padding: 2%;
+  color: rgb(118, 119, 122);
+  font-family: "Open Sans", sans-serif;
+}
+
+#HP_footer_img_log{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+#HP_foot_bookit_logo{
+  width: 7%;
 }

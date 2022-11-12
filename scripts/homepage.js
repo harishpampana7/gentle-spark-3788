@@ -1,4 +1,4 @@
-
+import footer from "../components/footer.js"
 
 //page linking 
 
@@ -18,6 +18,27 @@ document.getElementById("SKflights").addEventListener("click",()=>{
 document.getElementById("SKcarRental").addEventListener("click",()=>{
   window.location.href = "cars.html"
 })
+document.getElementById("mumbaiCity").onclick = () =>{
+  window.location.href = "city_mumbai.html"
+}
+document.getElementById("delhiCity").onclick = () =>{
+  window.location.href = "city_New_Delhi.html"
+}
+document.getElementById("puneCity").onclick = () =>{
+  window.location.href = "city_pune.html"
+}
+document.getElementById("hydCity").onclick = () =>{
+  window.location.href = "city_hyderabad.html"
+}
+document.querySelector(".delhiCity").onclick = () => {
+  window.location.href = "city_New_Delhi.html"
+}
+
+
+
+
+
+
 //slideshow
 var myIndex = 0;
 carousel();
@@ -134,30 +155,6 @@ function decreaseChildValue(){
    ChildValue.value = value;
   document.getElementById("child").innerText = value
 }
-
-//increase decrese number of rooms
-document.getElementById("decreaseRoom").addEventListener("click",decreaseRoomValue);
-document.getElementById("increaseRoom").addEventListener("click",increaseRoomValue);
-
-let roomsValue = document.getElementById("Roomnumber")
-document.getElementById("room").innerText = roomsValue.value;
-
-function increaseRoomValue(){
-  var value = parseInt(roomsValue.value,10)
-  value = isNaN(value)? 0 : value;
-  value++;
-  roomsValue.value = value;
-  document.getElementById("room").innerText = value
-}
-function decreaseRoomValue(){
-  var value = parseInt(roomsValue.value,10);
-  value = isNaN(value)? 0 : value;
-  value < 1 ? value = 1 : '';
-  value--
-  roomsValue.value = value;
-  document.getElementById("room").innerText = value
-}
-
 //popup of number of persons
 let popup = document.getElementById("skPersonDiv")
 document.getElementById("skPerson").addEventListener("click",openpopup)
@@ -170,6 +167,20 @@ document.querySelector("#cross").addEventListener("click",closepopup)
 function closepopup(){
   popup.classList.remove("open_popup")
 }
+//popup sreach results;
+
+let searchpopup = document.getElementById("searchpopupdiv")
+document.getElementById("searchCity").addEventListener("click",opensearchpopup);
+
+function opensearchpopup(){
+  searchpopup.classList.add("openSearch_popup")
+}
+document.getElementById("closesearch").addEventListener("click",closeSearchpopup)
+
+function closeSearchpopup(){
+  searchpopup.classList.remove("openSearch_popup")
+}
+
 
 
 
@@ -187,14 +198,12 @@ const searchResult = () => {
   let chekout = document.getElementById("skCheckout").value;
   let adult = document.getElementById("adult").innerText;
   let child = document.getElementById("child").innerText;
-  let room = document.getElementById("room").innerText;
   let searchObj = {
     query,
     chekin,
     chekout,
     adult,
     child,
-    room,
   }
   localStorage.setItem("query",JSON.stringify(searchObj));
   console.log(query)
@@ -221,7 +230,12 @@ const searchResult = () => {
   document.getElementById("room").innerText = null;
 }
 
+//importing and appending footer
 
+let footeDiv = document.getElementById("footer")
+footeDiv.innerHTML = footer();
+
+//show user on homepage
 
 
 
