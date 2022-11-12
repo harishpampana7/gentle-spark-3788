@@ -109,3 +109,21 @@ return {
 })
 .then((resp) => callback(resp.country));
 }
+
+// ----------------------------------------------------aplly promocode--------------------------------------------------
+
+function applyCode(){
+let promo=document.getElementById("dr-promo").value;
+
+if(promo==="bookit#250"){
+  let discount= lastprice*(10/100);
+  let final_amount=lastprice-discount;
+  let fp =document.getElementById("dr-pr").innerText= +final_amount;
+  let sh =document.getElementById("dr-sch-pay").innerText= +final_amount;
+  let sh1 =document.getElementById("dr-sch-pay1").innerText= +final_amount;
+  console.log(fp,sh,sh1);
+}else{
+  //console.log("Incorrect Promocode");
+  alert("Incorrect PromoCode");
+}
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinalDetails</title>
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <title>Bookit.com : Final Details</title>
     <link rel="stylesheet" href="./styles/checkout.css" />
     <link rel="stylesheet" href="./styles/finalDetails.css" />
     <link
@@ -14,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
+
     <div id="navDream">
       <div id="parantDream-div">
         <div id="logoDream">
@@ -112,8 +114,8 @@
         <div id="dr-promocode">
           <h4>Do you have a promo code?</h4>
           <label for="">Do you have a promo code?</label>
-          <input type="text" name="" id="">
-          <button>Apply</button>
+          <input type="text" name="" id="dr-promo" />
+          <button onclick="applyCode(event)">Apply</button>
         </div>
       </div>
       <div id="rightDream-div">
@@ -160,43 +162,138 @@
           </div>
           <div id="Dr-details">
             <div>
-            <div id="dr-cntrycode">
-              <label for="">Country/Region</label>
-              <select name="" id="dr-country">
-                <option value=""></option>
-                <option value="United States Of America">
-                  United States Of America
-                </option>
-                <option value="India">India</option>
-                <option value="Bangladesh">Bangladesh</option>
-                <option value="China">China</option>
-                <option value="Russia">Russia</option>
-                <option value="Australia">Australia</option>
-                <option value="Canada">Canada</option>
-                <option value="South America">South America</option>
-                <option value="Germany">Germany</option>
-                <option value="Denmark">Denmark</option>
-              </select>
+              <div id="dr-cntrycode">
+                <label for="">Country/Region</label>
+                <select name="" id="dr-country">
+                  <option value=""></option>
+                  <option value="United States Of America">
+                    United States Of America
+                  </option>
+                  <option value="India">India</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="China">China</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="South America">South America</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Denmark">Denmark</option>
+                </select>
 
-              <label for="">Telephone (mobile number preferred)</label>
-              <input id="phone" type="tel" placeholder="Enter Your Number" />
-            </div>
-            <div>
+                <label for="">Telephone (mobile number preferred)</label>
+                <input id="phone" type="tel" placeholder="Enter Your Number" />
+              </div>
+              <div>
                 <h4>Name</h4>
                 <p id="dr-n"></p>
                 <h4>Email</h4>
                 <p id="dr-e"></p>
+              </div>
             </div>
-          </div>
-          <div>
-            <p>Needed by the property to validate your booking</p>
             <div>
-              <input type="checkout">
-              <p>Yes, I'd like free paperless confirmation (recommended)</p>
+              <p>Needed by the property to validate your booking</p>
+              <div>
+                <input type="checkout" id="d-chbox" />
+                <p>Yes, I'd like free paperless confirmation (recommended)</p>
+              </div>
               <p>We'll text you a link to download our app</p>
             </div>
           </div>
+        </div>
+        <div id="dr-paymentcard">
+          <h3>How do you want to pay?</h3>
+          <form action="">
+            <label for="">Cardholder's name</label>
+            <input type="text" />
+            <label for="">Card type</label>
+            <select name="" id="">
+              <option value="">--Select--</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Visa">Visa</option>
+              <option value="Diners Club">Diners Club</option>
+              <option value="American Express">American Express</option>
+              <option value="By Cash">By Cash</option>
+            </select>
+            <label for="">Card number</label>
+            <input type="number" />
+          </form>
+          <label for="">Expiry date</label>
+          <div>
+            <select name="" id="">
+              <option value="1-Jan">1-Jan</option>
+              <option value="2-Feb">2-Feb</option>
+              <option value="3-Mar">3-Mar</option>
+              <option value="4-Apr">4-Apr</option>
+              <option value="5-May">5-May</option>
+              <option value="6-Jun">6-Jun</option>
+              <option value="7-Jul">7-Jul</option>
+              <option value="8-Aug">8-Aug</option>
+              <option value="9-Sep">9-Sep</option>
+              <option value="10-Oct">10-Oct</option>
+              <option value="11-Nov">11-Nov</option>
+              <option value="12-Dec">12-Dec</option>
+            </select>
+            <p>/</p>
+            <select name="" id="">
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+              <option value="2033">2033</option>
+              <option value="2034">2034</option>
+              <option value="2035">2035</option>
+              <option value="3036">2036</option>
+            </select>
           </div>
+          <label for="">CVC-code</label>
+          <p>You do not need to enter a CVC code for this booking.</p>
+        </div>
+        <div id="dr-conditions">
+          <div>
+            <input type="checkbox" />
+            <p>
+              Yes, I consent to receiving marketing emails including deals,
+              travel inspiration and updates on products and services from
+              Booking.com.
+            </p>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <p>
+              Yes, I consent to receiving marketing emails from Booking.com
+              about transport deals from Booking.com Transport Limited.
+            </p>
+          </div>
+          <p>
+            You can unsubscribe at any time. View our
+            <span>privacy policy</span>.
+          </p>
+          <p>
+            Your booking is with OYO 70214 Kartik House directly and by
+            completing this booking you agree to the
+            <span>booking Conditions</span>, <span>general terms</span>, and
+            <span>privacy policy</span>
+          </p>
+        </div>
+        <div id="dr-lockbtn">
+          <button>Check your booking</button>
+          <button>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWxvY2tfY2xvc2VkIiBoZWlnaHQ9IjI0IiByb2xlPSJwcmVzZW50YXRpb24iIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTE5LjUgMTYuNXY1LjI1YS43NS43NSAwIDAgMS0uNzUuNzVINS4yNWEuNzUuNzUgMCAwIDEtLjc1LS43NXYtMTAuNWEuNzUuNzUgMCAwIDEgLjc1LS43NWgxMy41YS43NS43NSAwIDAgMSAuNzUuNzV2NS4yNXptMS41IDB2LTUuMjVBMi4yNSAyLjI1IDAgMCAwIDE4Ljc1IDlINS4yNUEyLjI1IDIuMjUgMCAwIDAgMyAxMS4yNXYxMC41QTIuMjUgMi4yNSAwIDAgMCA1LjI1IDI0aDEzLjVBMi4yNSAyLjI1IDAgMCAwIDIxIDIxLjc1VjE2LjV6TTcuNSA5Ljc1VjZhNC41IDQuNSAwIDAgMSA5IDB2My43NWEuNzUuNzUgMCAwIDAgMS41IDBWNkE2IDYgMCAwIDAgNiA2djMuNzVhLjc1Ljc1IDAgMCAwIDEuNSAwek0xMiAxNWExLjEyNSAxLjEyNSAwIDEgMCAuMDA0IDBoLS4wMDZhLjc1Ljc1IDAgMCAwIC4wMDQgMS41SDEyYS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6Ii8+PC9zdmc+"
+              alt=""
+            />
+            <p>Complete booking</p>
+          </button>
+        </div>
+        <div>
+          <p>What are my booking conditions?</p>
         </div>
       </div>
     </div>
