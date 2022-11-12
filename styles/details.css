@@ -18,11 +18,17 @@
   padding: 20px;
   display: flex;
 }
-
+#ss_listcount {
+  font-size: 20px;
+  color: #0071c2;
+  /* padding-right: 10px; */
+  font-weight: bold;
+}
 #ss_listcount_div p {
-  font-size: large;
-  color: goldenrod;
+  font-size: 20px;
+  color: black;
   padding-right: 10px;
+  font-weight: bold;
 }
 
 #ss_box-2 {
@@ -133,4 +139,25 @@
   /* margin-right: 5px; */
   margin-bottom: 10px;
   width: 80%;
+}
+
+#ss_operation {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+#ss_operation button {
+  /* background-color: green; */
+  border: none;
+  border-radius: 3px;
+  /* color: #fff; */
+  padding: 10px;
+}
+
+#ss_operation button:hover {
+  background-color: #003580;
+  color: #fff;
+  cursor: pointer;
 }
