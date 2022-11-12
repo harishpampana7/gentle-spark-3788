@@ -168,20 +168,46 @@ function closepopup(){
   popup.classList.remove("open_popup")
 }
 //popup sreach results;
-
+let searchQuery = document.getElementById("query")
+let searchValuemum = document.getElementById("SearchOptionmum").value
+let searchValuePune = document.getElementById("SearchOptionpune").value
+let searchValueDelhi = document.getElementById("SearchOptionDelhi").value;
+let searchValueHyd = document.getElementById("SearchOptionHyd").value;
 let searchpopup = document.getElementById("searchpopupdiv")
 document.getElementById("searchCity").addEventListener("click",opensearchpopup);
 
 function opensearchpopup(){
   searchpopup.classList.add("openSearch_popup")
 }
-document.getElementById("closesearch").addEventListener("click",closeSearchpopup)
-
-function closeSearchpopup(){
+document.querySelector(".sgnCityDiv").onclick = () => {
+  searchQuery.value = searchValuemum
+  console.log(searchValuemum)
   searchpopup.classList.remove("openSearch_popup")
 }
+document.querySelector(".sgnCityDivPune").onclick = () => {
+  searchQuery.value = searchValuePune
+  console.log(searchValuePune)
+  searchpopup.classList.remove("openSearch_popup")
+}
+document.querySelector(".sgnCityDivDelhi").onclick = () => {
+  searchQuery.value = searchValueDelhi
+  console.log(searchValueDelhi)
+  searchpopup.classList.remove("openSearch_popup")
+}
+document.querySelector(".sgnCityDivHyd").onclick = () => {
+  searchQuery.value = searchValueHyd
+  console.log(searchValueHyd)
+  searchpopup.classList.remove("openSearch_popup")
+}
+// function closeSearchpopup(){
+//   searchpopup.classList.remove("openSearch_popup")
+// }
 
+//  document.getElementById("cityicon").addEventListener("click",searchoption)
 
+//  function searchoption(){
+//    searchQuery = searchValue
+//  }
 
 
 
