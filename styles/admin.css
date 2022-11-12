@@ -1,0 +1,57 @@
+#d-box {
+  width: 30%;
+  /* margin: auto; */
+  flex-direction: column;
+  /* border: 1px solid black; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+#d-box input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#d-box h2 {
+  color: rgb(22, 16, 108);
+  font-size: 30px;
+  padding: 10px;
+}
+#d-box button {
+  width: 40%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+#showresBtn {
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+/* div {
+  border: 1px solid black;
+} */
+
+#ss_container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}

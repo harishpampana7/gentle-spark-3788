@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>city New Delhi Hotels</title>
     <link rel="stylesheet" href="./styles/ss_city.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
+    <div id="top_navbar"></div>
     <div id="ss_container">
       <div id="ss_city_box_1">
         <div id="ss_city_box_1_1"></div>
@@ -15,9 +18,20 @@
       </div>
       <div id="ss_city_box_2"></div>
     </div>
+    <footer>
+      <div id="HP_footer-container"></div>
+    </footer>
   </body>
 </html>
-<script>
+<script type="module">
+  import navbar from "../components/navbar.js";
+  import footer from "../components/footer.js";
+
+  let header = document.getElementById("top_navbar");
+  header.innerHTML = navbar();
+  let foot = document.getElementById("HP_footer-container");
+  foot.innerHTML = footer();
+
   let api = `https://bookit-com-server.onrender.com/hotel?city=New Delhi`;
   console.log(api);
 

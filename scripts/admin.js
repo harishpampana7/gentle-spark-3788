@@ -1,4 +1,11 @@
+import navbar from "../components/navbar.js";
+import footer from "../components/footer.js";
+
+let header = document.getElementById("top_navbar");
+header.innerHTML = navbar();
+
 let api = `https://bookit-com-server.onrender.com/hotel`;
+// let api = `http://localhost:3000/hotel`;
 
 window.onload = () => {
   let addBtn = document.getElementById("submitBtn");
@@ -41,4 +48,6 @@ let addPlace = async (e) => {
       "Content-Type": "application/json",
     },
   });
+
+  document.getElementById("form-data").reset();
 };

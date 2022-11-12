@@ -9,6 +9,7 @@
   width: 80%;
   margin: auto;
   gap: 10px;
+  margin-top: 10px;
 }
 
 #ss_city_box_1 {
@@ -37,7 +38,7 @@
   display: flex;
   margin-bottom: 10px;
   width: 90%;
-
+  align-items: center;
   justify-content: space-evenly;
   gap: 5px;
 }
@@ -55,19 +56,30 @@
 .ss_two-item {
   /* border: 1px solid gray; */
   width: 50%;
+  /* padding: 10px;
+  margin-bottom: 10px; */
 }
 
+.ss_two-item p {
+  margin-bottom: 20px;
+}
 .ss_three-item {
   /* border: 1px solid gray; */
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
-
+.ss_three-item p {
+  margin-bottom: 20px;
+}
 .ss_review1-item {
   background-color: #003580;
   color: #fff;
   padding: 5px;
   border-radius: 5px;
-  width: 15%;
+  width: 22%;
 }
 .ss_name-item {
   font-size: 20px;
@@ -87,7 +99,7 @@
   background-color: #008009;
   color: #fff;
   padding: 5px;
-  width: 23%;
+  width: 26%;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
   font-size: 12px;
@@ -99,7 +111,7 @@
   background-color: #0071c2;
   color: #fff;
   padding: 5px;
-  width: 75%;
+  width: 85%;
 }
 
 .ss_price-item {
@@ -108,8 +120,9 @@
 
 .ss_three-item_1 {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 10px;
+  justify-content: center;
 }
 .ss_three-item_2 {
   display: flex;
