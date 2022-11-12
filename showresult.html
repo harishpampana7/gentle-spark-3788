@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="./styles/details.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg"
+    />
     <title>showresult</title>
   </head>
   <body>
     <div id="top_navbar"></div>
     <div id="ss_listcount_div">
-      <p>Total Number of Hotel Listed</p>
+      <p>Total Listed Hotel :</p>
       <span id="ss_listcount"></span>
-      <button id="sort-low-to-high">Sort Low to High</button>
-      <button id="sort-high-to-low">Sort High to Low</button>
+      <div id="ss_operation">
+        <button id="sort-low-to-high">Sort Low to High</button>
+        <button id="sort-high-to-low">Sort High to Low</button>
+        <button id="greater-than">Price > 2000</button>
+        <button id="less-than">Price < 2000</button>
+      </div>
     </div>
     <div id="container">
       <div id="ss_box-1"></div>
@@ -49,18 +57,18 @@
   };
   getdata();
   /*
-    {
-        image,
-        name,
-        price,
-        type,
-        city,
-        rating,
-        id,
-        review,
-        strikeprice,
-      }
-    */
+      {
+          image,
+          name,
+          price,
+          type,
+          city,
+          rating,
+          id,
+          review,
+          strikeprice,
+        }
+      */
   // let card = (el) => {
   //   //creating Elements for appending Data
 
@@ -192,6 +200,21 @@
     res = await res.json();
     renderDom(res);
   };
+
+  let greter = async () => {
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel?price_gte=4001`
+    );
+    res = await res.json();
+    renderDom(res);
+  };
+  let lesser = async () => {
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel?price_lte=4000`
+    );
+    res = await res.json();
+    renderDom(res);
+  };
   window.onload = () => {
     document
       .getElementById("sort-low-to-high")
@@ -200,5 +223,9 @@
     document
       .getElementById("sort-high-to-low")
       .addEventListener("click", sortHL);
+
+    document.getElementById("greater-than").addEventListener("click", greter);
+
+    document.getElementById("less-than").addEventListener("click", lesser);
   };
 </script>

@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>city Pune Hotels</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg"
+    />
     <link rel="stylesheet" href="./styles/ss_city.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
@@ -14,7 +19,12 @@
     <div id="ss_container">
       <div id="ss_city_box_1">
         <div id="ss_city_box_1_1"></div>
-        <div id="ss_city_box_1_2"></div>
+        <div id="ss_city_box_1_2">
+          <button id="sort-low-to-high">Sort Low to High</button>
+          <button id="sort-high-to-low">Sort High to Low</button>
+          <button id="greater-than">Price greater 2000</button>
+          <button id="less-than">Price less 2000</button>
+        </div>
       </div>
       <div id="ss_city_box_2"></div>
     </div>
@@ -121,5 +131,55 @@
     // hotel.push(el);
     localStorage.setItem("hotel", JSON.stringify(el));
     window.location.href = "./checkout.html";
+  };
+
+  let sortLH = async () => {
+    document.getElementById("sort-low-to-high").style.background = "#0071c2";
+
+    document.getElementById("sort-low-to-high").style.color = "#fff";
+
+    document.getElementById("sort-low-to-high").style.border = "none";
+
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel?_sort=price&_order=asc&city=Pune`
+    );
+    res = await res.json();
+    renderDom(res);
+  };
+
+  let sortHL = async () => {
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel?_sort=price&_order=desc&city=Pune`
+    );
+    res = await res.json();
+    renderDom(res);
+  };
+
+  let greter = async () => {
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel?price_gte=2001&city=Pune`
+    );
+    res = await res.json();
+    renderDom(res);
+  };
+  let lesser = async () => {
+    let res = await fetch(
+      `https://bookit-com-server.onrender.com/hotel?price_lte=2000&city=Pune`
+    );
+    res = await res.json();
+    renderDom(res);
+  };
+  window.onload = () => {
+    document
+      .getElementById("sort-low-to-high")
+      .addEventListener("click", sortLH);
+
+    document
+      .getElementById("sort-high-to-low")
+      .addEventListener("click", sortHL);
+
+    document.getElementById("greater-than").addEventListener("click", greter);
+
+    document.getElementById("less-than").addEventListener("click", lesser);
   };
 </script>
