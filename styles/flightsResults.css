@@ -1,0 +1,300 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+
+/* section-1 Starts */
+
+#AKsection-1{
+    border: 0px solid black;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    background-color: rgb(243, 242, 242);
+    
+  }
+  #AKsection-1 #AKsubsection-1{
+    border: 0px solid black;
+    width: 70%;
+    height: 330px;
+    margin: auto;
+  }
+  #AKsection-1 #AKsubsection-1 #AKcovid{
+    border: 1px solid red;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: rgb(247, 233, 213);
+  }
+  #AKsection-1 #AKsubsection-1 #AKcovid>p{
+    color: rgb(94, 93, 93);
+    font-size: 14px;
+  }
+  #AKsection-1 #AKsubsection-1 #AKcovid>p>a{
+    color: rgb(57, 57, 247);
+    font-size: 14px;
+  }
+  #AKcomparesection{
+    width: 100%;
+    border: 0px solid blue;
+    height: auto;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  #AKcomparesection>p{
+    margin-top: 10px;
+  }
+  
+  #AKradiobutton{
+    display: flex;
+    align-items: center;
+    border: 0PX solid rebeccapurple;
+    justify-content: space-around;
+    width: 55%;
+    font-size: 14px;
+    color: rgb(78, 76, 76);
+    margin-top: 10px;
+  }
+  #AKradiobutton>label{
+    margin-left: -35px;
+  }
+  #AKradio{
+  border: 2px solid blue;
+  width: 7%;
+  height: 2em;
+  margin-left:-15px;
+  }  
+  .AKselect{
+  border: none;
+  background-color: rgb(243, 242, 242);
+  width: 13.5%;
+  outline: none;
+  }
+  #AKsearchdata{
+  border: 1px solid red;
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  }
+  #AKsearchdata>input{
+  font-size: 15px;
+  padding: 15px;
+  border: 3px solid rgb(237, 193, 32);
+  border-right: 1px solid rgb(237, 193, 32);
+  color: rgb(102, 102, 102);
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  #AKsearchdata>input[type = "text"]{
+  width:30% ;
+  }
+  #AKsearchdata>input[type="submit"]{
+  background-color: rgb(50, 108, 194);
+  color: white;
+  cursor: pointer;
+  padding: 0px 40px 0px 40px;
+  border-right: 4px solid rgb(237, 193, 32);
+  }
+  #AKcheckdiv{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  }
+  #AKcheck{
+  width: 20px;
+  height: 20px;
+  border: 1px solid blue;
+  }
+  #AKcheckdiv>label{
+  margin-left: 7px;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  }
+
+  /* section-1 End */
+
+  
+    #AKmaindiv{
+      border: 0px solid red;
+      width: 75%;
+      margin: auto;
+      display: flex;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    #AKfilterdiv{
+      border: 0px solid blue;
+      width: 30%;
+    }
+    #AKfilterdiv>div{
+      border: 0px solid blue;
+      width: 100%;
+      height: 10%;
+    }
+    #AKfilterdiv>div:nth-child(1){
+      height:7%;
+      line-height: 20px;
+      padding-top:10px ;
+    }
+    #AKfilterdiv>div:nth-child(2){
+      height: 13%;
+      line-height: 25px;
+      padding-top: 20px;  
+    }
+    #AKfilterdiv>div:nth-child(2)>h4{
+      margin-bottom: 7px;
+    }
+    #AKfilterdiv>div:nth-child(2)>input{
+      width: 20px;
+      height: 20px;
+      margin-right: 0px;
+    }
+    #AKfilterdiv>div:nth-child(2)>label{
+      margin-bottom: 35px;
+      margin-left: 5px;
+    }
+    #AKfilterdiv>div:nth-child(3){
+      line-height: 24px;
+    }
+    #AKfilterdiv>div:nth-child(3)>h4{
+      margin-top: 10px;
+    }
+    #AKfilterdiv>div:nth-child(4){
+      height: 28%;
+      line-height: 25px;
+    }
+    #AKfilterdiv>div:nth-child(4)>h4{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    #AKfilterdiv>div:nth-child(4)>input{
+      height: 8%;
+      width: 8%;
+    }
+   
+  
+    #AKtime{
+      border: 0px solid blue;
+      width: 80%;
+    }
+  
+      #AKfirstdiv{
+          border: 1px solid rgb(185, 183, 183);
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          height: 70px;
+          width: 95%;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+      }
+      #AKfirstdiv>p{
+          font-size: 17px;
+          cursor: pointer;
+          border: 0px solid red;
+          height: 100%;
+          width: 30%;
+          text-align: center;
+          padding-top: 23px;
+      }
+      #AKfirstdiv>p:hover{
+          background-color: rgb(237, 236, 236);
+          margin-bottom: 1px solid grey;
+          color: rgb(45, 45, 245);
+      }
+      #AKseconddiv{
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          border: 1px solid rgb(185, 183, 183);
+          height: 200px;
+          width: 95%;
+          margin: auto;
+          display: flex;
+          margin-top: 10px;
+      }
+      #AKseconddiv>div:nth-child(1){
+          width: 10% ;
+          border-right: 0px solid rgb(207, 206, 206);
+      }
+      #AKseconddiv>div:nth-child(1)>div, #AKseconddiv>div:nth-child(2)>div{
+          width: 100% ;
+          height: 50%;
+         text-align: center;
+      }
+      #AKseconddiv>div:nth-child(1)>div:nth-child(1), #AKseconddiv>div:nth-child(2)>div:nth-child(1){
+          border-bottom: 0px solid rgb(207, 206, 206);
+      }
+      #AKseconddiv>div:nth-child(1)>div>img{
+          width: 50%;
+      }
+      #AKseconddiv>div:nth-child(1)>div{
+          padding-top: 20px;
+          line-height: 25px;
+      }
+      #AKseconddiv>div:nth-child(2){
+          width: 60% ;
+          border-right: 1px solid rgb(207, 206, 206);
+      }
+      #AKseconddiv>div:nth-child(2)>div{
+          border: 0px solid red;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+      #AKseconddiv>div:nth-child(2)>div>div:nth-child(2){
+          line-height: 30px;
+      }
+      #AKseconddiv>div:nth-child(2)>div>div>p:nth-child(1){
+          border-bottom: 1px solid grey;
+      }
+      #AKseconddiv>div:nth-child(3){
+          width: 30% ;
+          /* border: 1px solid rgb(185, 183, 183); */
+      }
+      #AKseconddiv>div:nth-child(3)>div{
+          border: 0px solid red;
+          width: 100%;
+          height: 33.33%;
+          display:grid;
+          padding: 0px 10px 0px 10px;
+      }
+      #AKseconddiv>div:nth-child(3)>div>img{
+          width: 20%;
+          justify-self:flex-end;
+          margin-right: 15px;
+      }
+      #AKseconddiv>div:nth-child(3)>div>p{
+          font-size: 12px;
+          justify-self:flex-end;
+      }
+      #AKseconddiv>div:nth-child(3)>div:nth-child(2){
+          line-height: 30px;
+          border: 0px solid blue;
+          padding-top: 17px;
+      }
+      #AKseconddiv>div:nth-child(3)>div:nth-child(2)>h2{
+          font-size: 20px;
+          justify-self:flex-end;
+          text-align: left;
+          margin-bottom: -10px;
+      }
+      #AKseconddiv>div:nth-child(3)>div:nth-child(3){
+          border: 0px solid blue;
+          height: 22%;
+          margin-top: 12px;
+      }
+      #AKseconddiv>div:nth-child(3)>div:nth-child(3)>button{
+          border: 1px solid blue;
+          color: blue;
+          background-color: white;
+          cursor: pointer;
+          font-weight: bold;
+      }
+      #AKseconddiv>div:nth-child(3)>div:nth-child(3)>button:hover{
+        background-color: aliceblue;
+      }
