@@ -140,7 +140,7 @@ function applyCode() {
 function closePopPromo() {
   document.querySelector(".promo-pop-up").style.display = "none";
   document.querySelector(".promo-pop-up1").style.display = "none";
-  window.location.href = "./index.html";
+  
 }
 
 function bookingSucc() {
@@ -151,6 +151,7 @@ function bookingSucc() {
 function closebookingPop() {
   document.querySelector(".promo-pop-up2").style.display = "none";
   document.querySelector(".promo-pop-up3").style.display = "none";
+  window.location.href = "./index.html";
 }
 
 function gotoHomePage() {
