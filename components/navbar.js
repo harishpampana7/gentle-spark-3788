@@ -1,4 +1,4 @@
-const navbar=()=>{
+const navbar = ()=>{
     return `<div id="BB_main">
 
                
