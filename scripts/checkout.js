@@ -2,11 +2,23 @@ let getproduct = JSON.parse(localStorage.getItem("hotel"));
 
 let userData=JSON.parse(localStorage.getItem("HP_user"));
 
-// let username=document.querySelector("#Dprofile>h3");
-// username.innerText=userData.name;
+let searchData = JSON.parse(localStorage.getItem("query"));
+console.log(searchData);
 
-// let username1=document.querySelector("#d-div1>div>p");
-// username1.innerText=userData.name;
+let checkin=document.getElementById("d-chin");
+checkin.innerText=`Sun  ${searchData.chekin}`;
+
+let checkout=document.getElementById("d-chout");
+checkout.innerText=`Mon  ${searchData.chekout}`;
+
+ let username=document.querySelector("#Dprofile>h3");
+ username.innerText=userData.name;
+
+ let username1=document.querySelector("#d-div1>div>p");
+ username1.innerText=userData.name;
+
+ let pr_dp=document.querySelector("#Dprofile>div>h3");
+ pr_dp.innerText=userData.name[0];
 
 let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
 
@@ -18,6 +30,8 @@ shpr.innerText=0;
 
 let shpr1=document.getElementById("dr-sch-pay1");
 shpr1.innerText=0;
+
+let lastprice;
 
 let appendProduct = (data) => {
   let cont = document.getElementById("Dream-show-product");
@@ -59,7 +73,8 @@ let appendProduct = (data) => {
   price.innerText=`₹ ${final_price}`;
   shpr.innerText=`₹ ${final_price}`;
   shpr1.innerText=`₹ ${final_price}`;
- //console.log(data.price*c1);
+  lastprice=final_price;
+  
     if (c1 === random) {
       plus.disabled = true;
       minus.disabled = false;
@@ -72,7 +87,8 @@ let appendProduct = (data) => {
     price.innerText=`₹ ${final_price}`;
     shpr.innerText=`₹ ${final_price}`;
     shpr1.innerText=`₹ ${final_price}`;
-     //console.log(data.price*c1);
+    lastprice=final_price;
+ 
     if (c1 === 0) {
       minus.disabled = true;
       plus.disabled = false;
@@ -89,13 +105,13 @@ let appendProduct = (data) => {
   }
   rat.innerText = `Hotel ${ans}`;
   let ansr = "";
-    if (Math.floor(data.review) <= 10 && Math.floor(data.review)>8 ) {
+    if (Math.ceil(data.review) <= 10 && Math.ceil(data.review)>8 ) {
       ansr += "Very Good .50 reviews";
       
-    } else if (Math.floor(data.review) <= 8 && Math.floor(data.review)>5 ) {
+    } else if (Math.ceil(data.review) <= 8 && Math.ceil(data.review)>5 ) {
       ansr += "Good .35 reviews";
     
-    } else if (Math.floor(data.review) <= 5 && Math.floor(data.review)>1 ) {
+    } else if (Math.ceil(data.review) <= 5 && Math.ceil(data.review)>1 ) {
       ansr += "Average .30 reviews";
       
     }
@@ -118,6 +134,7 @@ let appendProduct = (data) => {
 appendProduct(getproduct);
 
 function gotoFinalPage(){
+    localStorage.setItem("price",JSON.stringify(lastprice));
     window.location.href="finalDetails.html";
     console.log("finally");
 }

@@ -176,7 +176,7 @@ function closepopup(){
 
 //search query to local storage
 
-let searchArr = [];
+//let searchArr = [];
 
 document.getElementById("searchBtn").addEventListener("click",()=>{
   searchResult()
@@ -197,8 +197,8 @@ const searchResult = () => {
     child,
     room,
   }
-  searchArr.push(searchObj);
-  localStorage.setItem("query",JSON.stringify(searchArr));
+  //searchArr.push(searchObj);
+  localStorage.setItem("query",JSON.stringify(searchObj));
   console.log(query)
 
   if(query == "mumbai"){
