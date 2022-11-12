@@ -176,7 +176,6 @@ function closepopup(){
 
 //search query to local storage
 
-let searchArr = [];
 
 document.getElementById("searchBtn").addEventListener("click",()=>{
   searchResult()
@@ -197,17 +196,20 @@ const searchResult = () => {
     child,
     room,
   }
-  searchArr.push(searchObj);
-  localStorage.setItem("query",JSON.stringify(searchArr));
+  localStorage.setItem("query",JSON.stringify(searchObj));
   console.log(query)
 
   if(query == "mumbai"){
+    console.log("m");
     window.location.href = "city_mumbai.html"
   }else if(query == "delhi"){
+    console.log("d");
     window.location.href = "city_New_Delhi.html"
   }else if(query == "hyderabad"){
+    console.log("h");
     window.location.href = "city_hyderabad.html"
   }else if(query == "pune"){
+    console.log("p");
     window.location.href = "city_pune.html"
   }
 

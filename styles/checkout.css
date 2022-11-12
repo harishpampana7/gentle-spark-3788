@@ -176,7 +176,7 @@
 #d-div2{
     background-color:#D2EDD5;
     padding:6px 10px;
-    width:43%;
+    width:46%;
     border-radius:5px;
     color:#515b2c;
 }
@@ -477,7 +477,7 @@ span{
     border:1px solid rgb(219, 218, 218);
     display: flex;
     flex-direction: column;
-    padding: 15px 0px 15px 15px;
+    padding: 15px;
 }
 #dream-discount>div{
     display:flex;
@@ -500,4 +500,88 @@ span{
 }
 #dream-discount>div>p{
     font-size:12px;
+}
+#phone{
+    width:75%;
+    height:40px;
+    border-radius:3px;
+    font-size: 16px;
+    border:0.1px solid rgb(198, 195, 195);
+}
+#dr-country{
+    width:100%;
+    height:40px;
+    border-radius:3px;
+}
+#Dr-details{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+#Dr-details>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#dr-cntrycode{
+    display: flex;
+    width:60%;
+    flex-direction: column;
+}
+#dr-cntrycode+div{
+    display: flex;
+    flex-direction: column;
+    border:1px solid rgb(219, 218, 218);
+    padding: 0px 15px 0px 15px;    
+}
+#dr-cntrycode>label{
+    margin-top:20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight:700;
+}
+#dr-cntrycode+div>h4{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+#dr-cntrycode+div>p{
+   font-size:15px;
+   margin-bottom:20px;
+}
+#dr-promocode{
+    border:1px solid rgb(219, 218, 218);
+    display: flex;
+    flex-direction: column;
+    padding: 15px; 
+}
+#dr-promocode>h4{
+    margin-bottom:15px;
+}
+#dr-promocode>label{
+    font-size:13.5px;
+    font-weight:500;
+    margin-bottom: 5px;
+}
+#dr-promocode>input{
+    height:35px;
+    border-radius: 3px;
+    border:0.1px solid rgb(188, 187, 187);
+    margin-bottom:10px;
+}
+#dr-promocode>button{
+    width:23%;
+    height:35px;
+    font-size: 15px;
+    font-weight:500;
+    color:#0071C2;
+    background-color: white;
+    border: 1px solid #0071C2;
+}
+#Dr-details>div+div{
+    display: flex;
+    flex-direction: column;
+}
+#Dr-details>div+div>p{
+    font-size:14.5px;
+    color:#828181
 }
