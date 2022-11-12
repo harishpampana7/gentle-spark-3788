@@ -15,10 +15,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
-
     <div id="navDream">
       <div id="parantDream-div">
-        <div id="logoDream">
+        <div id="logoDream" onclick="gotoHomePage()">
           <img
             src="https://drive.google.com/uc?export=view&id=1HjnVBG9gNd58TlhLLNs3pbnVghqfl4h0"
             alt=""
@@ -113,7 +112,7 @@
         </div>
         <div id="dr-promocode">
           <h4>Do you have a promo code?</h4>
-          <label for="">Do you have a promo code?</label>
+          <label id="d-label">Do you have a promo code?</label>
           <input type="text" name="" id="dr-promo" />
           <button onclick="applyCode(event)">Apply</button>
         </div>
@@ -193,7 +192,7 @@
             <div>
               <p>Needed by the property to validate your booking</p>
               <div>
-                <input type="checkout" id="d-chbox" />
+                <input type="checkbox" id="d-chbox" />
                 <p>Yes, I'd like free paperless confirmation (recommended)</p>
               </div>
               <p>We'll text you a link to download our app</p>
@@ -283,8 +282,7 @@
           </p>
         </div>
         <div id="dr-lockbtn">
-          <button>Check your booking</button>
-          <button>
+          <button onclick="bookingSucc()">
             <img
               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJiay1pY29uIC1zdHJlYW1saW5lLWxvY2tfY2xvc2VkIiBoZWlnaHQ9IjI0IiByb2xlPSJwcmVzZW50YXRpb24iIHdpZHRoPSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSI+PHBhdGggZD0iTTE5LjUgMTYuNXY1LjI1YS43NS43NSAwIDAgMS0uNzUuNzVINS4yNWEuNzUuNzUgMCAwIDEtLjc1LS43NXYtMTAuNWEuNzUuNzUgMCAwIDEgLjc1LS43NWgxMy41YS43NS43NSAwIDAgMSAuNzUuNzV2NS4yNXptMS41IDB2LTUuMjVBMi4yNSAyLjI1IDAgMCAwIDE4Ljc1IDlINS4yNUEyLjI1IDIuMjUgMCAwIDAgMyAxMS4yNXYxMC41QTIuMjUgMi4yNSAwIDAgMCA1LjI1IDI0aDEzLjVBMi4yNSAyLjI1IDAgMCAwIDIxIDIxLjc1VjE2LjV6TTcuNSA5Ljc1VjZhNC41IDQuNSAwIDAgMSA5IDB2My43NWEuNzUuNzUgMCAwIDAgMS41IDBWNkE2IDYgMCAwIDAgNiA2djMuNzVhLjc1Ljc1IDAgMCAwIDEuNSAwek0xMiAxNWExLjEyNSAxLjEyNSAwIDEgMCAuMDA0IDBoLS4wMDZhLjc1Ljc1IDAgMCAwIC4wMDQgMS41SDEyYS4zNzUuMzc1IDAgMSAxIDAtLjc1LjM3NS4zNzUgMCAwIDEgMCAuNzUuNzUuNzUgMCAwIDAgMC0xLjV6Ii8+PC9zdmc+"
               alt=""
@@ -296,6 +294,19 @@
           <p>What are my booking conditions?</p>
         </div>
       </div>
+    </div>
+    <div class="promo-pop-up"></div>
+    <div class="promo-pop-up1">
+      <h1>🎊 Hurray! 🎊</h1>
+      <h2></h2>
+      <h3></h3>
+      <h4></h4>
+      <button onclick="closePopPromo()">Okay</button>
+    </div>
+    <div class="promo-pop-up2"></div>
+    <div class="promo-pop-up3">
+      <h1>You have Successfully Booked Your Trip !!🎉🎉</h1>
+      <button onclick="closebookingPop()">Okay</button>
     </div>
   </body>
 </html>

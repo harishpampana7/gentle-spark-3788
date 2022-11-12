@@ -134,7 +134,21 @@ let appendProduct = (data) => {
 appendProduct(getproduct);
 
 function gotoFinalPage(){
-    localStorage.setItem("price",JSON.stringify(lastprice));
-    window.location.href="finalDetails.html";
-    console.log("finally");
+    let fn=document.getElementById("d-fn").value;
+    let ln=document.getElementById("d-ln").value;
+    let eml=document.getElementById("d-eml").value;
+    let cn_eml=document.getElementById("d-cn-eml").value;
+   
+    if(fn===""||ln===""||eml===""||cn_eml===""){
+      let fn1=document.getElementById("d-fn").style.borderColor="red";
+      let ln1=document.getElementById("d-ln").style.borderColor="red";
+      let eml1=document.getElementById("d-eml").style.borderColor="red";
+      let cn_eml1=document.getElementById("d-cn-eml").style.borderColor="red";
+      let btn=document.querySelector("#Dream-nextbtn>button");
+    }else{
+      localStorage.setItem("price",JSON.stringify(lastprice));
+      window.location.href="./finalDetails.html";
+      console.log("finally");
+    }
+
 }
