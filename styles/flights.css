@@ -181,6 +181,7 @@ color: rgb(102, 102, 102);
     top:100px;
     transition: 1s;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   #AK_pnext{
     position: relative;
@@ -188,6 +189,7 @@ color: rgb(102, 102, 102);
     top: 100px;
     transition: 1s;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
 
@@ -245,6 +247,7 @@ color: rgb(102, 102, 102);
     left:199px;
     top:110px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   #AK_tnext{
     position: relative;
@@ -252,6 +255,7 @@ color: rgb(102, 102, 102);
     top:110px;
     transition: 1s;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
 /* section-2 Ends */
@@ -384,6 +388,7 @@ color: rgb(102, 102, 102);
     margin: auto;
     border: 0px solid black;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 #AKsection-5>div{
