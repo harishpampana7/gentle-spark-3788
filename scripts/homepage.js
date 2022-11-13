@@ -35,30 +35,6 @@ document.querySelector(".delhiCity").onclick = () => {
 }
 
 
-
-
-
-
-//slideshow
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 6000);    
-}
-
-document.getElementById("SKlogo").addEventListener("click",function(){
-    window.location.href = "index.html"
-})
-
 //cities swiper;
 let slidesContainerA = document.getElementById("slides-containerA");
 let slideA = document.querySelector(".slideA");
@@ -199,17 +175,6 @@ document.querySelector(".sgnCityDivHyd").onclick = () => {
   console.log(searchValueHyd)
   searchpopup.classList.remove("openSearch_popup")
 }
-// function closeSearchpopup(){
-//   searchpopup.classList.remove("openSearch_popup")
-// }
-
-//  document.getElementById("cityicon").addEventListener("click",searchoption)
-
-//  function searchoption(){
-//    searchQuery = searchValue
-//  }
-
-
 
 //search query to local storage
 
@@ -263,6 +228,15 @@ footeDiv.innerHTML = footer();
 
 //show user on homepage
 
+let user = JSON.parse(localStorage.getItem("HP_user"))
+
+let usernameHome = document.getElementById("skSignIn")
+let usericon = document.querySelector(".fa-user")
+usernameHome.innerText = user.name || "Sign In"
+
+let h5 = document.getElementById("signinh5")
+
+h5.innerText = user.name[0] || usericon
 
 
 
