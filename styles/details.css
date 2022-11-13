@@ -1,7 +1,7 @@
 #container {
   display: flex;
 
-  width: 100%;
+  width: 90%;
   margin: auto;
   margin-top: 10px;
 }
@@ -14,9 +14,11 @@
 
 #ss_listcount_div {
   margin: auto;
-  width: 80%;
+  width: 75%;
   padding: 20px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #ss_listcount {
   font-size: 20px;
@@ -80,7 +82,7 @@
   color: #fff;
   padding: 5px;
   border-radius: 5px;
-  width: 15%;
+  width: 20%;
 }
 .ss_name-item {
   font-size: 20px;
@@ -100,7 +102,7 @@
   background-color: #008009;
   color: #fff;
   padding: 5px;
-  width: 19%;
+  width: 22%;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
   font-size: 12px;
@@ -112,7 +114,7 @@
   background-color: #0071c2;
   color: #fff;
   padding: 5px;
-  width: 65%;
+  width: 70%;
   align-items: center;
 }
 
@@ -143,7 +145,7 @@
 
 #ss_operation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
 }

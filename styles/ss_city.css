@@ -8,7 +8,7 @@ body {
 #ss_container {
   display: flex;
 
-  width: 80%;
+  width: 70%;
   margin: auto;
   gap: 10px;
   margin-top: 10px;
@@ -53,7 +53,7 @@ body {
   padding: 10px;
   display: flex;
   margin-bottom: 10px;
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   gap: 5px;
@@ -115,7 +115,7 @@ body {
   background-color: #008009;
   color: #fff;
   padding: 5px;
-  width: 26%;
+  width: 28%;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
   font-size: 12px;
@@ -162,4 +162,56 @@ body {
   background-color: #008009;
   color: #fff;
   border: 1px solid #008009;
+}
+
+#ss_query_result {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+#ss_query_city,
+#ss_query_checkin,
+#ss_query_checkout,
+#ss_query_noguest {
+  background-color: #fff;
+  padding: 5px;
+}
+
+#ss_query_result p {
+  font-size: 15px;
+  padding: 3px;
+}
+
+#ss_check_one,
+#ss_check_two {
+  width: 15px;
+  height: 15px;
+}
+
+label {
+  font-size: 12px;
+}
+
+/* #ss_check_div_2,
+#ss_check_div_1 {
+  background-color: #febb02;
+} */
+
+#ss_query_searchBtn {
+  background-color: #0071c2;
+  color: #fff;
+  padding: 10px;
+  border-color: #0071c2;
+  font-size: 15px;
+}
+
+#ss_query_searchBtn:hover {
+  background-color: #003580;
+  color: #fff;
 }
