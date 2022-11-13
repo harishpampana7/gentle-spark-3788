@@ -12,14 +12,15 @@ const navbar = ()=>{
                     <div id="top_navbar_second_login" >
 
                         <div id="top_navbar_second_user">
-                            <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt="">
+                           <!-- <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt=""> -->
                             <a style="text-decoration: 0;" href="signup.html"><p>Register</p></a>
                         </div>
 
                         
                         <div id="top_navbar_second_user">
                             <!-- <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt=""> -->
-                            <a style="text-decoration: 0;" href="signin.html"><p>SignIn</p></a>
+                            <div id="AKuserdiv"></div>
+                            <a style="text-decoration: 0;" href="signin.html"><p id = "AKsignin">SignIn</p></a>
                         </div>
 
                     </div>
