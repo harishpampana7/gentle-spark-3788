@@ -1,7 +1,10 @@
 /* .gif{
   animation: fading 10s infinite;
 } */
-
+body{
+  margin: 0px;
+  padding: 0px;
+}
 .homevideo{
   width: 100%;
 }
