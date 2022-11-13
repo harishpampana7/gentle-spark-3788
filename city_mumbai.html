@@ -17,7 +17,40 @@
     <div id="top_navbar"></div>
     <div id="ss_container">
       <div id="ss_city_box_1">
-        <div id="ss_city_box_1_1"></div>
+        <div id="ss_city_box_1_1">
+          <div id="ss_city_box_1_1">
+            <div id="ss_query_result">
+              <h2>Search</h2>
+              <p>Destination</p>
+              <div id="ss_query_city"></div>
+              <p>Check-in date</p>
+              <div id="ss_query_checkin"></div>
+              <p>Check-out date</p>
+              <div id="ss_query_checkout"></div>
+              <p>Guests</p>
+              <div id="ss_query_noguest"></div>
+              <div id="ss_check_div">
+                <div id="ss_check_div_1">
+                  <input
+                    type="checkbox"
+                    id="ss_check_one"
+                    name="ss_check_one"
+                  />
+                  <label for="ss_check_one">Entire homes & apartments</label>
+                </div>
+                <div id="ss_check_div_2">
+                  <input
+                    type="checkbox"
+                    id="ss_check_two"
+                    name="ss_check_two"
+                  />
+                  <label for="ss_check_two">I'm traveling for work</label>
+                </div>
+              </div>
+              <button id="ss_query_searchBtn">Search</button>
+            </div>
+          </div>
+        </div>
         <div id="ss_city_box_1_2">
           <button id="sort-low-to-high">Sort Low to High</button>
           <button id="sort-high-to-low">Sort High to Low</button>
@@ -180,5 +213,14 @@
     document.getElementById("greater-than").addEventListener("click", greter);
 
     document.getElementById("less-than").addEventListener("click", lesser);
+
+    let query = JSON.parse(localStorage.getItem("query"));
+    console.log(query);
+    document.getElementById("ss_query_city").innerText = query.query;
+    document.getElementById("ss_query_checkin").innerText = query.chekin;
+    document.getElementById("ss_query_checkout").innerText = query.chekout;
+    document.getElementById(
+      "ss_query_noguest"
+    ).innerText = `${query.adult} Adult & ${query.child} Child`;
   };
 </script>

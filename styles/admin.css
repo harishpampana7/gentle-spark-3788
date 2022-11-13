@@ -33,14 +33,17 @@
 }
 
 #showresBtn {
-  width: 100px;
+  width: 250px;
   padding: 5px;
   margin-bottom: 5px;
   border-radius: 10px;
-  background-color: grey;
-  color: #fff;
+  background-color: #febb02;
+  /* color: black; */
   border: none;
-  padding: 10px;
+  /* padding: 15px; */
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* div {
@@ -54,4 +57,6 @@
   margin-top: 20px;
   justify-content: center;
   gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
