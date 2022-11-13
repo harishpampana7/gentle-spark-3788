@@ -17,7 +17,7 @@
 }
 
 #d-box h2 {
-  color: rgb(22, 16, 108);
+  color: #003580;
   font-size: 30px;
   padding: 10px;
 }
@@ -33,16 +33,16 @@
 }
 
 #showresBtn {
-  width: 250px;
+  width: 40%;
   padding: 5px;
   margin-bottom: 5px;
-  border-radius: 10px;
-  background-color: #febb02;
+  border-radius: 5px;
+  background-color: #0071c2;
   /* color: black; */
   border: none;
   /* padding: 15px; */
-  height: 45px;
-  font-size: 20px;
+  height: 38px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -59,4 +59,23 @@
   gap: 10px;
   flex-direction: column;
   align-items: center;
+}
+
+#res_count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 28%;
+  justify-content: space-between;
+}
+
+#res_count_1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#showresBtn:hover {
+  background-color: #003580;
+  cursor: pointer;
+  /* font-weight: bold; */
 }
