@@ -48,6 +48,28 @@ let addPlace = async (e) => {
       "Content-Type": "application/json",
     },
   });
-
+  getdata();
   document.getElementById("form-data").reset();
 };
+
+let signinUser = JSON.parse(localStorage.getItem("HP_user"));
+let signinName = document.getElementById("AKsignin");
+signinName.innerText = "Admin";
+
+let user_div = document.querySelector("#top_navbar_second_user > div");
+user_div.innerText = "A";
+
+// let api = `https://bookit-com-server.onrender.com/hotel`;
+let c_num;
+let getdata = async () => {
+  let res = await fetch(api);
+  res = await res.json();
+  console.log(res);
+  console.log(res.length);
+  c_num = res.length;
+  let count = document.getElementById("res_count_1");
+  count.innerText = c_num;
+  // renderDom(res);
+};
+
+getdata();

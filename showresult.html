@@ -203,14 +203,14 @@
 
   let greter = async () => {
     let res = await fetch(
-      `https://bookit-com-server.onrender.com/hotel?price_gte=4001`
+      `https://bookit-com-server.onrender.com/hotel?price_gte=2001`
     );
     res = await res.json();
     renderDom(res);
   };
   let lesser = async () => {
     let res = await fetch(
-      `https://bookit-com-server.onrender.com/hotel?price_lte=4000`
+      `https://bookit-com-server.onrender.com/hotel?price_lte=2000`
     );
     res = await res.json();
     renderDom(res);
@@ -228,4 +228,11 @@
 
     document.getElementById("less-than").addEventListener("click", lesser);
   };
+
+  let signinUser = JSON.parse(localStorage.getItem("HP_user"));
+  let signinName = document.getElementById("AKsignin");
+  signinName.innerText = "Admin";
+
+  let user_div = document.querySelector("#top_navbar_second_user > div");
+  user_div.innerText = "A";
 </script>

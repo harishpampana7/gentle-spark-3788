@@ -28,7 +28,7 @@ body {
 #ss_city_box_1_2 {
   /* background-color: grey; */
   width: 260px;
-  height: 434px;
+  height: 450px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,9 @@ body {
   align-items: center;
   margin-top: 10px;
 }
-
+#ss_city_box_1_2 h4 {
+  padding-top: 10px;
+}
 #ss_city_box_1_2 button {
   width: 80%;
   /* margin-left: 10px; */
