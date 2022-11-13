@@ -203,9 +203,9 @@
           <h3>How do you want to pay?</h3>
           <form action="">
             <label for="">Cardholder's name</label>
-            <input type="text" />
+            <input type="text" id="dr-ch-name" />
             <label for="">Card type</label>
-            <select name="" id="">
+            <select name="" id="dr-card-payment" onchange="disabledInputs()">
               <option value="">--Select--</option>
               <option value="MasterCard">MasterCard</option>
               <option value="Visa">Visa</option>
@@ -214,11 +214,11 @@
               <option value="By Cash">By Cash</option>
             </select>
             <label for="">Card number</label>
-            <input type="number" />
+            <input type="number" id="dr-cnumber" />
           </form>
           <label for="">Expiry date</label>
           <div>
-            <select name="" id="">
+            <select name="" id="dr-cr-month">
               <option value="1-Jan">1-Jan</option>
               <option value="2-Feb">2-Feb</option>
               <option value="3-Mar">3-Mar</option>
@@ -233,7 +233,7 @@
               <option value="12-Dec">12-Dec</option>
             </select>
             <p>/</p>
-            <select name="" id="">
+            <select name="" id="dr-cr-year">
               <option value="2022">2022</option>
               <option value="2023">2023</option>
               <option value="2024">2024</option>
