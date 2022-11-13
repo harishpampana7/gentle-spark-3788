@@ -128,6 +128,9 @@ function applyCode() {
     console.log(tam, pam, sam);
     document.querySelector(".promo-pop-up").style.display = "block";
     document.querySelector(".promo-pop-up1").style.display = "block";
+    document.getElementById("d-label").style.color = "black";
+    let pm = document.getElementById("dr-promo");
+    pm.style.borderColor = "grey";
   } else {
     document.getElementById("d-label").style.color = "red";
     let pm = document.getElementById("dr-promo");
@@ -156,4 +159,19 @@ function closebookingPop() {
 
 function gotoHomePage() {
   window.location.href = "./index.html";
+}
+
+function disabledInputs(){
+  let value=document.getElementById("dr-card-payment").value;
+  if(value==="By Cash"){
+   document.getElementById("dr-ch-name").disabled=true;
+   document.getElementById("dr-cnumber").disabled=true;
+   document.getElementById("dr-cr-month").disabled=true;
+   document.getElementById("dr-cr-year").disabled=true;
+  }else{
+    document.getElementById("dr-ch-name").disabled=false;
+   document.getElementById("dr-cnumber").disabled=false;
+   document.getElementById("dr-cr-month").disabled=false;
+   document.getElementById("dr-cr-year").disabled=false;
+  }
 }
