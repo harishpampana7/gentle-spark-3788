@@ -211,6 +211,8 @@ const searchResult = () => {
   }else if(query == "pune"){
     console.log("p");
     window.location.href = "city_pune.html"
+  }else{
+    alert("Sorry, No results found")
   }
 
   document.getElementById("query").value = null;
