@@ -271,31 +271,33 @@ body{
   position: absolute;
   top:39%;
   left:95.5%;
-  width: 3.2%;
+  width: 3%;
   height: 30px;
-  border-radius: 200px;
+  border-radius:50%;
   border: none;
-  background-color: rgba(240, 248, 255, 0.593);
+  background-color: rgba(240, 248, 255, 0.796);
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   color: #304ef8;
   cursor:pointer;
+  z-index: 1;
 }
 .slide-arrowPrev,.slide-arrowPrevB,.slide-arrowPrevC{
   position: absolute;
   top: 39%;
   left: 0%;
-  width: 3.2%;
+  width: 3%;
   height: 30px;
-  border-radius: 200px;
-  border:none;
-  background-color: rgba(240, 248, 255, 0.593);
+  border-radius:50%;
+  border:0px solid white;
+  background-color: rgba(240, 248, 255, 0.796);
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   color: #304ef8;
-  cursor: pointer;;
+  cursor: pointer;
+  z-index: 1;
 }
 #searchBar{
   position: absolute;
@@ -533,12 +535,12 @@ body{
 #slide-arrow-prevB{
   top:30%;
   left: 1%;
-  background-color: rgba(167, 174, 180, 0.808);
+  background-color: rgba(240, 248, 255, 0.796);
 }
 #slide-arrow-nextB{
   top:30%;
   left: 94%;
-  background-color: rgba(167, 174, 180, 0.808);
+  background-color: rgba(240, 248, 255, 0.796);
 }
 #cityimg{
   border: 0px solid black;
