@@ -14,37 +14,29 @@
 
 
 * HomePage:
-* ![image](https://user-images.githubusercontent.com/99958902/180615321-f2963c49-b720-4ac8-bc2b-fa8dd197922f.png)
+* ![image](https://i.ibb.co/fQYB1sS/bookit-home.png)
 
 
-* New Product Page: 
-* ![image](https://user-images.githubusercontent.com/99958902/180615351-8c814342-e45d-477c-a03a-c2cd7dc854c5.png)
-
+* Flight Booking Page: 
+* ![image](https://i.ibb.co/q0SBGCv/bookit2.png)
 
  
-* Brand Wise Product Page:
-* ![image](https://user-images.githubusercontent.com/99958902/180615366-b5bcd6d3-435e-4aad-9fda-a766e9a4884d.png)
+* Car Booking Page:
+* ![image](https://i.ibb.co/61qDCZD/bookit3car.png)
 
 
-
-* Product detail Page:
-* ![image](https://user-images.githubusercontent.com/99958902/180615400-eccddbca-3559-46dc-aa29-1bf9320ab4af.png)
-
+* Booking Page:
+* ![image](https://i.ibb.co/hMSR55R/bookit-booking-page.png)
 
 
-* Bag Page:
-* ![image](https://user-images.githubusercontent.com/99958902/180615414-b1164c4a-b141-4c25-8dc2-5693135b0eb8.png)
+* Register Page:
+* ![image](https://i.ibb.co/h9Z3Nn0/bookit-sigin.png)
 
 
-
-* Signup Page:
-* ![image](https://user-images.githubusercontent.com/99958902/180615435-c5cb1df7-880c-4b39-a567-0cacb3f53595.png)
-
+* Sign In Page: 
+* ![image](https://i.ibb.co/jh97KND/bookit-sign.png)
 
 
-* Login Page: 
-* ![image](https://user-images.githubusercontent.com/99958902/180615461-23bfc828-bce6-4eeb-9082-bd61bdf71cb0.png)
-
-*Payment page
-* ![image](https://user-images.githubusercontent.com/99958902/180615492-472183ce-1dab-482c-94e1-dc8bbbae14dc.png)
+*Booking Details page
+* ![image](https://i.ibb.co/Y0DgqyS/bookit-details-page.png)
 
