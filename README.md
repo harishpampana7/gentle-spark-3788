@@ -37,6 +37,14 @@
 * ![image](https://i.ibb.co/jh97KND/bookit-sign.png)
 
 
+* Admin Page: 
+* ![image](https://i.ibb.co/r7Jx1dF/bookiit-admin-page.png)
+
+
+* Admin Manage Page: 
+* ![image](https://i.ibb.co/MSMt4hh/bookit-admin-page-show-list.png)
+
+
 *Booking Details page
 * ![image](https://i.ibb.co/Y0DgqyS/bookit-details-page.png)
 
